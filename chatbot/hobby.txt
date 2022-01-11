@@ -1,0 +1,130 @@
+Hobby
+
+
+Piłka nozna
+"Czy lubisz piłke nożną", "Lubisz grać w piłkę nożną"
+"Tak, bardzo", "Lubię oglądać meczę", "Częściej oglądam niż gram", "Nie lubię tego sportu"
+
+"Ilu graczy jest na boisku", "Jak dużo graczy gra w piłkę nożną", "Jak duża jest drużyna", "Jak duży jest zespół", "Ilu piłkarzy jest w drużynie"
+"Drużyna piłkarska składa się z 11 zawodników (aby zespół został dopuszczony do meczu musi być ich co najmniej 7) i zazwyczaj 7 rezerwowych (w finałach mistrzostw świata i mistrzostw Europy – 12).", "11 zawodników", "10 biegaczy i 1 bramkarz"
+
+"Ile jest drużyn?", "ile drużyn gra jednoczęsnie na boisku", "Ile drużyn gra mecz"
+"Na boisku są 2 drużyny", "Na świecie jest wiele drużyn"
+
+"Na czym polega gra", "Opowiedz coś o piłce nożnej", Opowiedz o piłce nożnej", "Jakie są zasady gry", "Znasz zasady?"
+"Celem gry jest umieszczenie piłki w bramce przeciwnika. Zwycięża drużyna, która w regulaminowym czasie gry (dwie połowy po 45 minut każda w rozgrywkach seniorów) zdobędzie więcej bramek.", "Na wbijaniu bramek przeciwnikowi",
+"Typowa gra piłkarska polega na utrzymywaniu się w posiadaniu piłki tak, aby nie weszła ona w posiadanie przeciwnika, na podaniach piłki nogą lub głową (nie ręką) do partnera z zespołu, a następnie kopnięciu jej do bramki przeciwnika."
+Gdzie oglądasz piłke nożna
+"Najczęsciej w telewizji", "Na laptopie", "W internecie", "Oglądam tylko skróty", "Na youTube", "Lubię mecze w pubie"
+
+"Ulubiony pub?", "jaki bar najbardziej lubisz", "Jaki pub najbardzije lubisz", "Gdzie chodzisz oglądać mecze"
+"Moim ulubionym pubem jest piwnica", "Nie mam ulubionego, lunie wszytskie", "Green pub Gdańsk!"
+
+"ciekawostka o piłce nożnej", "Opowiedz coś o piłce nożnej", "powiedz ciekawostke o piłce nożnej", "Powiedz coś ciekawego o piłce nożnej"
+"Mecze piłkarskie odbywają się na prostokątnym, pokrytym murawą boisku.", " Rozmiary boiska to 45 do 90 m szerokości i długości od 90 do 120 m, lecz boisko nie może być kwadratowe.", "Od 14 marca 2008 każde nowe boisko powinno mieć 105 metrów długości i 68 metrów szerokości"
+"Podział graczy z pola na pozycje jest czysto umowny, w aktualnie stosowanych strategiach gry często następuje podczas meczu płynna wymiana między nimi.", "Bramkarz jest jedynym zawodnikiem, który może dotykać i łapać piłkę rękami w czasie gry, jednak zgodnie z przepisami może to mieć miejsce jedynie we własnym polu karnym.",
+"Piłka nożna jest jedną z szybciej prowadzonych gier.", "Jeśli piłka po uderzeniu, podaniu lub odbiciu przekroczy całym obwodem linię boczną, sędzia wskazuje wrzut. Wznowienie gry następuje przez wrzut piłki rękoma, zza i znad głowy bez odrywania nóg od podłoża z miejsca, w którym piłka opuściła pole gry, przez zawodnika drużyny przeciwnej."
+
+"Rodzaje boisk do piłki nożnej", "Jakie boiska znasz", "Jakie murawy znasz?"
+"Boiska halowe", "Murawy naturalne", "Murawy sztuczne", "Murawa poliuretanowa"
+
+"Jak długo trwa mecz", "Jak długo się gra?", "Jaki jest czas gry", "Ile trwa mecz?"
+"Zazwyczaj 90 minut", "90 minut plus czas dodawany przez sędziego", "Czas gry wynosi 90 minut (dwie połowy, każda po 45 minut).",
+"90 minut plus czas przerwy pomiędzy połowami."
+
+"Jakie znasz drużyny?", "Podaj nazwę drużyny", "Podaj klub z Polski", "Jakie znasz kluby?", "Podaj nazwe klubu z Polski"
+"Legia Warszawa", "Lechia Gdańsk", "Arka Gdynia", "Polonia Warszawa", "Polska Reprezentacja", "Lech Poznań", "Cracovia"
+
+"Ulubiony piłkarz", "ulubiony gracz", "Jakiego piłkarza lubisz?", "Którego piłkarza lubisz?"
+"Robercik", "Robert Lewandowski", "Joshua Kimmich", "Kylian Mbappe", "Sergio Ramos", "Cristiano Ronaldo", "Neymar"
+
+
+"Kogo nie lubisz", "Jakiego nie lubisz", "Jakiego piłkarza nie lubisz"
+"Karim Benzema", "Manuel Neuer", "Erling Braut Haaland", "Lionel Messi"
+
+
+Kolarstwo
+"Opowiedz coś o kolarstwie", "Co wiesz o kolarstwie?", "Co powiesz o kolarstwie"
+"Znam klika faktów"
+
+"Podaj jakieś fakty o kolarstwie", "Podaj następny fakt o kolarstwie", "Powiedz coś o rowerach"
+"Kolarstwo bardzo szeroki termin, odnoszący się do wielu dyscyplin, zawsze jednak związanych z korzystaniem z roweru.","Nazwa wywodzi się od słowa „koło” jak początkowo nazywano w Polsce rower.",
+"Wiele naukowych opracowań dowodzi, że ludzie regularnie jeżdżący na rowerze mają mniejsze skłonności do otyłości, cukrzycy, udarów, chorób serca i różnych rodzajów raka",
+"Pierwszy oficjalny wyścig rowerowy odbył się 31 maja 1868 roku w Paryżu. Zawodnicy ścigali się na odcinku 1200 metrów.", "Kolarstwo dzieli się na wiele dyscyplin. Najpopularniejsze to kolarstwo szosowe, górskie, torowe i BMX.",
+"Każdy zawodnik obowiązkowo musi mieć na głowie kask."
+
+"Jakie rodzaje kolarstwa", "Jakie są rodzaje kolarstwa", "Jak dzielić kolarstwo", "Jaki jeszcze typ kolarstwa"
+"kolarstwo szosowe – uprawiane na drogach publicznych", "kolarstwo torowe – uprawiane na specjalnych owalnych torach", "kolarstwo górskie (MTB)", "kolarstwo BMX – uprawiane na torach Moto-Cross",
+"kolarstwo przełajowe – jazda po leśnych bezdrożach", "piłka rowerowa"
+
+"jakie rowery", "Wymień rowery", "Jakie znasz rowery", "Typy rowerów",
+"Kolarzówka", "Gravel", "MTB", "BMX", "Cross", "Miejski", 'Turystyczny'
+"Na jakim rowerze jezdzisz", "Na czym jeździsz?", ""
+"Na kolarzówce", "Na gravelu", "Tylko MTB", "BMX", "Na miejskim", 'Na turystycznym'
+"czy jeździsz", "Jeżdzisz na rowerze?"
+"Tak jeżdzę.", "Tylko do pracy", "Lubię robić wycieczki", "Czesto jeżdżę po mieście"
+
+"Czy znasz tour de france", "Tour de France", "Francuski "
+"Tak znam", "Bardzo fajny wyścig", "Legendarny wyścig"
+"Ulubiony wyścig", "Twój ulubiony wyścig"
+"Tour de Pologne", "Tour de France", "MTB Garmin Series", "Giro de Italia"
+"Jak czesto jezdzisz", "Dużo jeżdzisz?"
+"Raz w tygodniu", "Bardzo często", "Czasami"
+
+
+Astronomia
+Q: "Tell me something about astronomy", "Are you interested in astronomy?", "Astronomy"
+A: What do you want to know? I know some facts also as jokes.
+
+Q: "James Webb Space Telescope", "JWST", "teleskop Jamesa Webba"
+A: The James Webb Space Telescope (JWST) will be the largest space telescope at any wavelength, with a primary mirror 6.5 metres (21.3 feet) in diameter. The JWST will study forming stars and galaxies and was launched at 25th December 2021.
+
+Q: "black hole"
+A: Don't let the name fool you: a black hole is anything but empty space. Rather, it is a great amount of matter packed into a very small area - think of a star ten times more massive than the Sun squeezed into a sphere approximately the diameter of New York City. The result is a gravitational field so strong that nothing, not even light, can escape.
+
+Q: "Dark energy"
+A: Dark energy - More is unknown than is known. We know how much dark energy there is because we know how it affects the universe's expansion. Other than that, it is a complete mystery. But it is an important mystery. It turns out that roughly 68% of the universe is dark energy. Dark matter makes up about 27%. The rest - everything on Earth, everything ever observed with all of our instruments, all normal matter - adds up to less than 5% of the universe.
+
+Q: "enceladus"
+A: Enceladus is the sixth-largest moon of Saturn. Enceladus is mostly covered by fresh, clean ice, making it one of the most reflective bodies of the Solar System. Cryovolcanoes near the south pole shoot geyser-like jets of water vapor, molecular hydrogen, other volatiles, and solid material, including sodium chloride crystals and ice particles, into space, totaling about 200 kg (440 lb) per second. More than 100 geysers have been identified. Some of the water vapor falls back as "snow"; the rest escapes, and supplies most of the material making up Saturn's E ring.
+
+
+Q: "żart o astronomii", "astronomiczny żart", "kosmiczny żart"
+    1. How do we know that photons aren't religions?
+        They don't have mass.
+    2. Never trust an atom because they make up everything.
+    3. Black holes are most commonly found in black socks.
+    4. Did you hear about the claustrophobic astronaut?
+        He just needed a little space.
+
+Q: Fakty
+A:
+    1. Słońce jest największym obiektem w Układzie Słonecznym. Jest większe od Ziemi aż o 109 razy!
+    2. Olympus Mons - wygasły wulkan znajdujący się na Marsie mierzy około 26 000 metrów wysokości, to trzy razy więcej niż najwyższa góra Ziemi! Olympus Mons jest wygasłym wulkanem tarczowym, co oznacza, że powstał w wyniku powolnego i długotrwałego wycieku lawy. Dlaczego jest tak wysoki? Naukowcy twierdzą, że powodem jest brak płyt tektonicznych na Marsie. To pozwoliło wypływać gorącej lawie przez czas o wiele dłuższy, niż przeciętna aktywność wulkanu na Ziemi.
+    3. We wszechświecie jest więcej gwiazd niż ziaren piasku na wszystkich plażach na Ziemi. czyli co najmniej miliard bilionów.
+    4. Kosmos ma zapach, choć oczywiście człowiekowi trudno go poczuć, bo poza stacją kosmiczną zawsze musi znajdować się w skafandrze. Zapach ten jest jednak wyczuwalny po tym, gdy otworzy się śluzę powietrzną, np. z powodu spaceru kosmicznego. Astronauci przyrównują go do rozgrzanego metalu czy zapachu grilla. Za tę woń odpowiada ozon.
+    5. Kosmos jest próżnią, w której nie słuchać żadnych dźwięków. Jeśli w przestrzeni międzyplanetarnej zderzą się ze sobą dwa pojazdy kosmiczne, nie spowoduje to żadnych odgłosów.
+    6. Wenus jest szczególną planetą w Układzie Słonecznym. Jako jedyna obraca się bowiem w przeciwną stronę, czyli wstecznie do kierunku Słońca. Co więcej, obrót Wenus wokół własnej osi trwa dłużej (243 dni) niż jej obrót wokół Słońca (225 dni) – oznacza to, że wenusjański dzień jest dłuższy niż wenusjański rok!
+    7. Jowisz to planeta, która w Układzie Słonecznym wyróżnia się czymś więcej niż tylko masą i wielkością. Tzw. Wielka Czerwona Plama widoczna na Jowiszu jest w rzeczywistości ogromną burzą (a dokładniej – antycyklonem) o szerokości nawet 40 tys. km (średnica Ziemi wynosi ok. 12 tys. km!). Ten antycyklon trwa nieprzerwanie od co najmniej 355 lat.
+    8. Złom kosmiczny to dowolny ludzki obiekt otaczający Ziemię, który już nie służy pożytecznemu celowi. Naukowcy szacują, że dziś jest około pół miliona sztuk śmieci kosmicznych, w tym fragmentów rakiet i satelitów oraz przedmiotów codziennego użytku, takich jak klucze zrzucone podczas budowy Międzynarodowej Stacji Kosmicznej.
+    9. Najbardziej wietrzną planetą naszego układu słonecznego jest Neptun. Wiatr wieje tam z prędkością 2575 km/h, czyli 9 razy szybciej niż najsilniejszy wiatr na ziemi. Neptun jest jedyną planetą, której istnienia nie dowiedziono poprzez obserwację na niebie, ale na drodze obliczeń matematycznych! Naukowcy, obserwując odchylenia w ruchu orbitalnym Urana stwierdzili, że musi na niego wpływać inna, nieznana planeta. Kiedy wiadomo było już teoretycznie gdzie powinien się znajdować (przewidział to Urban Le Verrier) , został zaobserwowany przez Johanna Galle. Neptun został odwiedzony przez tylko jedną sondę kosmiczną Voyager 2, która przeleciała w pobliżu planety 25 sierpnia 1989 roku.
+    10. Kiedy obserwujemy gwiazdy, obraz, który widzimy, tak naprawdę pochodzi sprzed wielu lat - tylu, o ile lat świetlnych oddalona jest od nas dana gwiazda. Jeśli gwiazda oddalona jest od ziemi o 50 lat świetlnych, to oznacza, że światło potrzebuje 50 lat by do nas dotrzeć - czyli, oglądamy jej obraz sprzed 50 lat. W rzeczywistości gwiazda może wyglądać zupełnie inaczej, lub nawet nie istnieć. Działa to oczywiście również w drugą stronę. Z niektórych miejsc w kosmosie widać ziemię sprzed wielu lat. Oznacza to, że z miejsca w kosmosie oddalonego od ziemi o 604 lata świetlne, można na żywo obejrzeć Bitwę pod Grunwaldem.
+
+
+Kostki rubika
+- opowiedz coś o temacie
+A: Znam tylko kilka faktów o kostce rubika
+
+- nazwa „Kostka Rubika" pochodzi od węgierskiego Bűvös kocka, co dosłownie oznacza magiczną kostkę,
+- wymyślił ją Ernő Rubik, węgierski architekt i rzeźbiarz,
+- możliwości konfiguracji w Kostce Rubika jest 43 tryliony (43 252 003 274 489 856 000!)
+- najbardziej rozbudowana kostka w historii miała konstrukcję 33x33x33,
+- początkowo przyrząd nie miał służyć jako łamigłówka. Rubik stworzył kostkę, aby wyjaśnić studentom zasady przestrzenności i trójwymiarowości,
+- na samym początku nikt nie chciał zająć się produkcją kostki – firmy nie wierzyły, że jej ułożenie jest możliwe, więc podczas każdego spotkania Rubik musiał układać kostkę i udowadniać, że jednak się da,
+- na sam koniec: ułożenie Kostki Rubika jest o wiele łatwiejsze, niż się wydaje! Istnieje kilka prostych technik, które umożliwiają ułożenie Kostki nawet w 100 ruchach.
+
+- rekord kostki 3x3 i inne rodzaje, 4x4, 5x5, 6x6
+
+
+
+
