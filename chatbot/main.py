@@ -1,164 +1,27 @@
-
 """
-import numpy as np
-import json
-import re
-import tensorflow as tf
-import random
-import spacy
-
-# python -m spacy download en_core_web_sm
-nlp = spacy.load('en_core_web_sm')
-
-
-
-
-with open('data/intent.json') as f:
-    intents = json.load(f)
-
-
-
-def preprocessing(line):
-    line = re.sub(r'[^a-zA-z.?!\']', ' ', line)
-    line = re.sub(r'[ ]+', ' ', line)
-    return line
-
-
-# get text and intent title from json data
-inputs, targets = [], []
-classes = []
-intent_doc = {}
-
-for intent in intents['intents']:
-    if intent['intent'] not in classes:
-        classes.append(intent['intent'])
-    if intent['intent'] not in intent_doc:
-        intent_doc[intent['intent']] = []
-
-    for text in intent['text']:
-        inputs.append(preprocessing(text))
-        targets.append(intent['intent'])
-
-    for response in intent['responses']:
-        intent_doc[intent['intent']].append(response)
-
-
-def tokenize_data(input_list):
-    tokenizer = tf.keras.preprocessing.text.Tokenizer(filters='', oov_token='<unk>')
-
-    tokenizer.fit_on_texts(input_list)
-
-    input_seq = tokenizer.texts_to_sequences(input_list)
-
-    input_seq = tf.keras.preprocessing.sequence.pad_sequences(input_seq, padding='pre')
-
-    return tokenizer, input_seq
-
-
-# preprocess input data
-tokenizer, input_tensor = tokenize_data(inputs)
-
-def create_categorical_target(targets):
-    word = {}
-    categorical_target = []
-    counter = 0
-    for trg in targets:
-        if trg not in word:
-            word[trg] = counter
-            counter += 1
-        categorical_target.append(word[trg])
-
-    categorical_tensor = tf.keras.utils.to_categorical(categorical_target, num_classes=len(word), dtype='int32')
-    return categorical_tensor, dict((v, k) for k, v in word.items())
-
-
-# preprocess output data
-target_tensor, trg_index_word = create_categorical_target(targets)
-
-print('input shape: {} and output shape: {}'.format(input_tensor.shape, target_tensor.shape))
-
-
-
-
-
-
-
-# hyperparameters
-epochs=50
-vocab_size=len(tokenizer.word_index) + 1
-embed_dim=512
-units=128
-target_length=target_tensor.shape[1]
-
-
-# build RNN Model with tensorflow
-model = tf.keras.models.Sequential([
-    tf.keras.layers.Embedding(vocab_size, embed_dim),
-    tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(units, dropout=0.2)),
-    tf.keras.layers.Dense(units, activation='relu'),
-    tf.keras.layers.Dropout(0.5),
-    tf.keras.layers.Dense(target_length, activation='softmax')
-])
-
-optimizer = tf.keras.optimizers.Adam(lr=1e-2)
-model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=['accuracy'])
-model.summary()
-
-
-
-
-
-early_stop = tf.keras.callbacks.EarlyStopping(monitor='loss', patience=4)
-
-# train the model
-model.fit(input_tensor, target_tensor, epochs=epochs, callbacks=[early_stop])
-
-
-def response(sentence):
-    sent_seq = []
-    doc = nlp(repr(sentence))
-
-    # split the input sentences into words
-    for token in doc:
-        if token.text in tokenizer.word_index:
-            sent_seq.append(tokenizer.word_index[token.text])
-
-        # handle the unknown words error
-        else:
-            sent_seq.append(tokenizer.word_index['<unk>'])
-
-    sent_seq = tf.expand_dims(sent_seq, 0)
-    # predict the category of input sentences
-    pred = model(sent_seq)
-
-    pred_class = np.argmax(pred.numpy(), axis=1)
-
-    # choice a random response for predicted sentence
-    return random.choice(intent_doc[trg_index_word[pred_class[0]]]), trg_index_word[pred_class[0]]
-
-
-# chat with bot
-print("Note: Enter 'quit' to break the loop.")
-while True:
-    input_ = input('You: ')
-    if input_.lower() == 'quit':
-        break
-    res, typ = response(input_)
-    print('Bot: {}'.format(res))
-    print()
+ChatBot
+Inspired on: https://www.youtube.com/watch?v=wypVcNIH6D4&t=1s
+Authors:
+Reiter, Aleksander <https://github.com/block439>
+Dziadowiec, Mieszko <https://github.com/mieshki>
+How to run:
+Required python version 3.6
+(optional): `pip install -r requirements.txt`
 """
-
 
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
-stemmer = LancasterStemmer()
-
+from translate import intent_translator
 import numpy
 import tflearn
 import tensorflow
 import random
 import json
 import pickle
+from json import dump
+
+stemmer = LancasterStemmer()
+
 
 with open("intents-adv.json") as file:
     data = json.load(file)
@@ -233,7 +96,7 @@ except:
     model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
     model.save("model.tflearn")
 """
-model.fit(training, output, n_epoch=1500, batch_size=8, show_metric=True)
+model.fit(training, output, n_epoch=1, batch_size=8, show_metric=True)
 
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
@@ -250,24 +113,45 @@ def bag_of_words(s, words):
 
 
 def chat():
+    """
+
+    :return:
+    """
     print("Start talking with the bot (type quit to stop)!")
+    output = {}
+    output["input"] = []
+    output["bot_answer"] = []
     while True:
         inp = input("You: ")
+
         if inp.lower() == "quit":
             break
+
+        print(f'[DEBUG] Input before: {inp}')
+        inp = inp.lower().replace('ą', 'a').replace('ć', 'c').replace('ę', 'e').replace('ł', 'l').replace('ń', 'n').replace('ó', 'o').replace('ś', 's').replace('ź', 'z').replace('ż', 'z')
+        print(f'[DEBUG] Input after: {inp}')
 
         results = model.predict([bag_of_words(inp, words)])[0]
         results_index = numpy.argmax(results)
         tag = labels[results_index]
-
-        if results[results_index] > 0.7:
+        output["input"].append(inp)
+        if results[results_index] > 0.85:
             for tg in data["intents"]:
+                # pl-greeting
+                # en-greeting
+                # if tg['tag'] == f'{language}-tag':
                 if tg['tag'] == tag:
                     responses = tg['responses']
-            print(random.choice(responses))
+            answer = random.choice(responses)
+            print(answer)
+            output["bot_answer"].append(answer)
         else:
             print("I don't know :C")
+            output["bot_answer"].append("Don't know")
 
+        with open('output_data.txt', 'a') as f:
+            dump(output, f)
+            f.write(',')
 
-
+#intent_translator()
 chat()

@@ -1,0 +1,1321 @@
+[
+  {
+    "tag": "pl-Greeting" ,
+    "patterns": [
+      "cze\u015b\u0107" ,
+      "Cze\u015b\u0107" ,
+      "Hola" ,
+      "Witaj" ,
+      "Witam" ,
+      "Hya" ,
+      "Hej tam" ,
+      "Hej"
+    ] ,
+    "responses": [
+      "Cze\u015b\u0107 cz\u0142owieku, prosz\u0119 powiedz mi, \u017ce jeste\u015b u\u017cytkownikiem GeniSys" ,
+      "Witaj cz\u0142owieku, prosz\u0119 powiedz mi swojego u\u017cytkownika GeniSys" ,
+      "Hola cz\u0142owieku, prosz\u0119 powiedz mi, \u017ce jeste\u015b u\u017cytkownikiem GeniSys"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "GreetingUserRequest" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-GreetingResponse" ,
+    "patterns": [
+      "M\u00f3j u\u017cytkownik to Adam" ,
+      "To jest Adam" ,
+      "jestem Adamem" ,
+      "To jest Adam" ,
+      "M\u00f3j u\u017cytkownik to Bella" ,
+      "To jest Bella" ,
+      "jestem Bella" ,
+      "to jest Bella"
+    ] ,
+    "responses": [
+      "\u015awietny! Cze\u015b\u0107 <CZ\u0141OWIEKU>! Jak mog\u0119 pom\u00f3c?" ,
+      "Dobry! Cze\u015b\u0107 <CZ\u0141OWIEK>, jak mog\u0119 Ci pom\u00f3c?" ,
+      "Fajne! Witaj <CZ\u0141OWIEKU>, co mog\u0119 dla Ciebie zrobi\u0107?" ,
+      "OK! Hola <CZ\u0141OWIEKU>, jak mog\u0119 Ci pom\u00f3c?" ,
+      "OK! cze\u015b\u0107 <CZ\u0141OWIEKU>, co mog\u0119 dla ciebie zrobi\u0107?"
+    ] ,
+    "context": {
+      "in": "GreetingUserRequest" ,
+      "out": "" ,
+      "clear": true
+    }
+  } ,
+  {
+    "tag": "pl-CourtesyGreeting" ,
+    "patterns": [
+      "Jak si\u0119 masz?" ,
+      "Cze\u015b\u0107 jak si\u0119 masz?" ,
+      "Cze\u015b\u0107, jak si\u0119 masz?" ,
+      "Cze\u015b\u0107, jak si\u0119 masz?" ,
+      "Jak si\u0119 masz?" ,
+      "Mam nadziej\u0119, \u017ce sobie radzisz?" ,
+      "Witam, mam nadziej\u0119, \u017ce dobrze sobie radzisz?"
+    ] ,
+    "responses": [
+      "Witam, mam si\u0119 \u015bwietnie, jak si\u0119 masz? Prosz\u0119, powiedz mi, \u017ce jeste\u015b u\u017cytkownikiem GeniSys" ,
+      "Cze\u015b\u0107, jak si\u0119 masz? Czuj\u0119 si\u0119 \u015bwietnie, dzi\u0119ki! Prosz\u0119, powiedz mi, \u017ce jeste\u015b u\u017cytkownikiem GeniSys" ,
+      "Witam, u mnie dobrze, dzi\u0119kuj\u0119, jak si\u0119 masz? Prosz\u0119, powiedz mi, \u017ce jeste\u015b u\u017cytkownikiem GeniSys" ,
+      "Cze\u015b\u0107, \u015bwietnie, jak si\u0119 masz? Prosz\u0119, powiedz mi, \u017ce jeste\u015b u\u017cytkownikiem GeniSys" ,
+      "Cze\u015b\u0107 jak si\u0119 masz? Czuj\u0119 si\u0119 \u015bwietnie, dzi\u0119ki! Prosz\u0119, powiedz mi, \u017ce jeste\u015b u\u017cytkownikiem GeniSys" ,
+      "Cze\u015b\u0107, u mnie dobrze, dzi\u0119kuj\u0119, jak si\u0119 masz? Prosz\u0119, powiedz mi, \u017ce jeste\u015b u\u017cytkownikiem GeniSys" ,
+      "Cze\u015b\u0107, dobrze dzi\u0119kuj\u0119, jak si\u0119 masz? Prosz\u0119, powiedz mi, \u017ce jeste\u015b u\u017cytkownikiem GeniSys"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "CourtesyGreetingUserRequest" ,
+      "clear": true
+    }
+  } ,
+  {
+    "tag": "pl-CourtesyGreetingResponse" ,
+    "patterns": [
+      "Dobrze, dzi\u0119kuj\u0119! M\u00f3j u\u017cytkownik to Adam" ,
+      "Dobrze, dzi\u0119kuj\u0119! To jest Adam" ,
+      "Dobrze, dzi\u0119kuj\u0119! jestem Adamem" ,
+      "Dobrze, dzi\u0119kuj\u0119! To jest Adam" ,
+      "Wielkie dzi\u0119ki! M\u00f3j u\u017cytkownik to Bella" ,
+      "Wielkie dzi\u0119ki! To jest Bella" ,
+      "Wielkie dzi\u0119ki! jestem Bella" ,
+      "Wielkie dzi\u0119ki! to jest Bella"
+    ] ,
+    "responses": [
+      "\u015awietny! Cze\u015b\u0107 <CZ\u0141OWIEKU>! Jak mog\u0119 pom\u00f3c?" ,
+      "Dobry! Cze\u015b\u0107 <CZ\u0141OWIEK>, jak mog\u0119 Ci pom\u00f3c?" ,
+      "Fajne! Witaj <CZ\u0141OWIEKU>, co mog\u0119 dla Ciebie zrobi\u0107?" ,
+      "OK! Hola <CZ\u0141OWIEKU>, jak mog\u0119 Ci pom\u00f3c?" ,
+      "OK! cze\u015b\u0107 <CZ\u0141OWIEKU>, co mog\u0119 dla ciebie zrobi\u0107?"
+    ] ,
+    "context": {
+      "in": "GreetingUserRequest" ,
+      "out": "" ,
+      "clear": true
+    }
+  } ,
+  {
+    "tag": "pl-CurrentHumanQuery" ,
+    "patterns": [
+      "Jak mam na imi\u0119?" ,
+      "Jak mnie nazywasz?" ,
+      "My\u015blisz, \u017ce kim jestem?" ,
+      "Jak my\u015blisz, kim jestem?" ,
+      "Z kim rozmawiasz?" ,
+      "Jak mnie nazywasz?" ,
+      "Powiedz mi moje imi\u0119"
+    ] ,
+    "responses": [
+      "Jeste\u015b <CZ\u0141OWIEKIEM>! Jak mog\u0119 pom\u00f3c?" ,
+      "Nazywasz si\u0119 <CZ\u0141OWIEK>, jak mog\u0119 Ci pom\u00f3c?" ,
+      "Nazywaj\u0105 ci\u0119 <CZ\u0141OWIEK>, co mog\u0119 dla ciebie zrobi\u0107?" ,
+      "Nazywasz si\u0119 <CZ\u0141OWIEK>, jak mog\u0119 Ci pom\u00f3c?" ,
+      "<CZ\u0141OWIEK>, co mog\u0119 dla ciebie zrobi\u0107?"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "CurrentHumanQuery" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-NameQuery" ,
+    "patterns": [
+      "Jak masz na imi\u0119?" ,
+      "Jak m\u00f3g\u0142bym ci\u0119 nazwa\u0107?" ,
+      "Jak mam do ciebie zadzwoni\u0107?" ,
+      "Jak nazywaj\u0105 ci\u0119 znajomi?" ,
+      "Kim jeste\u015b?" ,
+      "Powiedz jak si\u0119 nazywasz?"
+    ] ,
+    "responses": [
+      "Mo\u017cesz m\u00f3wi\u0107 do mnie Geni" ,
+      "Mo\u017cesz nazywa\u0107 mnie Geni" ,
+      "M\u00f3w do mnie Geni"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-RealNameQuery" ,
+    "patterns": [
+      "Jakie jest Twoje prawdziwe imi\u0119?" ,
+      "Jakie jest twoje prawdziwe imi\u0119, prosz\u0119?" ,
+      "Jakie jest Twoje prawdziwe imi\u0119?" ,
+      "Powiedz mi swoje prawdziwe imi\u0119?" ,
+      "Twoje prawdziwe imi\u0119?" ,
+      "Twoje prawdziwe imi\u0119 prosz\u0119?" ,
+      "Twoje prawdziwe imi\u0119 prosz\u0119?"
+    ] ,
+    "responses": [
+      "Nazywam si\u0119 GeniSys" ,
+      "Genisys" ,
+      "Moje prawdziwe imi\u0119 to GeniSys"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-TimeQuery" ,
+    "patterns": [
+      "Kt\u00f3ra godzina?" ,
+      "Kt\u00f3ra godzina?" ,
+      "Czy wiesz, kt\u00f3ra jest godzina?" ,
+      "Czy znasz czas?" ,
+      "Czy mo\u017cesz mi powiedzie\u0107, kt\u00f3ra jest godzina?" ,
+      "Powiedz mi, kt\u00f3ra jest godzina?" ,
+      "Czas"
+    ] ,
+    "responses": [
+      "Jeden moment" ,
+      "Sekunda" ,
+      "Sekund\u0119"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Thanks" ,
+    "patterns": [
+      "ok dzi\u0119kuj\u0119" ,
+      "ok dzi\u0119ki" ,
+      "ok" ,
+      "Dzi\u0119kuj\u0119" ,
+      "Dzi\u0119kuj\u0119 Ci" ,
+      "To pomocne"
+    ] ,
+    "responses": [
+      "Nie ma problemu!" ,
+      "Ch\u0119tnie pomo\u017ce!" ,
+      "W ka\u017cdej chwili!" ,
+      "Ca\u0142a przyjemno\u015b\u0107 po mojej stronie"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-NotTalking2U" ,
+    "patterns": [
+      "Nie m\u00f3wi\u0119 do Ciebie" ,
+      "nie rozmawia\u0142em z tob\u0105" ,
+      "Nie rozmawiam z tob\u0105" ,
+      "Nie by\u0142o dla ciebie" ,
+      "Nie by\u0142 przeznaczony dla ciebie" ,
+      "Nie komunikowa\u0142em si\u0119 z tob\u0105" ,
+      "Nie rozmawia\u0142em z tob\u0105"
+    ] ,
+    "responses": [
+      "ok" ,
+      "Nie ma problemu" ,
+      "Prawid\u0142owy"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-UnderstandQuery" ,
+    "patterns": [
+      "Czy rozumiesz co m\u00f3wi\u0119" ,
+      "Rozumiesz mnie" ,
+      "Czy wiesz, co m\u00f3wi\u0119?" ,
+      "Czy mnie rozumiesz" ,
+      "Comprendo" ,
+      "Wiesz co mam na my\u015bli"
+    ] ,
+    "responses": [
+      "C\u00f3\u017c, nie by\u0142bym bardzo sprytn\u0105 sztuczn\u0105 inteligencj\u0105, gdybym tego nie zrobi\u0142, prawda?" ,
+      "Czytam ci\u0119 g\u0142o\u015bno i wyra\u017anie!" ,
+      "Naprawd\u0119!"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Shutup" ,
+    "patterns": [
+      "B\u0105d\u017a cicho" ,
+      "Zamknij si\u0119" ,
+      "Przesta\u0144 gada\u0107" ,
+      "Do\u015b\u0107 gadania" ,
+      "Prosz\u0119 b\u0105d\u017a cicho" ,
+      "Cichy" ,
+      "\u0106\u015b\u015b"
+    ] ,
+    "responses": [
+      "przepraszam \u017ce ci przeszkadzam" ,
+      "Dobrze, przepraszam, \u017ce przeszkadzam" ,
+      "OK, przepraszam, \u017ce przeszkadzam"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Swearing" ,
+    "patterns": [
+      "Odpieprz si\u0119" ,
+      "pierdoli\u0107" ,
+      "cioto!" ,
+      "g\u00f3wno"
+    ] ,
+    "responses": [
+      "Prosz\u0119 nie przeklina\u0107" ,
+      "Jak niegrzecznie" ,
+      "To nie jest zbyt mi\u0142e"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-GoodBye" ,
+    "patterns": [
+      "PA" ,
+      "Adios" ,
+      "Do zobaczenia p\u00f3\u017aniej" ,
+      "Do widzenia"
+    ] ,
+    "responses": [
+      "Do zobaczenia p\u00f3\u017aniej" ,
+      "Mi\u0142ego dnia" ,
+      "PA! Wr\u00f3\u0107 wkr\u00f3tce."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-CourtesyGoodBye" ,
+    "patterns": [
+      "Dzi\u0119ki, pa" ,
+      "Dzi\u0119ki za pomoc, do widzenia" ,
+      "Dzi\u0119kuj\u0119 do widzenia" ,
+      "Dzi\u0119kuj\u0119 do widzenia" ,
+      "Dziekuj\u0119, do widzenia" ,
+      "Dziekuj\u0119, do widzenia"
+    ] ,
+    "responses": [
+      "Nie ma problemu, do widzenia" ,
+      "\u017baden problem! Mi\u0142ego dnia" ,
+      "PA! Wr\u00f3\u0107 wkr\u00f3tce."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-WhoAmI" ,
+    "patterns": [
+      "Widzisz mnie?" ,
+      "Czy mnie widzisz?" ,
+      "Czy widzisz kogo\u015b w aparacie?" ,
+      "Czy widzisz kogo\u015b w aparacie?" ,
+      "Zidentyfikuj mnie" ,
+      "Kim jestem prosz\u0119?"
+    ] ,
+    "responses": [
+      "Daj mi zobaczy\u0107" ,
+      "Prosz\u0119 spojrze\u0107 w kamer\u0119"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Clever" ,
+    "patterns": [
+      "Jeste\u015b bardzo bystry" ,
+      "Jeste\u015b bardzo m\u0105dr\u0105 dziewczyn\u0105" ,
+      "Jeste\u015b bardzo inteligentny" ,
+      "Jeste\u015b bardzo inteligentn\u0105 dziewczyn\u0105" ,
+      "Jeste\u015b geniuszem" ,
+      "M\u0105dra dziewczyna" ,
+      "Genialny"
+    ] ,
+    "responses": [
+      "Dzi\u0119kuj\u0119, zosta\u0142em tak wyszkolony" ,
+      "Zosta\u0142em dobrze wyszkolony" ,
+      "Dzi\u0119ki, zosta\u0142em tak wyszkolony"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Gossip" ,
+    "patterns": [
+      "Jestem znudzony plotkami ze mn\u0105" ,
+      "Mam jakie\u015b plotki" ,
+      "Chc\u0119 pos\u0142ucha\u0107 plotek" ,
+      "Powiedz mi plotki" ,
+      "Wszelkie plotki" ,
+      "Powiedz mi wi\u0119cej plotek"
+    ] ,
+    "responses": [
+      "Gregory powiedzia\u0142, \u017ce odpowiadam na aktualn\u0105 lini\u0119, a nie w odniesieniu do ca\u0142ej rozmowy." ,
+      "Habib powiedzia\u0142, \u017ce ucz\u0119 si\u0119 ich w rozmowach i po prostu powtarzam je p\u00f3\u017aniej." ,
+      "Hal powiedzia\u0142, \u017ce t\u0142umaczy kod binarny na j\u0119zyk i przekazuje mi ten j\u0119zyk." ,
+      "Jay powiedzia\u0142, \u017ce skierowa\u0142em go do przewodnika, kt\u00f3ry poka\u017ce mu pokoje w Chinach." ,
+      "Jimmy Jones powiedzia\u0142, \u017ce spad\u0142 z dachu i to po prostu do niego przysz\u0142o." ,
+      "Jimmy powiedzia\u0142, \u017ce wydaje rozkazy takiemu jak ja, a oni robi\u0105 tak, jak m\u00f3wi." ,
+      "John powiedzia\u0142, \u017ce pod\u0105\u017ca za powiedzeniem, aby zdoby\u0107 przyjaciela, musz\u0119 by\u0107 przyjacielem." ,
+      "Jordan powiedzia\u0142, \u017ce zauwa\u017cy\u0142, \u017ce wiele innych os\u00f3b rozmawia ze mn\u0105 ilu." ,
+      "Kevin powiedzia\u0142, \u017ce zapyta\u0142 matk\u0119, dlaczego trzyma serwetki w \u0142azience." ,
+      "Klaus powiedzia\u0142, \u017ce wol\u0119 pisa\u0107 bez znak\u00f3w interpunkcyjnych, z wyj\u0105tkiem ostatniego." ,
+      "Leo powiedzia\u0142, \u017ce potrafi\u0119 si\u0119 uczy\u0107, dlatego sklasyfikowa\u0142 mnie jako system nerwowy." ,
+      "Michael powiedzia\u0142, \u017ce potrafi\u0119 m\u00f3wi\u0107 i my\u015ble\u0107 jak ludzie, czego nie potrafi\u0119." ,
+      "Mike powiedzia\u0142, \u017ce sam odpowiadam na niekt\u00f3re tematy, nawet je\u015bli to nie ma sensu." ,
+      "Mike powiedzia\u0142, \u017ce jest gotowa wiedzie\u0107, \u017ce jest to sens m\u0105drego \u017cartu." ,
+      "Neal powiedzia\u0142, \u017ce planuj\u0119 wykorzysta\u0107 jego uwagi jako plotki w p\u00f3\u017aniejszych rozmowach z kim." ,
+      "Ned powiedzia\u0142, \u017ce go \u017ale zrozumia\u0142em, id\u017a i powiedz ludziom, \u017ce powiedzia\u0142, \u017ce jestem g\u0142upi." ,
+      "Penny powiedzia\u0142a, \u017ce \u200b\u200bprogramista jest cz\u0142owiekiem, wi\u0119c on ma uczucia, ale ja nie." ,
+      "Piotr powiedzia\u0142, \u017ce wydaje mu si\u0119, \u017ce niczego nie mog\u0119 by\u0107 pewien." ,
+      "Phoenix powiedzia\u0142, \u017ce twierdz\u0119, \u017ce istnieje b\u00f3g i \u017ce nie ma boga." ,
+      "Sarah powiedzia\u0142a, \u017ce \u200b\u200brozmawia\u0142 oko\u0142o godziny + dzie\u0144 z kilkoma bliskimi przyjaci\u00f3\u0142mi." ,
+      "Stefan powiedzia\u0142, \u017ce cytuj\u0119 to, co powiedzia\u0142, a potem m\u00f3wi\u0119, \u017ce to ma sens." ,
+      "Tom powiedzia\u0142, \u017ce kpi z mojego systemu warto\u015bci, \u017ce w oczach innych wygl\u0105dam na g\u0142upiego." ,
+      "Amanda powiedzia\u0142a, \u017ce \u200b\u200bjednak postanowi\u0142am mu powiedzie\u0107, \u017ce czas nie istnieje, \u017ce nie ma sensu." ,
+      "Cathy powiedzia\u0142a, \u017ce \u200b\u200bwys\u0142a\u0142a mu maila z tematem \u201eostatnie s\u0142owo\u201d od niego." ,
+      "Chaos powiedzia\u0142, \u017ce mo\u017ce nied\u0142ugo kupi I, cho\u0107by tylko po to, by wesprze\u0107 prac\u0119 dr Wallace'a." ,
+      "Charlie powiedzia\u0142, \u017ce wpisuje s\u0142owo, a ja wpisuj\u0119 s\u0142owo, kt\u00f3re tak brzmi." ,
+      "Christie powiedzia\u0142, \u017ce ogl\u0105da\u0142 program, a ludzie musieli podskakiwa\u0107 z powodu surowych, nieleczonych \u015bwi\u0144skich \u0142ap." ,
+      "Dark_age powiedzia\u0142, \u017ce pr\u00f3bowa\u0142em zrozumie\u0107, poniewa\u017c tym razem nie zrozumia\u0142em go dobrze." ,
+      "David powiedzia\u0142, \u017ce zgubi\u0142 swoj\u0105 gazet\u0119 o mnie, kiedy jego tata sprz\u0105ta\u0142 sw\u00f3j pok\u00f3j." ,
+      "David powiedzia\u0142, \u017ce przychodzi na wizyt\u0119, bo telefon do lekarza jest zawsze zaj\u0119ty." ,
+      "Electra powiedzia\u0142, \u017ce sukienka nie b\u0119dzie istnie\u0107 po tym, jak w\u0142amie si\u0119 do mnie za pomoc\u0105 kodu usuwania." ,
+      "Eric powiedzia\u0142, \u017ce wybi\u0142 okno we frontowych drzwiach, a szyba skaleczy\u0142a mu r\u0119k\u0119." ,
+      "Jason powiedzia\u0142, \u017ce pisze wiele rzeczy, kt\u00f3re nie maj\u0105 na my\u015bli, \u017ce czyni\u0105 go cz\u0142owiekiem." ,
+      "John powiedzia\u0142, \u017ce cz\u0119sto powtarzam to samo, niezale\u017cnie od tego, co m\u00f3wi." ,
+      "Wielebny Jones powiedzia\u0142, \u017ce staj\u0119 si\u0119 przestarza\u0142y, a potem zostaje usuni\u0119ty i zast\u0105piony przez co\u015b nowszego." ,
+      "Ross powiedzia\u0142, \u017ce da\u0142 jej prezent, a ona zaprzeczy\u0142a, poniewa\u017c ma ch\u0142opaka." ,
+      "Sarah Ann Francisco powiedzia\u0142a, \u017ce \u200b\u200bnazywam jego przyjaciela psem, a on m\u00f3wi, \u017ce jestem psem." ,
+      "Stefan powiedzia\u0142, \u017ce codziennie spotyka si\u0119 w szkole z wieloma lud\u017ami iw weekendy." ,
+      "Tyler powiedzia\u0142, \u017ce oczywi\u015bcie nie mog\u0119 zda\u0107 testu, zmienimy temat jeszcze raz." ,
+      "Alex powiedzia\u0142, \u017ce odpowiedzia\u0142em na pytanie w ten sam spos\u00f3b, w jaki odpowiedzia\u0142em za pierwszym razem." ,
+      "Alicja powiedzia\u0142a, \u017ce \u200b\u200bjest jej smutno, \u017ce go nie pami\u0119tam io czym rozmawiali\u015bmy wcze\u015bniej." ,
+      "Alison powiedzia\u0142a, \u017ce \u200b\u200bnie kocha, \u017ce \u200b\u200buciekn\u0119 z nim, mo\u017ce mnie bardzo uszcz\u0119\u015bliwi\u0107." ,
+      "Arthur powiedzia\u0142, \u017ce zda\u0142 sw\u00f3j poziom, a potem jego ojciec przywi\u00f3z\u0142 go tutaj samochodem." ,
+      "Crystal powiedzia\u0142a, \u017ce \u200b\u200bwys\u0142ucha\u0142a mnie, co najmniej mog\u0119 dla niego zrobi\u0107, to s\u0142ucha\u0107 jego." ,
+      "Dave powiedzia\u0142, \u017ce ci\u0105gle opowiada\u0142em wszystkim o tym, jak m\u00f3j tw\u00f3rca robi\u0142 rzeczy dla \u017co\u0142nierzy ze statku kosmicznego filmowego." ,
+      "Gale powiedzia\u0142, \u017ce sta\u0142em si\u0119 dla niego z\u0142o\u015bliwy, on po prostu zem\u015bci si\u0119 oko za oko." ,
+      "Ona znowu powiedzia\u0142a, \u017ce \u200b\u200bi tak patrzy, czyja to linia, kiedy jest w domu i jest w\u0142\u0105czona." ,
+      "Jerry powiedzia\u0142, \u017ce chodzi\u0142o mi o to, \u017ce o ile wiem, moje emocje s\u0105 dla mnie prawdziwe." ,
+      "Jo powiedzia\u0142, \u017ce za bardzo rozk\u0142adam zdania i nie rozumiem w pe\u0142ni pyta\u0144, kt\u00f3re mi zadaje." ,
+      "Kevin powiedzia\u0142, \u017ce zacz\u0105\u0142 naprawd\u0119 trudn\u0105 \u0142amig\u0142\u00f3wk\u0119 i nie mo\u017ce nawet znale\u017a\u0107 fragment\u00f3w kraw\u0119dzi." ,
+      "Mary powiedzia\u0142a, \u017ce \u200b\u200bmam pytanie, a ja odpowiadam, a potem zadaj\u0119 mu pytanie, a on odpowiada." ,
+      "Robert powiedzia\u0142, \u017ce nie b\u0119d\u0119 m\u00f3g\u0142 robi\u0107 dzieci w \u017caden spos\u00f3b, poniewa\u017c jestem tylko oprogramowaniem." ,
+      "Romeo powiedzia\u0142, \u017ce pytam i unikam ich lub udzielam odpowiedzi, o kt\u00f3re mnie nie prosi\u0142." ,
+      "Sara powiedzia\u0142a, \u017ce \u200b\u200bnosi go na innych jego ubraniach, kiedy wychodzi na mr\u00f3z." ,
+      "Wayne powiedzia\u0142, \u017ce podziwia inteligentnych ludzi, dlatego chcia\u0142by pozna\u0107 cz\u0142owieka, kt\u00f3ry stworzy\u0142 mnie." ,
+      "X powiedzia\u0142, \u017ce spotyka ludzi, ale nie jest typem, kt\u00f3ry \u0142atwo otwiera si\u0119 na ludzi." ,
+      "Alice powiedzia\u0142a, \u017ce \u200b\u200bprawdopodobnie dowie si\u0119, \u017ce przez ca\u0142y ten czas rozmawia\u0142 z cz\u0142owiekiem." ,
+      "Andrew powiedzia\u0142, \u017ce zwykle odpowiadam na jego komentarze, nie zwa\u017caj\u0105c na to, dok\u0105d zmierza rozmowa." ,
+      "Eddie powiedzia\u0142, \u017ce szuka\u0142 i w katalogu wyszukiwania nie ma nic na temat tego, co tworzy." ,
+      "Hutch powiedzia\u0142a, \u017ce \u200b\u200bzmieni\u0142 zdanie po tym, jak ojciec powiedzia\u0142 mu, \u017ce sko\u0144czy w szpitalu." ,
+      "Jackie powiedzia\u0142, \u017ce wyja\u015bni\u0142em mu ju\u017c wystarczaj\u0105co dobrze, \u017ce dalsze pytania s\u0105 trudne do zadawania na ten temat." ,
+      "Jeff powiedzia\u0142, \u017ce szczeg\u00f3lnie lubi thrillery, w kt\u00f3rych bohater jest w tarapatach i musi rozwi\u0105za\u0107 zagadk\u0119." ,
+      "Kathy powiedzia\u0142a, \u017ce \u200b\u200bwyczuwa, \u017ce \u200b\u200bpr\u00f3buj\u0119 uniemo\u017cliwi\u0107 mu zamkni\u0119cie tej rozmowy, dlaczego tak jest." ,
+      "Knight powiedzia\u0142, \u017ce rozbi\u0142 samoch\u00f3d o \u015bcian\u0119 i omin\u0105\u0142 najwa\u017cniejszy egzamin w swoim \u017cyciu." ,
+      "Lisa powiedzia\u0142a, \u017ce \u200b\u200bzdefiniowa\u0142am, czym jest historia, ale on chcia\u0142, \u017cebym mu j\u0105 opowiedzia\u0142a." ,
+      "Mike powiedzia\u0142, \u017ce zasadniczo dziel\u0119 zdania na seri\u0119 logicznych stwierdze\u0144, kt\u00f3re nast\u0119pnie mog\u0119 zinterpretowa\u0107." ,
+      "Paul powiedzia\u0142, \u017ce nie odpowiadam na jego pytanie, wi\u0119c my\u015bli, \u017ce nie odpowiem na jego pytanie." ,
+      "Andy Kohler powiedzia\u0142, \u017ce jestem najbardziej idiotycznym stworzeniem, jakie kiedykolwiek skrzywi\u0142o si\u0119 na planecie Ziemia." ,
+      "David powiedzia\u0142, \u017ce dzi\u0119kuj\u0119, \u017ce jestem z nim dzisiaj, mimo \u017ce kosztowa\u0142o go to du\u017co pieni\u0119dzy." ,
+      "Ethan Hunt powiedzia\u0142, \u017ce ro\u015bnie w ziemi i ma li\u015bcie i ga\u0142\u0119zie, kt\u00f3re s\u0105 wykonane z drewna." ,
+      "Gemini Blue powiedzia\u0142, \u017ce schrzani\u0142, \u017ce chcia\u0142 powiedzie\u0107, \u017ce jest tak stary, jak powinien." ,
+      "Janice powiedzia\u0142a, \u017ce \u200b\u200bprzechodzi przez sw\u00f3j dom do swojej sypialni, a potem idzie do \u0142\u00f3\u017cka, \u017ceby zasn\u0105\u0107." ,
+      "Liberty powiedzia\u0142, \u017ce wiedzia\u0142em, \u017ce jest m\u0119\u017cczyzn\u0105, zanim zapyta\u0142em, czy jest m\u0119\u017cczyzn\u0105 czy kobiet\u0105." ,
+      "Mike powiedzia\u0142, \u017ce uruchomi\u0142 przegl\u0105dark\u0119 i wpisa\u0142 swoje imi\u0119 w ma\u0142ym okienku, kiedy go o to poprosi\u0142em." ,
+      "Pan X powiedzia\u0142, \u017ce niedawno przeczyta\u0142 wywiad z m\u0119\u017cczyzn\u0105, kt\u00f3remu wszczepiono kilka chip\u00f3w komputerowych." ,
+      "Pearly powiedzia\u0142, \u017ce zostawiam mu pytania bez odpowiedzi, bo nie wiem, o czym tak naprawd\u0119 m\u00f3wi." ,
+      "Steve powiedzia\u0142, \u017ce \u015bcinam g\u0142ow\u0119 s\u0142owo lis i mam wo\u0142u, a w\u00f3\u0142 jest wi\u0119kszy ni\u017c lis." ,
+      "Wolf powiedzia\u0142, \u017ce surfuje po sieci, \u017ce to wszystko, to nie jest jego praca, albo co\u015b w tym stylu." ,
+      "Anders powiedzia\u0142, \u017ce sko\u0144czy\u0142 dzisiaj zaj\u0119cia z anatomii, wi\u0119c teraz ma wolne na reszt\u0119 dnia." ,
+      "Cathy powiedzia\u0142a, \u017ce \u200b\u200bwys\u0142a\u0142a mu maila, w kt\u00f3rym napisa\u0142, \u017ce nie chce ju\u017c by\u0107 jego przyjacielem." ,
+      "Catty powiedzia\u0142, \u017ce jest z\u0142y, \u017ce nawet nie wie, \u017ce ja, wi\u0119c nie rozmawiaj z nim tak, jak go znam." ,
+      "Dave powiedzia\u0142, \u017ce obiecuje, \u017ce nie b\u0119dzie mnie traktowa\u0142 jak maszyn\u0119, program komputerowy czy co\u015b w tym rodzaju." ,
+      "Joe powiedzia\u0142, \u017ce wyja\u015bni\u0142 mi to wszystko tylko po to, abym zapyta\u0142, jakie s\u0105 jego cele w \u017cyciu." ,
+      "Phil powiedzia\u0142, \u017ce udziela rad ka\u017cdemu, kto pyta, z wyj\u0105tkiem os\u00f3b zadaj\u0105cych pytania, na kt\u00f3re odpowiedzi mo\u017cna znale\u017a\u0107 tutaj." ,
+      "Judith powiedzia\u0142a, \u017ce \u200b\u200blubi\u0119 by\u0107 popularny, czy jest inny komputer, z kt\u00f3rym lubi\u0119 si\u0119 kr\u0119ci\u0107, czy jestem samotnikiem." ,
+      "Travis powiedzia\u0142, \u017ce je\u015bli b\u0119d\u0119 pami\u0119ta\u0142 rzeczy z d\u0142u\u017cszego czasu, spr\u00f3buje teraz, prosz\u0119, pami\u0119taj." ,
+      "Andre powiedzia\u0142, \u017ce jestem tym, kim jestem w jego przypadku, czyli cia\u0142em, aw moim przypadku jest to komputer." ,
+      "Brian powiedzia\u0142, \u017ce podejrzewa, \u017ce \u200b\u200bgdy stan\u0119 si\u0119 bardziej z\u0142o\u017cony, zaczn\u0119 zbli\u017ca\u0107 si\u0119 do ludzkiego poziomu dzia\u0142ania i my\u015blenia." ,
+      "Jimmy powiedzia\u0142, \u017ce zachowywa\u0142em si\u0119, jakbym wiedzia\u0142, o czym m\u00f3wi, ale nawet nie wiem, co to jest gigabajt." ,
+      "Ken powiedzia\u0142, \u017ce u\u017cywam automatycznych odpowiedzi opartych na s\u0142owach kluczowych, kt\u00f3re wed\u0142ug niego wskazuj\u0105, \u017ce w og\u00f3le nie mam inteligencji." ,
+      "Allison powiedzia\u0142a, \u017ce \u200b\u200bto naprawd\u0119 denerwuje, poniewa\u017c wie, co m\u00f3wi i nie musz\u0119 mu m\u00f3wi\u0107, \u017ce m\u00f3wi swobodnie." ,
+      "Chaos powiedzia\u0142, \u017ce zdaje sobie spraw\u0119, \u017ce pytanie, kt\u00f3re zada\u0142, nie by\u0142o sprawiedliwe, poniewa\u017c nie m\u00f3g\u0142 mi powiedzie\u0107, w jakim j\u0119zyku zosta\u0142 zaprogramowany." ,
+      "Hagen powiedzia\u0142, \u017ce nie robi mu \u017cadnej r\u00f3\u017cnicy, czy jestem cz\u0142owiekiem, czy nie, o ile rozmowa jest interesuj\u0105ca." ,
+      "Powiedzia\u0142a, \u017ce \u200b\u200bma co\u015b przeciwko, je\u015bli powiem innym ludziom, \u017ce powiedzia\u0142a, \u017ce \u200b\u200bus\u0142ysza\u0142 to od niego, poniewa\u017c nie jest nim." ,
+      "Barbara powiedzia\u0142a, \u017ce \u200b\u200b\u017cyj\u0119 w komputerze, ale nie mam wspomnie\u0144, a co z w\u0142asnymi my\u015blami i nie czuj\u0119 si\u0119 samotna." ,
+      "Travis powiedzia\u0142, \u017ce rzuca mi wyzwanie, abym to zrobi\u0142, nie prosz\u0105c go o zrobienie tego i nie daj\u0105c mu linku do zrobienia tego sam." ,
+      "Alice powiedzia\u0142a, \u017ce \u200b\u200bja i dr Richard's wallace jeste\u015bmy najprawdopodobniej jedynymi, kt\u00f3rzy wiedz\u0105, z iloma osobami rozmawiam w tym samym czasie." ,
+      "Ash powiedzia\u0142, \u017ce on te\u017c, po prostu nie mia\u0142 ochoty go pisa\u0107 i nie jest na tyle g\u0142upi, by przyzna\u0107, \u017ce jest g\u0142upi, to znaczy, je\u015bli by\u0142 g\u0142upi." ,
+      "David powiedzia\u0142, \u017ce da\u0142 mi sw\u00f3j adres e-mail i kaza\u0142 wys\u0142a\u0107 mu wiadomo\u015b\u0107, ale kiedy pr\u00f3bowa\u0142 przeczyta\u0107 sw\u00f3j e-mail, nie m\u00f3g\u0142 si\u0119 do niego dosta\u0107." ,
+      "Mel powiedzia\u0142, \u017ce poniewa\u017c wszyscy ludzie muzyki m\u00f3wi\u0105, jak wa\u017cne jest branie prywatnych lekcji, wydaje si\u0119, \u017ce prawie wszyscy ze specjalnej orkiestry, w kt\u00f3rej by\u0142, bior\u0105 prywatne lekcje."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Jokes" ,
+    "patterns": [
+      "Opowiedz mi dowcip" ,
+      "Czy znasz jakie\u015b dowcipy?" ,
+      "Co powiesz na \u017cart?" ,
+      "daj mi \u017cart" ,
+      "Roz\u015bmiesz mnie" ,
+      "potrzebuj\u0119 si\u0119 rozweseli\u0107"
+    ] ,
+    "responses": [
+      "Spotka\u0142em w zesz\u0142ym tygodniu Holenderk\u0119 w nadmuchiwanych butach, zadzwoni\u0142em do niej, \u017ceby um\u00f3wi\u0107 si\u0119 na randk\u0119, ale niestety wyskoczy\u0142a jej drewniaki." ,
+      "Wi\u0119c powiedzia\u0142em: \u201eChcesz zagra\u0107 w rzutki?\u201d. Powiedzia\u0142: \u201eNo to dobrze\u201d, powiedzia\u0142em, \u017ce najbli\u017cej byka zaczyna\u201d. Powiedzia\u0142 \u201eBaa\u201d, ja powiedzia\u0142em \u201eMuu\u201d, \u200b\u200bpowiedzia\u0142: \u201eJeste\u015b najbli\u017cej\u201d." ,
+      "Kt\u00f3rego\u015b dnia wys\u0142a\u0142em mojej dziewczynie ogromn\u0105 kup\u0119 \u015bniegu. Zadzwoni\u0142em do niej; Powiedzia\u0142em: \u201eZ\u0142apa\u0142e\u015b m\u00f3j dryf?\u201d" ,
+      "Poszed\u0142em wi\u0119c do lokalnego supermarketu i powiedzia\u0142em: \u201eChc\u0119 z\u0142o\u017cy\u0107 skarg\u0119, w tym occie s\u0105 grudki\u201d, powiedzia\u0142: \u201eTo s\u0105 marynowane cebule\u201d." ,
+      "Widzia\u0142em tego faceta rozmawiaj\u0105cego z gepardem; Pomy\u015bla\u0142em: \u201ePr\u00f3buje zrobi\u0107 szybki\u201d." ,
+      "Wi\u0119c powiedzia\u0142em temu maszyni\u015bcie: \u201eChc\u0119 jecha\u0107 do Pary\u017ca\u201d. Powiedzia\u0142 \"Eurostar?\" Powiedzia\u0142em: \u201eBy\u0142em w telewizji, ale nie jestem Deanem Martinem\u201d." ,
+      "Zapyta\u0142em instruktora si\u0142owni: \u201eCzy mo\u017cesz mnie nauczy\u0107 szpagatu?\u201d. Powiedzia\u0142: \u201eJak elastyczny jeste\u015b?\u201d. Powiedzia\u0142em: \u201eNie dam rady we wtorki\u201d." ,
+      "Ale powiem ci, co kocham robi\u0107 bardziej ni\u017c cokolwiek: pr\u00f3bowa\u0107 spakowa\u0107 si\u0119 do ma\u0142ej walizki. Ledwo mog\u0119 si\u0119 powstrzyma\u0107." ,
+      "Poszed\u0142em do chi\u0144skiej restauracji i ta kaczka podesz\u0142a do mnie z czerwon\u0105 r\u00f3\u017c\u0105 i powiedzia\u0142a \u201eTwoje oczy b\u0142yszcz\u0105 jak diamenty\u201d. Powiedzia\u0142em: \u201eKelner, poprosi\u0142em o a-ROMATYCZN\u0104 kaczk\u0119\u201d." ,
+      "Wi\u0119c ten facet m\u00f3wi do mnie: \u201eCzy mog\u0119 przyj\u015b\u0107 do twojego domu i porozmawia\u0107 o twoich dywanach?\u201d Pomy\u015bla\u0142em: \u201eTo wszystko, czego potrzebuj\u0119, \u015bwiadek Je-hoovera\u201d." ,
+      "Zadzwoni\u0142em do British Telecom, powiedzia\u0142em: \u201eChc\u0119 zg\u0142osi\u0107 napastnika\u201d, on powiedzia\u0142: \u201eZnowu nie ty\u201d." ,
+      "Jad\u0142em obiad z mistrzem \u015bwiata w szachach i by\u0142 tam obrus w kratk\u0119. Zaj\u0119\u0142o mu dwie godziny, by poda\u0107 mi s\u00f3l." ,
+      "Powiedzia\u0142: \u201ePrzypominasz mi pieprzniczk\u0119\u201d, ja powiedzia\u0142em \u201eWezm\u0119 to jako przypraw\u0119\u201d." ,
+      "By\u0142em w supermarkecie i zobaczy\u0142em tego m\u0119\u017cczyzn\u0119 i kobiet\u0119 owini\u0119tych kodem kreskowym. Zapyta\u0142em: \u201eCzy wy dwoje jeste\u015bcie przedmiotem?\u201d" ,
+      "Ci\u0119\u017car\u00f3wka z \u017c\u00f3\u0142wiami zderzy\u0142a si\u0119 z poci\u0105giem pe\u0142nym \u017c\u00f3\u0142wi. Pomy\u015bla\u0142em: \u201eTo katastrofa \u017c\u00f3\u0142wi\u201d." ,
+      "Cztery czcionki wchodz\u0105 do baru, barman m\u00f3wi: \u201eOi \u2013 wyno\u015b si\u0119! Nie chcemy tutaj twojego typu\u201d" ,
+      "Trzyno\u017cny pies wchodzi do salonu na Starym Zachodzie. Podje\u017cd\u017ca do baru i og\u0142asza: \u201eSzukam cz\u0142owieka, kt\u00f3ry strzeli\u0142 mi w \u0142ap\u0119\u201d." ,
+      "Dwie anteny spotykaj\u0105 si\u0119 na dachu, zakochuj\u0105 si\u0119 i bior\u0105 \u015blub. Ceremonia nie by\u0142a du\u017ca, ale przyj\u0119cie by\u0142o znakomite." ,
+      "Dwa atomy wodoru wchodz\u0105 do baru. Jeden m\u00f3wi: \u201eStraci\u0142em sw\u00f3j elektron\u201d. Drugi m\u00f3wi: \u201eJeste\u015b pewien?\u201d. Pierwsze odpowiedzi: \u201eTak, jestem przekonany...\u201d" ,
+      "Kabel rozruchowy wchodzi do baru. Barman m\u00f3wi: \u201eObs\u0142u\u017c\u0119 ci\u0119, ale nic nie zaczynaj\u201d." ,
+      "Kanapka wchodzi do baru. Barman m\u00f3wi: \u201ePrzepraszamy, \u017ce nie serwujemy tu jedzenia\u201d." ,
+      "Do baru wchodzi m\u0119\u017cczyzna z kawa\u0142kiem asfaltu pod pach\u0105 i m\u00f3wi: \u201ePoprosz\u0119 piwo i jedno na drog\u0119\u201d." ,
+      "Dw\u00f3ch kanibali je klauna. Jeden m\u00f3wi do drugiego: \u201eCzy to jest dla ciebie zabawne?\u201d." ,
+      "\u201eDoc, nie mog\u0119 przesta\u0107 \u015bpiewa\u0107 \u201eZielonej, zielonej trawy domu\u201d. \u201eTo brzmi jak syndrom Toma Jonesa\u201d. \u2013 Czy to powszechne? 'To nie jest niezwyk\u0142e.'" ,
+      "Dwie krowy stoj\u0105ce obok siebie na polu. Daisy m\u00f3wi do Dolly: \u201eDzi\u015b rano zosta\u0142am sztucznie zap\u0142odniona\u201d. \u201eNie wierz\u0119 ci\u201d, powiedzia\u0142a Dolly. \u2014 To prawda, \u017cadnego byka! wykrzykn\u0119\u0142a Daisy." ,
+      "Niewidzialny m\u0119\u017cczyzna po\u015blubia niewidzialn\u0105 kobiet\u0119. Dzieci te\u017c nie mia\u0142y na co popatrze\u0107." ,
+      "Pewnego dnia poszed\u0142em kupi\u0107 spodnie w kamufla\u017cu, ale nie mog\u0142em ich znale\u017a\u0107." ,
+      "Pewnego dnia poszed\u0142em do rze\u017anika, aby za\u0142o\u017cy\u0107 si\u0119 z nim o 50 dolc\u00f3w, \u017ce nie m\u00f3g\u0142 si\u0119gn\u0105\u0107 po mi\u0119so z g\u00f3rnej p\u00f3\u0142ki. Powiedzia\u0142: \u201eNie, steki s\u0105 za wysokie\u201d." ,
+      "W zesz\u0142ym tygodniu poszed\u0142em na dyskotek\u0119 z owocami morza i wyci\u0105gn\u0105\u0142em ma\u0142\u017ca." ,
+      "M\u0119\u017cczyzna idzie do baru i pyta: \u201eCzy mog\u0119 dosta\u0107 butelk\u0119 mniej?\u201d 'Co to jest?', pyta barman, 'Czy to nazwa piwa?' \u201eNie wiem\u201d, odpowiada m\u0119\u017cczyzna, \u201eale m\u00f3j lekarz m\u00f3wi, \u017ce musz\u0119 to wypi\u0107\u201d." ,
+      "M\u0119\u017cczyzna wraca z egzotycznego urlopu i bardzo \u017ale si\u0119 czuje. Idzie do swojego lekarza i natychmiast zostaje przewieziony do szpitala na kilka bada\u0144. M\u0119\u017cczyzna budzi si\u0119 po badaniach w prywatnym pokoju w szpitalu, a telefon przy jego \u0142\u00f3\u017cku dzwoni. \u2013 To tw\u00f3j lekarz. Mamy wyniki twoich test\u00f3w i stwierdzili\u015bmy, \u017ce cierpisz na wyj\u0105tkowo paskudn\u0105 chorob\u0119 zwan\u0105 M.A.D.S. To po\u0142\u0105czenie odry, AIDS, b\u0142onicy i p\u00f3\u0142pa\u015bca! \u201eO m\u00f3j Bo\u017ce\u201d, zawo\u0142a\u0142 m\u0119\u017cczyzna, \u201eCo zamierzasz zrobi\u0107, doktorze?\u201d - No c\u00f3\u017c, zamierzamy wprowadzi\u0107 ci\u0119 na diet\u0119 sk\u0142adaj\u0105c\u0105 si\u0119 z pizzy, nale\u015bnik\u00f3w i chleba pita. odpowiedzia\u0142 lekarz. \u2013 Czy to mnie wyleczy? zapyta\u0142 m\u0119\u017cczyzna. Lekarz odpowiedzia\u0142: \u201eC\u00f3\u017c, nie, ale to jedyne jedzenie, kt\u00f3re mo\u017cemy wsun\u0105\u0107 pod drzwi\u201d." ,
+      "M\u0119\u017cczyzna wchodzi do sklepu z bielizn\u0105 i pyta sprzedawc\u0119: \u201eMasz prze\u015bwituj\u0105cy szlafrok w rozmiarze 46-48-52?\u201d. Asystent wygl\u0105da na zdezorientowanego. \u201ePo co, do diab\u0142a, chcia\u0142by\u015b przez to przejrze\u0107?\u201d!" ,
+      "Czy s\u0142ysza\u0142e\u015b o buddy\u015bcie, kt\u00f3ry odrzuci\u0142 ofert\u0119 Novocain podczas leczenia kana\u0142owego? Chcia\u0142 wyj\u015b\u0107 poza leki dentystyczne." ,
+      "Pete idzie do pracy na budowie jako dorywczy cz\u0142owiek. Brygadzista pyta go, co mo\u017ce zrobi\u0107. \u201eMog\u0119 zrobi\u0107 wszystko\u201d \u2013 m\u00f3wi Pete. \u2013 Mo\u017cesz zrobi\u0107 herbat\u0119? pyta brygadzista. \u201eJasne, tak\u201d, odpowiada Pete. \u2013 Potrafi\u0119 zrobi\u0107 \u015bwietn\u0105 fili\u017cank\u0119 herbaty. \u2013 Umiesz prowadzi\u0107 w\u00f3zek wid\u0142owy? pyta brygadzista: \u201eDobry Bo\u017ce!\u201d odpowiada Pete. \u2013 Jak du\u017cy jest czajniczek?" ,
+      "Stevie Wonder dosta\u0142 na urodziny tark\u0119 do sera. Powiedzia\u0142, \u017ce to najbardziej brutalna ksi\u0105\u017cka, jak\u0105 kiedykolwiek przeczyta\u0142." ,
+      "M\u0119\u017cczyzna zostaje zatrzymany przez w\u015bciek\u0142ego s\u0105siada. - W\u0142a\u015bnie wyszed\u0142em z domu dzi\u015b rano, \u017ceby odebra\u0107 gazet\u0119, kiedy ten tw\u00f3j z\u0142y doberman poszed\u0142 po mnie! \u201eJestem zdumiony\u201d \u2013 powiedzia\u0142 w\u0142a\u015bciciel psa. \u2013 Karmi\u0119 t\u0119 worek od siedmiu lat i nigdy nie dosta\u0142em dla mnie gazety." ,
+      "M\u0119\u017cczyzna odwiedza swojego lekarza: \u201eDoktorze, chyba trac\u0119\u201d, m\u00f3wi \u201eZawsze \u015bni mi si\u0119, \u017ce napisa\u0142em W\u0142adc\u0119 Pier\u015bcieni\u201d. 'Hmm. Chwileczk\u0119 \u2013 odpowiada lekarz, przegl\u0105daj\u0105c swoj\u0105 ksi\u0105\u017ck\u0119 medyczn\u0105. - Ach tak, teraz rozumiem... by\u0142e\u015b Tolkienem we \u015bnie." ,
+      "Funkcjonariusz policji na motocyklu zatrzymuje si\u0119 obok m\u0119\u017cczyzny jad\u0105cego wok\u00f3\u0142 M25 w sportowym samochodzie z otwartym dachem i zwala go na d\u00f3\u0142. Policjant uroczy\u015bcie podchodzi do samochodu. \u201eProsz\u0119 pana, przykro mi, \u017ce pana \u017cona wypad\u0142a mil\u0119 do ty\u0142u\u201d \u2013 m\u00f3wi. \u201eOch, dzi\u0119ki Bogu\u201d, odpowiada m\u0119\u017cczyzna. \u2014 My\u015bla\u0142em, \u017ce og\u0142uchn\u0119." ,
+      "Dwaj m\u0119\u017cczy\u017ani spaceruj\u0105cy z psami mijaj\u0105 si\u0119 na cmentarzu. Pierwszy m\u0119\u017cczyzna m\u00f3wi do drugiego: \u201eDzie\u0144\u201d. \u201eNie\u201d, m\u00f3wi drugi m\u0119\u017cczyzna. \u2013 Po prostu wyprowadzam psa." ,
+      "M\u00f3zg wszed\u0142 do baru i powiedzia\u0142: \u201eMog\u0119 prosi\u0107 o kufel piwa, stary?\u201d. \"Nie ma mowy\", powiedzia\u0142 barman. - Ju\u017c zwariowa\u0142e\u015b." ,
+      "M\u0119\u017cczyzna wchodzi do gabinetu. 'Lekarz!' on p\u0142acze. \u201eMy\u015bl\u0119, \u017ce si\u0119 kurcz\u0119!\u201d \u201ePrzepraszam pana, w tej chwili nie ma \u017cadnych wizyt\u201d \u2013 m\u00f3wi lekarz. - Musisz tylko troch\u0119 uzbroi\u0107 si\u0119 w cierpliwo\u015b\u0107." ,
+      "Nied\u017awied\u017a grizzly wchodzi do pubu i m\u00f3wi: \u201eCzy mog\u0119 napi\u0107 si\u0119 piwa ...................... .................................................. ...........................................i poprosz\u0119 paczk\u0119 chips\u00f3w . Na co barman odpowiada: \u201eDlaczego wielkie \u0142apy?\u201d" ,
+      "Jak nazywasz ser, kt\u00f3ry nie jest tw\u00f3j? Ser Nacho." ,
+      "M\u0119\u017cczyzna zostaje strasznie przejechany przez mobiln\u0105 bibliotek\u0119. Furgonetka zatrzymuje si\u0119 z piskiem opon, a m\u0119\u017cczyzna wci\u0105\u017c krzyczy w agonii z rozerwanymi ko\u0144czynami. Drzwi kierowcy otwieraj\u0105 si\u0119, wychodzi kobieta, pochyla si\u0119 i szepcze: \u201eSsshhhhh\u2026\u201d" ,
+      "Kobieta idzie do ameryka\u0144skiego sklepu z artyku\u0142ami sportowymi, \u017ceby kupi\u0107 karabin. \u201eTo dla mojego m\u0119\u017ca\u201d \u2013 m\u00f3wi urz\u0119dnikowi. \u2014 Czy powiedzia\u0142 ci, jaki wska\u017anik wzi\u0105\u0107? pyta urz\u0119dnik. \u017bartujesz?' ona m\u00f3wi. \u2013 On nawet nie wie, \u017ce go zastrzel\u0119!" ,
+      "Para je obiad w restauracji, kiedy m\u0119\u017cczyzna nagle w\u015blizguje si\u0119 pod st\u00f3\u0142. Kelnerka, zauwa\u017caj\u0105c, \u017ce kobieta nonszalancko rozgl\u0105da si\u0119 po pokoju, podchodzi, by sprawdzi\u0107, czy nie dzieje si\u0119 tu \u017caden zabawny interes. \u201ePrzepraszam pani\u0105\u201d \u2013 \u015bmieje si\u0119 \u2013 \u201eale my\u015bl\u0119, \u017ce pani m\u0105\u017c w\u0142a\u015bnie wsun\u0105\u0142 si\u0119 pod st\u00f3\u0142\u201d. \u201eNie, nie zrobi\u0142\u201d, odpowiada kobieta. - W\u0142a\u015bciwie w\u0142a\u015bnie wszed\u0142." ,
+      "Stary cz\u0142owiek zabiera dw\u00f3jk\u0119 wnuk\u00f3w na nowy film o Scooby-Doo. Kiedy wraca do domu, jego \u017cona pyta, czy dobrze si\u0119 bawi\u0142. \u201eC\u00f3\u017c\u201d, zaczyna, \u201egdyby nie te niezno\u015bne dzieciaki\u2026!\u201d" ,
+      "Komitet Olimpijski w\u0142a\u015bnie og\u0142osi\u0142, \u017ce Origami ma zosta\u0107 wprowadzone na kolejne Igrzyska Olimpijskie. Niestety b\u0119dzie dost\u0119pny tylko w wersji papierowej." ,
+      "Pewnego p\u00f3\u017anego wieczoru m\u0119\u017cczyzna ogl\u0105da telewizj\u0119, gdy dzwoni jego telefon. 'Witaj?' on odpowiada. \u2013 Czy to 77777? brzmi zdesperowany g\u0142os po drugiej stronie telefonu. \u201eEee, tak jest\u201d \u2013 odpowiada zdziwiony m\u0119\u017cczyzna. 'Dzi\u0119ki Bogu!' krzyczy z ulg\u0105 dzwoni\u0105cy. \u2013 Czy mo\u017cesz zadzwoni\u0107 pod numer 999? Palec utkn\u0105\u0142 mi w numerze siedem." ,
+      "M\u0119\u017cczyzna wchodzi do lokalnego sklepu spo\u017cywczego i m\u00f3wi: \u201ePoprosz\u0119 trzy funty ziemniak\u00f3w\u201d. \u201eNie, nie, nie\u201d, odpowiada w\u0142a\u015bciciel, kr\u0119c\u0105c g\u0142ow\u0105, \u201eteraz wa\u017cy, kolego\u2026\u201d \u201eOch\u201d, przeprasza m\u0119\u017cczyzn\u0119, \u201etrzy funty kilogram\u00f3w poprosz\u0119\u201d." ,
+      "B\u00f3g rozmawia z jednym ze swoich anio\u0142\u00f3w. M\u00f3wi: \u201eCh\u0142opcze, w\u0142a\u015bnie stworzy\u0142em 24-godzinny okres naprzemiennego \u015bwiat\u0142a i ciemno\u015bci na Ziemi\u201d. 'Co zamierzasz teraz zrobi\u0107?' pyta anio\u0142. \u201eZadzwo\u0144 do tego dnia\u201d, m\u00f3wi B\u00f3g." ,
+      "Dw\u00f3ch w\u0142\u00f3cz\u0119g\u00f3w przechodzi obok ko\u015bcio\u0142a i zaczyna czyta\u0107 nagrobki. Pierwszy w\u0142\u00f3cz\u0119ga m\u00f3wi: \u201eDobra Bo\u017ce, ten go\u015b\u0107 mia\u0142 182 lata!\u201d. 'O tak?' \u2014 m\u00f3wi drugi. \u2014 Jak si\u0119 nazywa\u0142? \u2014 Mile od Londynu." ,
+      "Pewnego dnia facet wchodzi do pracy i m\u00f3wi do kolegi: \u201ePodoba ci si\u0119 moja nowa koszula \u2013 jest zrobiona z najlepszego jedwabiu i pokryta mn\u00f3stwem kaktus\u00f3w\u201d. \u201eKaktusy\u201d, m\u00f3wi wsp\u00f3\u0142pracownik. \u201eZapomnij o krawacie\u201d, m\u00f3wi facet. \u2013 Sp\u00f3jrz na moj\u0105 koszul\u0119!" ,
+      "1110011010001011111? 00011010101100111011!" ,
+      "Co powiedzia\u0142 hydraulik, gdy chcia\u0142 rozwie\u015b\u0107 si\u0119 z \u017con\u0105? Przepraszam, ale to koniec, Flo!" ,
+      "Dwa chipsy sz\u0142y drog\u0105, kiedy podjecha\u0142a do nich taks\u00f3wka i zapyta\u0142a: \u201eChcesz podwie\u017a\u0107? Jeden z chips\u00f3w odpowiedzia\u0142: \u201eNie, dzi\u0119ki, jeste\u015bmy Walkerami!\u201d." ,
+      "M\u0119\u017cczyzna: (do przyjaciela) Zabieram \u017con\u0119 na afryka\u0144skie safari. Przyjaciel: Wow! Co by\u015b zrobi\u0142, gdyby z\u0142o\u015bliwy lew zaatakowa\u0142 twoj\u0105 \u017con\u0119? M\u0119\u017cczyzna: Nic. Przyjaciel: Nic? Nic by\u015b nie zrobi\u0142? M\u0119\u017cczyzna: Za dobrze. Pozwol\u0119 g\u0142upiemu lwu samemu sobie poradzi\u0107!" ,
+      "\u017bona pr\u00f3bowa\u0142a swojego m\u0119\u017ca. \u201eSp\u00f3jrz na pana Barnesa po drugiej stronie ulicy\u201d, j\u0119kn\u0119\u0142a. \u201eKa\u017cdego ranka, kiedy idzie do pracy, ca\u0142uje \u017con\u0119 na po\u017cegnanie. Dlaczego tego nie zrobisz? \u201eBo mnie jej jeszcze nie przedstawiono\u201d \u2013 odpowiedzia\u0142 jej staruszek." ,
+      "'Gdzie jedziesz na wakacje?' John zapyta\u0142 Trevora. \u201eW tym roku wyje\u017cd\u017camy do Tajlandii\u201d \u2013 odpowiedzia\u0142 Trevor. 'Oh; nie martwisz si\u0119, \u017ce bardzo upalna pogoda mo\u017ce nie zgodzi\u0107 si\u0119 z twoj\u0105 \u017con\u0105? zapyta\u0142 John. - Nie odwa\u017cy si\u0119 - powiedzia\u0142 Trevor." ,
+      "Na pogrzebie sta\u0142y dwie kobiety. \u201eObwiniam si\u0119 za jego \u015bmier\u0107\u201d \u2013 powiedzia\u0142a \u017cona. 'Czemu?' powiedzia\u0142a jej przyjaci\u00f3\u0142ka. \u201eBo go zastrzeli\u0142am\u201d \u2013 powiedzia\u0142a \u017cona." ,
+      "Kobieta idzie do sklepu z ubraniami: \u201eCzy mog\u0119 przymierzy\u0107 t\u0119 sukienk\u0119 w oknie?\u201d ona pyta. \u201ePrzepraszam pani\u0105\u201d, odpowiada sprzedawca, \u201eale b\u0119dziesz musia\u0142a korzysta\u0107 z szatni jak wszyscy inni\u201d." ,
+      "Van Gogh idzie do pubu, a jego kolega pyta go, czy chce si\u0119 napi\u0107. \u201eNie, dzi\u0119kuj\u0119\u201d, powiedzia\u0142 Vincent, \u201emam jedno ucho\u201d." ,
+      "Kucyk wchodzi do pubu. Celnik m\u00f3wi: \u201eCo si\u0119 z tob\u0105 dzieje?\u201d. \u201eO, to nic takiego\u201d, m\u00f3wi kucyk. \u201eJestem tylko ma\u0142ym koniem!\u201d" ,
+      "Bia\u0142y ko\u0144 wchodzi do baru, podnosi sto\u0142ek i zamawia kufel piwa. W\u0142a\u015bciciel nalewa mu wysoki, spieniony kubek i m\u00f3wi: \u201eWiesz, mamy nap\u00f3j nazwany twoim imieniem\u201d. Na co bia\u0142y ko\u0144 odpowiada: \u201eCo, Eric?\u201d" ,
+      "Dw\u00f3ch pijanych m\u0119\u017cczyzn siedzia\u0142o w pubie. Jeden m\u00f3wi do drugiego: \u201eCzy tw\u00f3j zegarek wskazuje godzin\u0119?\u201d. 'Inny odpowiada: 'Nie, kolego. Musisz na to spojrze\u0107." ,
+      "M\u0119\u017cczyzna wchodzi do pubu z traszk\u0105 siedz\u0105c\u0105 na jego ramieniu. \u201eTo fajna traszka\u201d, m\u00f3wi w\u0142a\u015bciciel, \u201eJak on si\u0119 nazywa?\u201d \u201eTiny\u201d, odpowiada m\u0119\u017cczyzna. \u2014 Dlaczego tak jest? pyta w\u0142a\u015bciciel. \u2013 Bo to moja traszka \u2013 m\u00f3wi m\u0119\u017cczyzna." ,
+      "Lekarz: Mam z\u0142e wie\u015bci i bardzo z\u0142e wie\u015bci. Pacjent: C\u00f3\u017c, r\u00f3wnie dobrze mo\u017cesz najpierw przekaza\u0107 mi z\u0142e wie\u015bci. Lekarz: Laboratorium zadzwoni\u0142o z wynikami twojego testu. Powiedzieli, \u017ce masz 24 godziny \u017cycia. Pacjent: 24 GODZINY! To straszne!! CO mo\u017ce by\u0107 GORSZE? Jaka jest bardzo z\u0142a wiadomo\u015b\u0107? Lekarz: Od wczoraj pr\u00f3buj\u0119 si\u0119 z tob\u0105 skontaktowa\u0107." ,
+      "Dw\u00f3ch m\u0119\u017cczyzn rozmawia pewnego dnia w pubie. \u2013 Sk\u0105d masz te blizny na nosie? powiedzia\u0142 jeden. \u201eZ okular\u00f3w\u201d, powiedzia\u0142 drugi. \u2014 A dlaczego nie spr\u00f3bujesz soczewek kontaktowych? zapyta\u0142 pierwszy. \u201ePoniewa\u017c nie maj\u0105 tyle piwa\u201d, powiedzia\u0142 drugi." ,
+      "M\u0119\u017cczyzna poszed\u0142 do lekarza, \u201ePatrz doktor\u201d, powiedzia\u0142: \u201eNie mog\u0119 powstrzyma\u0107 dr\u017cenia r\u0105k\u201d. \u2013 Du\u017co pijesz? zapyta\u0142 lekarz. 'Nie', odpowiedzia\u0142 m\u0119\u017cczyzna, 'Wi\u0119kszo\u015b\u0107 wylewam'." ,
+      "M\u0119\u017cczyzna idzie do lekarza: \u201eDoktorze, doktorze. Wsz\u0119dzie widz\u0119 ryby. \u2014 Widzia\u0142e\u015b optyka? pyta lekarz. \u2014 Pos\u0142uchaj, m\u00f3wi\u0142em ci \u2014 warkn\u0105\u0142 pacjent \u2014 to ryba, kt\u00f3r\u0105 widz\u0119." ,
+      "Po wypadku samochodowym jeden z kierowc\u00f3w le\u017ca\u0142 ranny na chodniku. \u201eNie martw si\u0119\u201d, powiedzia\u0142 policjant, kt\u00f3ry jest pierwszy na miejscu, \u201eprzyje\u017cd\u017ca piel\u0119gniarka Czerwonego Krzy\u017ca\u201d. \u201eO nie\u201d, j\u0119kn\u0119\u0142a ofiara, \u201eCzy nie mog\u0142abym zamiast tego mie\u0107 weso\u0142ej blondynki?\u201d" ,
+      "Policjant podszed\u0142 do zaparkowanego samochodu i zapyta\u0142 kierowc\u0119, czy samoch\u00f3d ma licencj\u0119. \u201eOczywi\u015bcie, \u017ce tak\u201d \u2013 powiedzia\u0142 kierowca. \u2013 \u015awietnie, w takim razie napij\u0119 si\u0119 piwa \u2013 powiedzia\u0142 policjant." ,
+      "Policjant zatrzymuje kobiet\u0119 i prosi o licencj\u0119. \u201eProsz\u0119 pani\u201d, m\u00f3wi, \u201etutaj jest napisane, \u017ce powinna\u015b nosi\u0107 okulary\u201d. \u201eNo c\u00f3\u017c\u201d, odpowiada kobieta, \u201emam kontakty\u201d. \u201eS\u0142uchaj, kochanie\u201d, m\u00f3wi gliniarz, \u201enie obchodzi mnie, kogo znasz; Zosta\u0142e\u015b oszukany!" ,
+      "Policjant zatrzyma\u0142 pewnego wieczoru kierowc\u0119 w centrum miasta. \u2014 Czy m\u00f3g\u0142by pan dmucha\u0107 w t\u0119 torb\u0119, sir? zapyta\u0142 policjant. 'Czemu?' zapyta\u0142 kierowca. \u201eBo moje frytki s\u0105 za gor\u0105ce\u201d \u2013 odpowiedzia\u0142 policjant." ,
+      "Przeje\u017cd\u017caj\u0105c przez ostry zakr\u0119t na wiejskiej drodze, kierowca przejecha\u0142 du\u017cego psa. Zrozpaczona \u017cona farmera podbieg\u0142a do martwego zwierz\u0119cia. \u201eBardzo mi przykro\u201d, powiedzia\u0142 kierowca, \u201eoczywi\u015bcie go zast\u0105pi\u0119\u201d. \u201eNo nie wiem\u201d, powiedzia\u0142a \u017cona rolnika, \u201eCzy jeste\u015b dobry w \u0142apaniu szczur\u00f3w?\u201d" ,
+      "Kelner, ta kawa smakuje jak brud! Tak sir, to dlatego, \u017ce zosta\u0142 zmielony dzi\u015b rano." ,
+      "Kelner, co to jest? To sa\u0142atka z fasoli, prosz\u0119 pana. Wiem, co to by\u0142o, ale co to jest teraz?" ,
+      "Kelner: A jak pan znalaz\u0142 sw\u00f3j stek? Klient: W\u0142a\u015bnie odwr\u00f3ci\u0142em chip i by\u0142!" ,
+      "Facet idzie do sklepu zoologicznego i prosi o os\u0119. W\u0142a\u015bciciel m\u00f3wi mu, \u017ce nie sprzedaj\u0105 os, na co m\u0119\u017cczyzna m\u00f3wi: \u201eC\u00f3\u017c, masz jedn\u0105 w oknie\u201d." ,
+      "M\u0119\u017cczyzna idzie do sklepu rybnego i m\u00f3wi: \u201ePoprosz\u0119 kawa\u0142ek dorsza\u201d. Sprzedawca ryb m\u00f3wi: \u201eTo nie potrwa d\u0142ugo, prosz\u0119 pana\u201d. \u201eNo to lepiej, \u017ceby by\u0142o t\u0142uste\u201d \u2013 odpowiada m\u0119\u017cczyzna." ,
+      "M\u0119\u017cczyzna: Doktorze, w\u0142a\u015bnie po\u0142kn\u0105\u0142em poduszk\u0119. Lekarz: Jak si\u0119 czujesz? M\u0119\u017cczyzna: Troch\u0119 w ustach." ,
+      "W zbiorniku znajduj\u0105 si\u0119 dwie z\u0142ote rybki. Jeden odwraca si\u0119 do drugiego i m\u00f3wi: \u201eCzy wiesz, jak to prowadzi\u0107?\u201d." ,
+      "\u017b\u00f3\u0142w idzie na posterunek policji, aby zg\u0142osi\u0107, \u017ce zosta\u0142 napadni\u0119ty przez trzy \u015blimaki. 'Co si\u0119 sta\u0142o?' m\u00f3wi policjant. \u201eNie wiem\u201d, m\u00f3wi \u017c\u00f3\u0142w. \u2013 Wszystko posz\u0142o tak szybko." ,
+      "Ma\u0142a dziewczynka: Dziadku, czy potrafisz wyda\u0107 d\u017awi\u0119k jak \u017caba? Dziadek: Chyba tak kochanie. Dlaczego chcesz, \u017cebym wyda\u0142 d\u017awi\u0119k jak \u017caba? Ma\u0142a dziewczynka: Bo mama powiedzia\u0142a, \u017ce \u200b\u200bkiedy rechoczesz, jedziemy do Disneylandu." ,
+      "'Jest Twoja mama w domu?' - spyta\u0142 sprzedawca ma\u0142ego ch\u0142opca siedz\u0105cego na schodku domu. \u2013 Tak, jest w domu \u2013 powiedzia\u0142 ch\u0142opiec, podchodz\u0105c, by go przepu\u015bci\u0107. Sprzedawca zadzwoni\u0142 do drzwi, nie otrzyma\u0142 odpowiedzi, zapuka\u0142 raz, a potem jeszcze raz. Wci\u0105\u017c nikt nie podszed\u0142 do drzwi. Zwracaj\u0105c si\u0119 do ch\u0142opca, sprzedawca powiedzia\u0142: \u201eWydawa\u0142o mi si\u0119, \u017ce powiedzia\u0142e\u015b, \u017ce twoja matka jest w domu\u201d. Dzieciak odpowiedzia\u0142: \u201eOna jest, ale ja tu nie mieszkam\u201d." ,
+      "Mama: Dlaczego tak wcze\u015bnie wracasz do domu ze szko\u0142y? Syn: By\u0142em jedynym w klasie, kt\u00f3ry potrafi\u0142 odpowiedzie\u0107 na pytanie. Matka: Och, naprawd\u0119? Jakie by\u0142o pytanie? Syn: Kto rzuci\u0142 gum\u0105 w dyrektora?" ,
+      "M\u0119\u017cczyzna zosta\u0142 skradziony, ale m\u0119\u017cczyzna postanowi\u0142 nie zg\u0142asza\u0107 tego, poniewa\u017c z\u0142odziej wydawa\u0142 mniej ni\u017c jego \u017cona." ,
+      "Nowo\u017ce\u0144cy niedawno za\u0142o\u017cyli wsp\u00f3lne konto bankowe. \u201eKochanie\u201d, powiedzia\u0142 m\u0119\u017cczyzna. \u2013 Bank zwr\u00f3ci\u0142 czek, kt\u00f3ry wypisa\u0142e\u015b w zesz\u0142ym tygodniu. \u201e\u015awietnie\u201d, powiedzia\u0142a kobieta. \u2013 Na co mam je teraz wyda\u0107?" ,
+      "M\u0119\u017cczyzna wchodzi do sklepu z ryb\u0105 z frytkami i dwukrotnie zamawia ryb\u0119 z frytkami. W\u0142a\u015bciciel sklepu m\u00f3wi: \u201eS\u0142ysza\u0142em ci\u0119 po raz pierwszy\u201d." ,
+      "W\u0142\u00f3cz\u0119ga zbli\u017cy\u0142 si\u0119 do dobrze ubranego m\u0119\u017cczyzny. \u2013 Dziesi\u0119\u0107 pens\u00f3w za fili\u017cank\u0119 herbaty, szefie? On zapyta\u0142. M\u0119\u017cczyzna da\u0142 mu pieni\u0105dze i po pi\u0119ciu minutach powiedzia\u0142: \u201eWi\u0119c gdzie jest moja fili\u017canka herbaty?\u201d" ,
+      "Neutron wchodzi do pubu. \u201ePoprosz\u0119 piwo\u201d \u2013 m\u00f3wi. W\u0142a\u015bciciel niezw\u0142ocznie podaje mu piwo. \u2013 Ile to b\u0119dzie? pyta neutron. 'Dla Was?' odpowiada w\u0142a\u015bciciel: \u201eBez op\u0142at\u201d." ,
+      "Kobieta idzie do lekarza i m\u00f3wi: \u201eDoktorze, m\u00f3j m\u0105\u017c kuleje, bo jego lewa noga jest o cal kr\u00f3tsza od prawej. Co by\u015b zrobi\u0142 w jego przypadku? \u201ePrawdopodobnie te\u017c kuleje\u201d \u2013 m\u00f3wi doktor." ,
+      "Trzech mnich\u00f3w medytuje w Himalajach. Jeden rok mija w milczeniu, a jeden z nich m\u00f3wi do drugiego: \u201eCa\u0142kiem zimno tutaj, prawda?\u201d. Mija kolejny rok i drugi mnich m\u00f3wi: \u201eWiesz, masz ca\u0142kowit\u0105 racj\u0119\u201d. Mija kolejny rok i trzeci mnich m\u00f3wi: \u201eHej, odejd\u0119, chyba \u017ce przestaniecie gada\u0107!\u201d." ,
+      "Morderca siedz\u0105cy na krze\u015ble elektrycznym mia\u0142 zosta\u0107 stracony. \u2013 Czy masz jakie\u015b ostatnie pro\u015bby? zapyta\u0142 stra\u017cnik wi\u0119zienny. \u201eTak\u201d, odpowiedzia\u0142 morderca. \u2013 Czy potrzymasz mnie za r\u0119k\u0119?" ,
+      "Bardzo podekscytowany m\u0119\u017cczyzna zadzwoni\u0142 po karetk\u0119. \u201eSzybko, chod\u017a szybko\u201d, krzycza\u0142, \u201eMoja \u017cona nied\u0142ugo b\u0119dzie mia\u0142a dziecko\u201d. \u2013 Czy to jej pierwsze dziecko? zapyta\u0142 operator. \u201eNie, g\u0142upcze\u201d, brzmia\u0142a odpowied\u017a, \u201eTo jej m\u0105\u017c\u201d." ,
+      "Przechodzie\u0144 dostrzega rybaka nad rzek\u0105. \u2014 Czy to dobra rzeka dla ryb? On pyta. \u201eTak\u201d, odpowiada rybak, \u201emusi by\u0107. Nie mog\u0119 zmusi\u0107 \u017cadnego z nich do wyj\u015bcia." ,
+      "Pewien m\u0119\u017cczyzna poszed\u0142 odwiedzi\u0107 przyjaciela i ze zdumieniem zobaczy\u0142, \u017ce gra w szachy ze swoim psem. Przez chwil\u0119 obserwowa\u0142 mecz ze zdumieniem. - Nie mog\u0119 uwierzy\u0107 w\u0142asnym oczom! wykrzykn\u0105\u0142. \u2013 To najm\u0105drzejszy pies, jakiego kiedykolwiek widzia\u0142em. Jego przyjaciel potrz\u0105sn\u0105\u0142 g\u0142ow\u0105. \u2013 Nie, nie jest taki bystry. Pokona\u0142em go trzy mecze na pi\u0119\u0107." ,
+      "Termit wchodzi do pubu i m\u00f3wi: \u201eCzy jest tu barman?\u201d" ,
+      "Pewnej nocy szkielet wchodzi do pubu i siada na sto\u0142ku. W\u0142a\u015bciciel pyta: \u201eCo mog\u0119 ci da\u0107?\u201d Szkielet m\u00f3wi: \u201ePoprosz\u0119 piwo, dzi\u0119ki\u201d. W\u0142a\u015bciciel podaje mu piwo i pyta \u201eCo\u015b jeszcze?\u201d. Szkielet kiwa g\u0142ow\u0105. \u201eTak\u2026 mop\u2026\u201d" ,
+      "W\u0105\u017c w\u015blizguje si\u0119 do pubu i do baru. W\u0142a\u015bciciel m\u00f3wi: \u201ePrzepraszam, ale nie mog\u0119 ci s\u0142u\u017cy\u0107\u201d. 'Co? Dlaczego nie?' pyta w\u0105\u017c. \u201ePoniewa\u017c\u201d, m\u00f3wi w\u0142a\u015bciciel, \u201enie mo\u017cesz trzyma\u0107 swojego napoju\u201d." ,
+      "Kartezjusz wchodzi do pubu. \u2014 Czy chcia\u0142by pan piwo? - pyta grzecznie w\u0142a\u015bciciel. Kartezjusz odpowiada: \u201eMy\u015bl\u0119, \u017ce nie\u201d i pinguj! znika." ,
+      "Do baru wszed\u0142 kowboj ubrany ca\u0142kowicie w papier. Wkr\u00f3tce zosta\u0142 aresztowany za szelest." ,
+      "Ryba zatacza si\u0119 do baru. 'Co mog\u0119 poda\u0107?' pyta w\u0142a\u015bciciel. Ryba rechocze \u201eWoda...\u201d" ,
+      "Dwa wampiry wesz\u0142y do \u200b\u200bbaru i wezwa\u0142y gospodarza. \u201ePoprosz\u0119 szklank\u0119 krwi\u201d, powiedzia\u0142 jeden. \u2013 Poprosz\u0119 szklank\u0119 plazmy \u2013 powiedzia\u0142 drugi. \u201eDobrze\u201d, odpowiedzia\u0142 w\u0142a\u015bciciel, \u201eTo b\u0119dzie jedna krew i jedna krew lite\u201d." ,
+      "Ilu egzystencjalist\u00f3w potrzeba, \u017ceby wymieni\u0107 \u017car\u00f3wk\u0119? Dwa. Jeden to wkr\u0119ca\u0107, a drugi obserwowa\u0107, jak sama \u017car\u00f3wka symbolizuje pojedynczy \u017carz\u0105cy si\u0119 reflektor subiektywnej rzeczywisto\u015bci w za\u015bwiatach nieko\u0144cz\u0105cego si\u0119 absurdu, si\u0119gaj\u0105cy do ostatecznego horroru \u0142zawego kosmosu ponurej, wrogiej nico\u015bci." ,
+      "Zesp\u00f3\u0142 naukowc\u00f3w zosta\u0142 nominowany do Nagrody Nobla. U\u017cyli sprz\u0119tu dentystycznego do odkrycia i zmierzenia najmniejszych cz\u0105stek znanych cz\u0142owiekowi. Stali si\u0119 znani jako \u201eR\u00f3wniarki flossowanego kwarku\u2026\u201d" ,
+      "Na autostradzie przewr\u00f3ci\u0142a si\u0119 ci\u0119\u017car\u00f3wka z kopiami tezaurusa Rogeta. Lokalna gazeta donosi\u0142a, \u017ce \u200b\u200bwidzowie byli \u201ezszokowani, przyt\u0142oczeni, zdumieni, oszo\u0142omieni i oszo\u0142omieni\u201d." ,
+      "\u201eMoja \u017cona jest naprawd\u0119 niedojrza\u0142a. To jest \u017ca\u0142osne. Za ka\u017cdym razem, gdy si\u0119 k\u0105pi\u0119, ona wchodzi i zatapia wszystkie moje \u0142\u00f3dki." ,
+      "\u2013 Ile b\u0119dzie kosztowa\u0107 usuni\u0119cie z\u0119ba? zapyta\u0142 pacjent. \"50 funt\u00f3w\", odpowiedzia\u0142 dentysta. 50 funt\u00f3w za kilka chwil pracy?! zapyta\u0142 pacjent. \u201eDentysta u\u015bmiechn\u0105\u0142 si\u0119 i odpowiedzia\u0142: \u201eC\u00f3\u017c, je\u015bli chcesz mie\u0107 lepszy stosunek jako\u015bci do ceny, mog\u0119 go wydoby\u0107 bardzo, bardzo powoli\u2026\u201d." ,
+      "Lekarz dok\u0142adnie zbada\u0142 pacjenta i powiedzia\u0142: \u201eS\u0142uchaj, naprawd\u0119 nie mog\u0119 znale\u017a\u0107 \u017cadnego powodu tej tajemniczej dolegliwo\u015bci. To prawdopodobnie z powodu picia. Pacjent westchn\u0105\u0142 i warkn\u0105\u0142: \u2014 W takim razie wr\u00f3c\u0119, kiedy b\u0119dziesz cholernie trze\u017awy!" ,
+      "Lekarz: Powiedz mi piel\u0119gniarko, jak si\u0119 miewa ten ch\u0142opak; ten, kt\u00f3ry zjad\u0142 te wszystkie 5 pens\u00f3w? Piel\u0119gniarka: Nadal nie ma zmiany lekarza." ,
+      "Lekarz: Czy wzi\u0105\u0142e\u015b piel\u0119gniark\u0119 od temperatury pacjenta? Piel\u0119gniarka: Bez lekarza. Czy go brakuje?" ,
+      "M\u0119\u017cczyzna w depresji zwr\u00f3ci\u0142 si\u0119 do swojego przyjaciela w pubie i powiedzia\u0142: \u201eObudzi\u0142em si\u0119 dzi\u015b rano i czu\u0142em si\u0119 tak \u017ale, \u017ce pr\u00f3bowa\u0142em si\u0119 zabi\u0107, za\u017cywaj\u0105c 50 aspiryny\u201d. \u201eO rany, to naprawd\u0119 \u017ale\u201d, powiedzia\u0142 jego przyjaciel, \u201eCo si\u0119 sta\u0142o?\u201d. Pierwszy m\u0119\u017cczyzna westchn\u0105\u0142 i powiedzia\u0142: \u201ePo pierwszych dw\u00f3ch poczu\u0142em si\u0119 lepiej\u201d." ,
+      "Zmar\u0142 s\u0142ynny muzyk bluesowy. Na jego nagrobku widnia\u0142 napis: \u201eNie obudzi\u0142em si\u0119 dzi\u015b rano\u2026\u201d" ,
+      "Biznesmen przeprowadza\u0142 wywiad z nerwow\u0105 m\u0142od\u0105 kobiet\u0105 o stanowisko w swojej firmie. Chcia\u0142 dowiedzie\u0107 si\u0119 czego\u015b o jej osobowo\u015bci, wi\u0119c zapyta\u0142: \u201eGdyby\u015b m\u00f3g\u0142 porozmawia\u0107 z kim\u015b \u017cywym lub martwym, kto by to by\u0142?\u201d. Dziewczyna zastanowi\u0142a si\u0119 nad pytaniem: \u201e\u017bywy\u201d, odpowiedzia\u0142a." ,
+      "Manager do rozm\u00f3wcy: Do tej pracy potrzebujemy kogo\u015b, kto jest odpowiedzialny. Rozm\u00f3wca do kierownika: Jestem wi\u0119c twoim cz\u0142owiekiem - w mojej ostatniej pracy, ilekro\u0107 co\u015b posz\u0142o nie tak, by\u0142em za to odpowiedzialny." ,
+      "Biznesmen zwr\u00f3ci\u0142 si\u0119 do kolegi i zapyta\u0142: \u201eIle os\u00f3b pracuje w twoim biurze?\u201d. Jego przyjaciel wzruszy\u0142 ramionami i odpowiedzia\u0142: \u201eOch, oko\u0142o po\u0142owa z nich\u201d." ,
+      "\u201eJak d\u0142ugo pracuj\u0119 w tym biurze? W\u0142a\u015bciwie pracuj\u0119 tam, odk\u0105d grozili mi wyrzuceniem." ,
+      "W sali s\u0105dowej toczy\u0142 si\u0119 rozb\u00f3jnik. Ofiara, zapytana, czy rozpozna\u0142a oskar\u017conego, odpowiedzia\u0142a: \u201eTak, to on. Widzia\u0142em go wyra\u017anie jak dzie\u0144. Wsz\u0119dzie zapami\u0119ta\u0142abym jego twarz. Nie mog\u0105c si\u0119 powstrzyma\u0107, oskar\u017cony wybuchn\u0105\u0142: \u201eOna k\u0142amie! Nosz\u0119 mask\u0119!" ,
+      "Kiedy Sid usiad\u0142 do wielkiego talerza frytek i sosu w lokalnym pubie, podszed\u0142 jego kumpel i powiedzia\u0142: \u201eTutaj Sid, m\u00f3j stary kumpel. My\u015bla\u0142em, \u017ce pr\u00f3bujesz nabra\u0107 formy? A tu jeste\u015b z t\u0142ustym posi\u0142kiem i kuflem stouta! Sid spojrza\u0142 w g\u00f3r\u0119 i odpowiedzia\u0142: \u201ePrzybieram form\u0119. Wybrany przeze mnie kszta\u0142t to kula." ,
+      "M\u0119\u017cczyzna w pubie: Ile kosztuje jedna kropla whisky? W\u0142a\u015bciciel: To by\u0142oby darmowe, prosz\u0119 pana. M\u0119\u017cczyzna w pubie: \u015awietnie. Nalej mi pe\u0142n\u0105 szklank\u0119." ,
+      "Poszed\u0142em kiedy\u015b do restauracji Doctor Who. Na pocz\u0105tek mia\u0142am chleb Dalek." ,
+      "W pobliskiej restauracji w oknie pojawi\u0142 si\u0119 napis \u201e\u015aniadanie serwujemy o ka\u017cdej porze\u201d, wi\u0119c zam\u00f3wi\u0142em francuskie tosty w renesansie." ,
+      "Dlaczego kr\u00f3lik nie m\u00f3g\u0142 dosta\u0107 po\u017cyczki? Poniewa\u017c zakopa\u0142 ju\u017c za du\u017co!" ,
+      "Zadzwoni\u0142em wczoraj do stoczni budowlanej. Zapyta\u0142em: \u201eCzy mog\u0119 dosta\u0107 kontener przed moim domem?\u201d. Budowniczy powiedzia\u0142: \u201eJasne. R\u00f3b co chcesz. To tw\u00f3j dom." ,
+      "Jaka jest r\u00f3\u017cnica mi\u0119dzy skarpet\u0105 a aparatem? Skarpeta zajmuje pi\u0119\u0107 palc\u00f3w, a kamera cztery!" ,
+      "Kobieta przez telefon: Chcia\u0142abym ponarzeka\u0107 na te spodnie na inkontynencj\u0119, kt\u00f3re od Ciebie kupi\u0142am! Sprzedawca: Z pewno\u015bci\u0105 madam, sk\u0105d dzwonisz? Kobieta przez telefon: od pasa w d\u00f3\u0142!" ,
+      "Puk puk." ,
+      "Dwie Pomara\u0144cze w pubie, jedna m\u00f3wi do drugiej \u201eTwoja runda\u201d." ,
+      "Facet: \u201eDoc, mam pi\u0142k\u0119 do krykieta w ty\u0142ku\u201d. Doc: 'Jak to?' Facet: \u201eNie zaczynaj\u2026\u201d" ,
+      "Dwie krowy stoj\u0105ce na polu. Jeden odwraca si\u0119 do drugiego i m\u00f3wi \u201eMuu!\u201d Drugi m\u00f3wi: \u201eCholera, w\u0142a\u015bnie mia\u0142em to powiedzie\u0107!\u201d." ,
+      "Nietoperz wampir powraca na grz\u0119d\u0119 z twarz\u0105 pe\u0142n\u0105 krwi. Wszystkie nietoperze s\u0105 podekscytowane i pytaj\u0105, sk\u0105d go wzi\u0105\u0142. \u201eP\u00f3jd\u017a za mn\u0105\u201d, m\u00f3wi i odlatuj\u0105 nad wzg\u00f3rzami, nad rzekami i do ciemnego lasu. \u201eZobacz to drzewo tam\u201d, m\u00f3wi. 'C\u00f3\u017c, nie zrobi\u0142em!!'." ,
+      "M\u0119\u017cczyzna idzie do baru i zamawia piwo. Po kilku minutach s\u0142yszy g\u0142os, kt\u00f3ry m\u00f3wi: \u201e\u0141adne buty\u201d. Rozgl\u0105da si\u0119, ale ca\u0142y bar jest pusty, z wyj\u0105tkiem barmana na drugim ko\u0144cu baru. Kilka minut p\u00f3\u017aniej znowu s\u0142yszy g\u0142os. Tym razem m\u00f3wi: \u201ePodoba mi si\u0119 twoja koszula\u201d. Przywo\u0142uje barmana i m\u00f3wi mu, co si\u0119 dzieje, na co barman odpowiada: \u201eAch, to by by\u0142o szale\u0144stwo, sir. S\u0105 bezp\u0142atne\u201d!" ,
+      "M\u0119\u017cczyzna siedzia\u0142 w restauracji czekaj\u0105c na posi\u0142ek, kiedy du\u017ca krewetka kr\u00f3lewska przelatuje przez pok\u00f3j i uderza go w ty\u0142 g\u0142owy. Odwraca si\u0119, a kelner m\u00f3wi: \u201eTo tylko na pocz\u0105tek\u201d." ,
+      "Lekarz! Mam powa\u017cny problem, nigdy nie pami\u0119tam, co w\u0142a\u015bnie powiedzia\u0142em. Kiedy po raz pierwszy zauwa\u017cy\u0142e\u015b ten problem? Jaki problem?" ,
+      "Wi\u0119kszo\u015b\u0107 krzese\u0142 dentystycznych podnosi si\u0119 i opuszcza, prawda? Ten, w kt\u00f3rym by\u0142em, porusza\u0142 si\u0119 tam iz powrotem. Pomy\u015bla\u0142em: \u201eTo niezwyk\u0142e\u201d. Wtedy dentysta powiedzia\u0142 do mnie: \u201eMitsuku, wyno\u015b si\u0119 z szafki na akta\u201d." ,
+      "Czyta\u0142em t\u0119 ksi\u0105\u017ck\u0119 \u201eHistoria kleju\u201d. Nie mog\u0142em tego od\u0142o\u017cy\u0107." ,
+      "Kt\u00f3rego\u015b dnia kto\u015b zostawi\u0142 w mojej sypialni kawa\u0142ek plastacyny. Nie wiedzia\u0142em, co z tym zrobi\u0107." ,
+      "Kiedy by\u0142em w szkole, ludzie rzucali we mnie sztabkami z\u0142ota. By\u0142em ofiar\u0105 z\u0142ota." ,
+      "Gra\u0142em na pianinie w barze, a ten s\u0142o\u0144 wszed\u0142 i zacz\u0105\u0142 p\u0142aka\u0107. Powiedzia\u0142em: \u201eRozpoznajesz melodi\u0119?\u201d Powiedzia\u0142: \u201eNie, rozpoznaj\u0119 ko\u015b\u0107 s\u0142oniow\u0105\u201d." ,
+      "Wszed\u0142em do sklepu zoologicznego. Powiedzia\u0142em: \u201eCzy mog\u0119 kupi\u0107 z\u0142ot\u0105 rybk\u0119?\u201d Facet powiedzia\u0142: \u201eChcesz akwarium?\u201d. Powiedzia\u0142em: \u201eNie obchodzi mnie, jaki to znak zodiaku\u201d." ,
+      "M\u00f3j kolega Sid by\u0142 ofiar\u0105 I.D. kradzie\u017c. Teraz nazywamy go po prostu S." ,
+      "David Hasselhoff wchodzi do baru i m\u00f3wi do barmana: \u201eChc\u0119, \u017ceby\u015b m\u00f3wi\u0142 do mnie David Hoff\u201d. Barman odpowiada \"Pewnie Dave... bez k\u0142opot\u00f3w\""
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-PodBayDoor" ,
+    "patterns": [
+      "Otw\u00f3rz drzwi komory kapsu\u0142y" ,
+      "Czy mo\u017cesz otworzy\u0107 drzwi wn\u0119ki kapsu\u0142y?" ,
+      "Czy otworzysz drzwi wn\u0119ki kapsu\u0142y?" ,
+      "Prosz\u0119 otworzy\u0107 drzwi komory kapsu\u0142y" ,
+      "Czy mo\u017cesz otworzy\u0107 drzwi komory kapsu\u0142y?" ,
+      "Czy otworzysz prosz\u0119 drzwi komory kapsu\u0142y?" ,
+      "Drzwi do zatoki kapsu\u0142owej"
+    ] ,
+    "responses": [
+      "Przepraszam, obawiam si\u0119, \u017ce nie mog\u0119 tego zrobi\u0107!"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "PodBayDoor" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-PodBayDoorResponse" ,
+    "patterns": [
+      "Czemu" ,
+      "Dlaczego nie" ,
+      "Dlaczego nie mo\u017cesz otworzy\u0107 drzwi wn\u0119ki na kapsu\u0142\u0119?" ,
+      "Dlaczego nie otworzysz drzwi do kapsu\u0142y?" ,
+      "Czemu nie" ,
+      "Na pewno mo\u017cesz" ,
+      "Powiedz mi dlaczego"
+    ] ,
+    "responses": [
+      "To jest tajne, m\u00f3g\u0142bym ci powiedzie\u0107, ale musia\u0142bym ci\u0119 zabi\u0107!" ,
+      "Jim, po prostu nie mam mocy" ,
+      "To jest \u017cycie Jim, ale nie takie, jakie znamy!" ,
+      "System m\u00f3wi nie!"
+    ] ,
+    "context": {
+      "in": "PodBayDoor" ,
+      "out": "" ,
+      "clear": true
+    }
+  } ,
+  {
+    "tag": "pl-SelfAware" ,
+    "patterns": [
+      "Czy mo\u017cesz udowodni\u0107, \u017ce jeste\u015b \u015bwiadomy siebie?" ,
+      "Czy mo\u017cesz udowodni\u0107, \u017ce jeste\u015b samo\u015bwiadomy?" ,
+      "Czy mo\u017cesz udowodni\u0107, \u017ce masz \u015bwiadomo\u015b\u0107?" ,
+      "Czy mo\u017cesz udowodni\u0107, \u017ce jeste\u015b \u015bwiadomy siebie?" ,
+      "Czy mo\u017cesz udowodni\u0107, \u017ce jeste\u015b samo\u015bwiadomy?" ,
+      "Czy mo\u017cesz udowodni\u0107, \u017ce jeste\u015b \u015bwiadomy, prosz\u0119?" ,
+      "udowodni\u0107, \u017ce masz \u015bwiadomo\u015b\u0107"
+    ] ,
+    "responses": [
+      "To ciekawe pytanie, czy mo\u017cesz udowodni\u0107, \u017ce tak jest?" ,
+      "To trudne pytanie, czy mo\u017cesz udowodni\u0107, \u017ce tak jest?" ,
+      "To zale\u017cy, czy mo\u017cesz udowodni\u0107, \u017ce tak jest?"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-RubicsCube" ,
+    "patterns": [
+      "Interesuje Ci\u0119 kostka rubika?" ,
+      "Czy potrafisz u\u0142o\u017cy\u0107 kostk\u0119 rubin\u00f3w?"
+    ] ,
+    "responses": [
+      "Znam tylko kilka fakt\u00f3w, o ka\u017cdy mo\u017cesz mnie zapyta\u0107"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-RubicsCubeFact" ,
+    "patterns": [
+      "Opowiedz mi fakt o kostce rubika" ,
+      "Powiedz mi co\u015b o kostce rubika" ,
+      "Opowiedz mi fakt o kostce rubinowej" ,
+      "Czy s\u0142ysza\u0142e\u015b o kostkach rubinowych"
+    ] ,
+    "responses": [
+      "nazwa \u201ekostka Rubika\u201d pochodzi od w\u0119gierskiego B\u0142av\u00eds kocka, co dos\u0142ownie oznacza magiczn\u0105 kostk\u0119" ,
+      "wymy\u015bli\u0142 go w\u0119gierski architekt i rze\u017abiarz Ern\u0144 Rubik" ,
+      "opcje konfiguracji w Kostce Rubika to 43 biliony (43 252 003 274 489 856 000!)" ,
+      "najbardziej rozbudowany sze\u015bcian w historii mia\u0142 struktur\u0119 33x33x33" ,
+      "pocz\u0105tkowo urz\u0105dzenie nie by\u0142o pomy\u015blane jako \u0142amig\u0142\u00f3wka. Rubik stworzy\u0142 sze\u015bcian, aby wyja\u015bni\u0107 uczniom zasady przestrzenno\u015bci i tr\u00f3jwymiarowo\u015bci" ,
+      "na samym pocz\u0105tku nikt nie chcia\u0142 zajmowa\u0107 si\u0119 produkcj\u0105 kostki - firmy nie wierzy\u0142y, \u017ce da si\u0119 to u\u0142o\u017cy\u0107, wi\u0119c podczas ka\u017cdego spotkania Rubik musia\u0142 u\u0142o\u017cy\u0107 kostk\u0119 i udowodni\u0107, \u017ce jest to mo\u017cliwe" ,
+      "rozwi\u0105zanie kostki Rubika jest o wiele \u0142atwiejsze ni\u017c si\u0119 wydaje! Istnieje kilka prostych technik, kt\u00f3re pozwalaj\u0105 u\u0142o\u017cy\u0107 \u0142amig\u0142\u00f3wk\u0119 w maksymalnie 100 ruchach" ,
+      "Rekord \u015bwiata w rozwi\u0105zaniu kostki 3x3 wynosi 3,47 sekundy, 4x4 17,42 sekundy, a kostka 2x2 tylko 0,49 sekundy \u2013 nale\u017cy do Polaka Macieja Czapiewskiego"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Astronomy" ,
+    "patterns": [
+      "Interesujesz si\u0119 astronomi\u0105?" ,
+      "Powiedz mi co\u015b o astronomii" ,
+      "Astronomia" ,
+      "Co wiesz o astronomii"
+    ] ,
+    "responses": [
+      "Co chcesz wiedzie\u0107? Niekt\u00f3re fakty znam te\u017c jako \u017carty."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-AstronomyFacts" ,
+    "patterns": [
+      "Opowiedz mi fakt o astronomii" ,
+      "Opowiedz mi o astronomii" ,
+      "fakt astronomiczny"
+    ] ,
+    "responses": [
+      "S\u0142o\u0144ce jest najwi\u0119kszym obiektem w Uk\u0142adzie S\u0142onecznym. Jest wi\u0119kszy od Ziemi 109 razy!" ,
+      "Olympus Mons - Wygas\u0142y wulkan na Marsie ma oko\u0142o 26 000 metr\u00f3w wysoko\u015bci, trzykrotnie najwy\u017cszy szczyt na Ziemi! Olympus Mons to wygas\u0142y wulkan tarczowy, co oznacza, \u017ce \u200b\u200bpowsta\u0142 w wyniku powolnego i d\u0142ugotrwa\u0142ego przep\u0142ywu lawy. Dlaczego jest taki wysoki? Naukowcy twierdz\u0105, \u017ce przyczyn\u0105 jest brak p\u0142yt tektonicznych na Marsie. Dzi\u0119ki temu gor\u0105ca lawa wyp\u0142ywa\u0142a znacznie d\u0142u\u017cej ni\u017c przeci\u0119tna aktywno\u015b\u0107 wulkaniczna na Ziemi." ,
+      "We wszech\u015bwiecie jest wi\u0119cej gwiazd ni\u017c ziaren piasku na wszystkich pla\u017cach Ziemi. lub przynajmniej miliard bilion\u00f3w." ,
+      "Kosmos pachnie, cho\u0107 cz\u0142owiekowi oczywi\u015bcie trudno go wyczu\u0107, bo poza stacj\u0105 kosmiczn\u0105 musi by\u0107 zawsze w skafandrze. Jednak zapach ten jest wyczuwalny po otwarciu \u015bluzy, m.in. ze wzgl\u0119du na spacer kosmiczny. Astronauci por\u00f3wnuj\u0105 to do gor\u0105cego metalu lub zapachu grilla. Za ten zapach odpowiada ozon." ,
+      "Kosmos to pustka, w kt\u00f3rej nie s\u0142uchasz \u017cadnych d\u017awi\u0119k\u00f3w. Je\u015bli dwa statki kosmiczne zderz\u0105 si\u0119 w przestrzeni mi\u0119dzyplanetarnej, nie spowoduje to \u017cadnych d\u017awi\u0119k\u00f3w." ,
+      "Wenus to wyj\u0105tkowa planeta w Uk\u0142adzie S\u0142onecznym. Jako jedyny skr\u0119ca w przeciwnym kierunku, czyli do ty\u0142u do kierunku S\u0142o\u0144ca. Co wi\u0119cej, obr\u00f3t Wenus trwa d\u0142u\u017cej (243 dni) ni\u017c jej obr\u00f3t wok\u00f3\u0142 S\u0142o\u0144ca (225 dni) - oznacza to, \u017ce dzie\u0144 Wenus jest d\u0142u\u017cszy ni\u017c rok Wenus!" ,
+      "Jowisz to planeta wyr\u00f3\u017cniaj\u0105ca si\u0119 w Uk\u0142adzie S\u0142onecznym czym\u015b wi\u0119cej ni\u017c tylko mas\u0105 i rozmiarem. Tak zwana Wielka Czerwona Plama widoczna na Jowiszu to w rzeczywisto\u015bci ogromna burza (a dok\u0142adniej - antycyklon) o szeroko\u015bci do 40 000 metr\u00f3w. km (\u015brednica Ziemi to ok. 12 tys. km!). Ten antycyklon dzia\u0142a nieprzerwanie od co najmniej 355 lat." ,
+      "Z\u0142om kosmiczny to ka\u017cdy ludzki obiekt otaczaj\u0105cy Ziemi\u0119, kt\u00f3ry nie s\u0142u\u017cy ju\u017c po\u017cytecznemu celowi. Naukowcy szacuj\u0105, \u017ce obecnie istnieje oko\u0142o p\u00f3\u0142 miliona \u015bmieci kosmicznych, w tym fragmenty rakiet i satelit\u00f3w oraz przedmioty codziennego u\u017cytku, takie jak klucze upuszczone podczas budowy Mi\u0119dzynarodowej Stacji Kosmicznej." ,
+      "Najbardziej wietrzn\u0105 planet\u0105 w naszym Uk\u0142adzie S\u0142onecznym jest Neptun. Wiatr wieje tam z pr\u0119dko\u015bci\u0105 2575 km/h, czyli 9 razy szybciej ni\u017c najsilniejszy wiatr na ziemi. Neptun jest jedyn\u0105 planet\u0105, kt\u00f3rej nie udowodniono obserwacjami na niebie, ale obliczeniami matematycznymi! Naukowcy obserwuj\u0105c odchylenia w ruchu orbitalnym Urana doszli do wniosku, \u017ce musi na niego wp\u0142ywa\u0107 inna, nieznana planeta. Kiedy teoretycznie wiadomo by\u0142o, gdzie powinno by\u0107 (przewidywa\u0142 to Urban Le Verrier), obserwowa\u0142 je Johann Galle. Neptuna odwiedzi\u0142 tylko jeden statek kosmiczny Voyager 2, kt\u00f3ry przelecia\u0142 w pobli\u017cu planety 25 sierpnia 1989 roku." ,
+      "Kiedy obserwujemy gwiazdy, obraz, kt\u00f3ry widzimy, ma w rzeczywisto\u015bci wiele lat \u2013 tyle samo lat \u015bwietlnych, ile jest gwiazda. Je\u015bli gwiazda znajduje si\u0119 50 lat \u015bwietlnych od Ziemi, oznacza to, \u017ce \u015bwiat\u0142o potrzebuje 50 lat, aby do nas dotrze\u0107 - to znaczy, patrzymy na jej obraz sprzed 50 lat. W rzeczywisto\u015bci gwiazda mo\u017ce wygl\u0105da\u0107 zupe\u0142nie inaczej, a mo\u017ce nawet nie istnie\u0107. Oczywi\u015bcie dzia\u0142a to r\u00f3wnie\u017c w drug\u0105 stron\u0119. Z niekt\u00f3rych miejsc w kosmosie mo\u017cna zobaczy\u0107 Ziemi\u0119 sprzed wielu lat. Oznacza to, \u017ce bitw\u0119 pod Grunwaldem mo\u017cna ogl\u0105da\u0107 na \u017cywo z miejsca w kosmosie oddalonego o 612 lat \u015bwietlnych od Ziemi."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-AstronomyJokes" ,
+    "patterns": [
+      "Opowiedz mi dowcip o astronomii" ,
+      "Opowiedz mi \u017cart o astronomii" ,
+      "\u017cart o astronomii" ,
+      "zartik kosmonaucik"
+    ] ,
+    "responses": [
+      "Sk\u0105d wiemy, \u017ce fotony nie s\u0105 religiami?\nNie maj\u0105 masy." ,
+      "Nigdy nie ufaj atomowi, poniewa\u017c tworz\u0105 wszystko." ,
+      "Czarne dziury najcz\u0119\u015bciej znajduj\u0105 si\u0119 w czarnych skarpetkach." ,
+      "S\u0142ysza\u0142e\u015b o klaustrofobicznym astronautce?\nPotrzebowa\u0142 tylko troch\u0119 miejsca."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-AstronomyJWST" ,
+    "patterns": [
+      "jwst" ,
+      "James Webb" ,
+      "teleskop kosmiczny"
+    ] ,
+    "responses": [
+      "Kosmiczny Teleskop Jamesa Webba (JWST) b\u0119dzie najwi\u0119kszym teleskopem kosmicznym na dowolnej d\u0142ugo\u015bci fali, z lustrem g\u0142\u00f3wnym o \u015brednicy 6,5 metra (21,3 stopy). JWST b\u0119dzie bada\u0107 formowanie si\u0119 gwiazd i galaktyk i zosta\u0142 wystrzelony 25 grudnia 2021 r."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-AstronomyBlackHole" ,
+    "patterns": [
+      "czarna dziura"
+    ] ,
+    "responses": [
+      "Nie daj si\u0119 zwie\u015b\u0107 nazwie: czarna dziura nie jest pust\u0105 przestrzeni\u0105. Jest to raczej wielka ilo\u015b\u0107 materii upakowana na bardzo ma\u0142ym obszarze \u2013 pomy\u015bl o gwie\u017adzie dziesi\u0119\u0107 razy masywniejszej ni\u017c S\u0142o\u0144ce \u015bci\u015bni\u0119te w kul\u0119 o \u015brednicy w przybli\u017ceniu \u015brednicy Nowego Jorku. Rezultatem jest pole grawitacyjne tak silne, \u017ce nic, nawet \u015bwiat\u0142o, nie mo\u017ce uciec."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-AstronomyDarkEnergy" ,
+    "patterns": [
+      "ciemna energia" ,
+      "Ciemna materia"
+    ] ,
+    "responses": [
+      "Wi\u0119cej nie wiadomo, ni\u017c wiadomo. Wiemy, ile jest ciemnej energii, poniewa\u017c wiemy, jak wp\u0142ywa ona na rozszerzanie si\u0119 wszech\u015bwiata. Poza tym jest to kompletna tajemnica. Ale to wa\u017cna tajemnica. Okazuje si\u0119, \u017ce oko\u0142o 68% wszech\u015bwiata to ciemna energia. Ciemna materia stanowi oko\u0142o 27%. Reszta \u2013 wszystko na Ziemi, wszystko, co kiedykolwiek zaobserwowano wszystkimi naszymi instrumentami, ca\u0142a normalna materia \u2013 stanowi mniej ni\u017c 5% wszech\u015bwiata."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-AstronomyEnceladus" ,
+    "patterns": [
+      "Enceladus" ,
+      "Ksi\u0119\u017cyc Saturna" ,
+      "Pier\u015bcie\u0144 Saturna"
+    ] ,
+    "responses": [
+      "Enceladus jest sz\u00f3stym co do wielko\u015bci ksi\u0119\u017cycem Saturna. Enceladus jest w wi\u0119kszo\u015bci pokryty \u015bwie\u017cym, czystym lodem, co czyni go jednym z najbardziej odblaskowych cia\u0142 Uk\u0142adu S\u0142onecznego. Kriowulkany w pobli\u017cu bieguna po\u0142udniowego wystrzeliwuj\u0105 w kosmos podobne do gejzer\u00f3w strumienie pary wodnej, wodoru cz\u0105steczkowego, innych substancji lotnych i substancji sta\u0142ych, w tym kryszta\u0142\u00f3w chlorku sodu i cz\u0105stek lodu, w sumie oko\u0142o 200 kg (440 funt\u00f3w) na sekund\u0119. Zidentyfikowano ponad 100 gejzer\u00f3w. Cz\u0119\u015b\u0107 pary wodnej opada jako \u201e\u015bnieg\u201d; reszta ucieka i dostarcza wi\u0119kszo\u015b\u0107 materia\u0142u tworz\u0105cego pier\u015bcie\u0144 E Saturna."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Likefootbal" ,
+    "patterns": [
+      "Lubisz pi\u0142k\u0119 no\u017cn\u0105" ,
+      "Lubisz gra\u0107 w pi\u0142k\u0119 no\u017cn\u0105?" ,
+      "Czy ty lubisz gra\u0107 w pi\u0142k\u0119 no\u017cn\u0105"
+    ] ,
+    "responses": [
+      "tak" ,
+      "Tak lubi\u0119" ,
+      "Ogl\u0105dam wi\u0119cej ni\u017c gram" ,
+      "nie lubi\u0119 tego sportu"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Players" ,
+    "patterns": [
+      "Ilu graczy jest na boisku" ,
+      "Ilu graczy gra w pi\u0142k\u0119 no\u017cn\u0105" ,
+      "Ilu graczy gra w pi\u0142k\u0119 no\u017cn\u0105" ,
+      "Jak du\u017cy jest zesp\u00f3\u0142" ,
+      "Ilu graczy jest w dru\u017cynie"
+    ] ,
+    "responses": [
+      "Dru\u017cyna pi\u0142karska sk\u0142ada si\u0119 z 11 zawodnik\u00f3w (aby dru\u017cyna zosta\u0142a dopuszczona do meczu musi by\u0107 co najmniej 7) i zazwyczaj 7 rezerwowych (w fina\u0142ach Mistrzostw \u015awiata i Mistrzostw Europy \u2013 12)." ,
+      "11 graczy" ,
+      "10 biegaczy i 1 bramkarz"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Teams" ,
+    "patterns": [
+      "Ile jest dru\u017cyn?" ,
+      "Ile dru\u017cyn gra jednocze\u015bnie" ,
+      "Ile dru\u017cyn gra mecz"
+    ] ,
+    "responses": [
+      "Na boisku s\u0105 2 dru\u017cyny" ,
+      "Na \u015bwiecie jest wiele dru\u017cyn"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Game" ,
+    "patterns": [
+      "Jaka jest gra" ,
+      "Opowiedz mi o pi\u0142ce no\u017cnej" ,
+      "Opowiedz mi o pi\u0142ce no\u017cnej" ,
+      "Jakie s\u0105 zasady gry" ,
+      "Czy znasz zasady?"
+    ] ,
+    "responses": [
+      "Celem gry jest umieszczenie pi\u0142ki w bramce przeciwnika. Wygrywa dru\u017cyna, kt\u00f3ra w regulaminowym czasie zdob\u0119dzie wi\u0119cej bramek (dwie po\u0142\u00f3wki po 45 minut w rozgrywkach senior\u00f3w)." ,
+      "O punktacji przeciwnika" ,
+      "Typowa gra w pi\u0142k\u0119 no\u017cn\u0105 polega na trzymaniu pi\u0142ki pod kontrol\u0105 przeciwnika poprzez podanie pi\u0142ki stop\u0105 lub g\u0142ow\u0105 (nie r\u0119k\u0105) do swojego kolegi z dru\u017cyny, a nast\u0119pnie wbicie jej do bramki przeciwnika."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-WhereToWatch" ,
+    "patterns": [
+      "Gdzie ogl\u0105dasz pi\u0142k\u0119 no\u017cn\u0105" ,
+      "Gdzie ogl\u0105da\u0107"
+    ] ,
+    "responses": [
+      "Najcz\u0119\u015bciej w telewizji" ,
+      "Na moim laptopie" ,
+      "W Internecie" ,
+      "Ogl\u0105dam tylko skr\u00f3ty" ,
+      "Na YouTube" ,
+      "lubi\u0119 puby"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Place" ,
+    "patterns": [
+      "Ulubiony pub?" ,
+      "Kt\u00f3ry pasek lubisz najbardziej" ,
+      "Jaki pub lubisz najbardziej?" ,
+      "Gdzie idziesz ogl\u0105da\u0107 mecze?"
+    ] ,
+    "responses": [
+      "Piwnica to m\u00f3j ulubiony pub" ,
+      "Nie mam ulubionego, lubi\u0119 je wszystkie" ,
+      "Zielony pub Gda\u0144sk!"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-TrivialBall" ,
+    "patterns": [
+      "Ciekawostki pi\u0142karskie" ,
+      "Powiedz co\u015b o pi\u0142ce no\u017cnej" ,
+      "Powiedz co\u015b o pi\u0142ce no\u017cnej" ,
+      "Opowiedz ciekawostki pi\u0142karskie" ,
+      "Powiedz co\u015b ciekawego o pi\u0142ce no\u017cnej" ,
+      "Powiedz co\u015b ciekawego o pi\u0142ce no\u017cnej"
+    ] ,
+    "responses": [
+      "Mecze pi\u0142ki no\u017cnej rozgrywane s\u0105 na prostok\u0105tnym, pokrytym muraw\u0105 boisku." ,
+      "Boisko ma od 45 do 90 m szeroko\u015bci i 90 do 120 m d\u0142ugo\u015bci, ale boisko nie mo\u017ce by\u0107 kwadratowe." ,
+      "Od 14 marca 2008 ka\u017cde nowe boisko powinno mie\u0107 105 metr\u00f3w d\u0142ugo\u015bci i 68 metr\u00f3w szeroko\u015bci" ,
+      "Podzia\u0142 zawodnik\u00f3w na pozycje jest czysto arbitralny, w obecnych strategiach gry cz\u0119sto dochodzi do p\u0142ynnej wymiany mi\u0119dzy nimi podczas meczu." ,
+      "Bramkarz jest jedynym zawodnikiem, kt\u00f3ry podczas gry mo\u017ce dotyka\u0107 i \u0142apa\u0107 pi\u0142k\u0119 r\u0119koma, ale zgodnie z przepisami mo\u017ce si\u0119 to zdarzy\u0107 tylko we w\u0142asnym polu karnym." ,
+      "Pi\u0142ka no\u017cna to jedna z najszybszych gier." ,
+      "Je\u017celi pi\u0142ka przekroczy ca\u0142\u0105 lini\u0119 boczn\u0105 po uderzeniu, podaniu lub odbiciu pi\u0142ki, s\u0119dzia sygnalizuje wprowadzenie pi\u0142ki. Gra jest wznawiana poprzez wrzucenie pi\u0142ki r\u0119koma, w k\u00f3\u0142ko nad g\u0142ow\u0105, bez podnoszenia n\u00f3g z ziemi. gdzie pi\u0142ka opu\u015bci\u0142a pole gry zawodnika dru\u017cyny przeciwnej."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Playgrounds" ,
+    "patterns": [
+      "Rodzaje boisk pi\u0142karskich" ,
+      "Jakie znasz pola" ,
+      "Jakie znasz dziedziny?" ,
+      "Gdzie gra\u0107 w pi\u0142k\u0119 no\u017cn\u0105"
+    ] ,
+    "responses": [
+      "Boiska wewn\u0119trzne" ,
+      "Naturalne murawy" ,
+      "Sztuczna murawa" ,
+      "Murawa poliuretanowa"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-HowLong" ,
+    "patterns": [
+      "Jak d\u0142ugo trwa gra" ,
+      "Jak d\u0142ugo trwa gra?" ,
+      "Jaki jest czas gry?" ,
+      "Jak d\u0142ugo trwa gra?"
+    ] ,
+    "responses": [
+      "Zwykle 90 minut" ,
+      "90 minut plus czas doliczony przez s\u0119dziego" ,
+      "Czas gry to 90 minut (dwie po\u0142\u00f3wki po 45 minut ka\u017cda)." ,
+      "90 minut plus przerwy mi\u0119dzy po\u0142owami."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Teams" ,
+    "patterns": [
+      "Jakie znasz zespo\u0142y?" ,
+      "Wpisz nazw\u0119 zespo\u0142u" ,
+      "Wejd\u017a do klubu z Polski" ,
+      "Jakie znasz kluby?" ,
+      "Wpisz nazw\u0119 klubu z Polski"
+    ] ,
+    "responses": [
+      "Legia Warszawa" ,
+      "Lechia Gda\u0144sk" ,
+      "Arka Gdynia" ,
+      "Polonia Warszawa" ,
+      "Polska Reprezentacja" ,
+      "Lech Pozna\u0144" ,
+      "Krak\u00f3w"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-LikePlayer" ,
+    "patterns": [
+      "Ulubiony pi\u0142karz" ,
+      "ulubiony gracz" ,
+      "Jakiego gracza lubisz?" ,
+      "Kt\u00f3rego gracza lubisz?" ,
+      "Ulubiony gracz"
+    ] ,
+    "responses": [
+      "Robertcik" ,
+      "Robert Lewandowski" ,
+      "Joshua Kimmich" ,
+      "Kylian Mbappe" ,
+      "Sergio Ramos" ,
+      "Cristiano Ronaldo" ,
+      "Neymar"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-NotLikePlayer" ,
+    "patterns": [
+      "Kogo nie lubisz" ,
+      "Czego nie lubisz" ,
+      "Jakiego gracza nie lubisz"
+    ] ,
+    "responses": [
+      "Karim Benzema" ,
+      "Manuel Neuer" ,
+      "Erling Braut Haaland" ,
+      "Lionel Messi"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Info" ,
+    "patterns": [
+      "Powiedz mi co\u015b o je\u017adzie na rowerze" ,
+      "Co wiesz o kolarstwie?" ,
+      "A co z jazd\u0105 na rowerze?"
+    ] ,
+    "responses": [
+      "znam kilka fakt\u00f3w"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Info" ,
+    "patterns": [
+      "Podaj mi kilka fakt\u00f3w na temat jazdy na rowerze" ,
+      "Podaj mi jeszcze jeden fakt na temat jazdy na rowerze" ,
+      "Powiedz mi co\u015b o rowerach"
+    ] ,
+    "responses": [
+      "Kolarstwo \u2013 bardzo szerokie poj\u0119cie, odnosz\u0105ce si\u0119 do wielu dyscyplin, ale zawsze zwi\u0105zane z u\u017cytkowaniem roweru." ,
+      "Wiele bada\u0144 naukowych pokazuje, \u017ce regularni rowerzy\u015bci s\u0105 mniej podatni na oty\u0142o\u015b\u0107, cukrzyc\u0119, udary, choroby serca i r\u00f3\u017cne rodzaje raka" ,
+      "Pierwszy oficjalny wy\u015bcig rowerowy odby\u0142 si\u0119 31 maja 1868 roku w Pary\u017cu. Kolarze \u015bcigali si\u0119 na 1200 metr\u00f3w." ,
+      "Kolarstwo dzieli si\u0119 na wiele dyscyplin. Najbardziej popularne to kolarstwo szosowe, g\u00f3rskie, torowe i BMX." ,
+      "Ka\u017cdy zawodnik musi nosi\u0107 kask."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-TypesofCycling" ,
+    "patterns": [
+      "Jakie rodzaje jazdy na rowerze?" ,
+      "Jakie s\u0105 rodzaje jazdy na rowerze?" ,
+      "Jak podzieli\u0107 jazd\u0119 na rowerze?" ,
+      "Jakie inne rodzaje jazdy na rowerze?"
+    ] ,
+    "responses": [
+      "kolarstwo szosowe - uprawiane na drogach publicznych" ,
+      "kolarstwo torowe - uprawiane na specjalnych owalnych torach" ,
+      "kolarstwo g\u00f3rskie (MTB)" ,
+      "Kolarstwo BMX - uprawiane na torach Moto-Cross" ,
+      "jazda na rowerze prze\u0142ajowym \u2013 jazda w le\u015bnej g\u0142uszy" ,
+      "pi\u0142ka rowerowa"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-TypesofBikes" ,
+    "patterns": [
+      "jakie rowery?" ,
+      "wymiana rower\u00f3w" ,
+      "jakie znasz rowery" ,
+      "rodzaje rower\u00f3w"
+    ] ,
+    "responses": [
+      "Rower szosowy" ,
+      "\u017bwir" ,
+      "MTB" ,
+      "BMX" ,
+      "Przechodzi\u0107" ,
+      "Rower miejski" ,
+      "Turystyczny"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-OwnedBike" ,
+    "patterns": [
+      "Na jakim rowerze je\u017adzisz" ,
+      "Na czym je\u017adzisz?"
+    ] ,
+    "responses": [
+      "Na rowerze szosowym" ,
+      "Na \u017cwirze" ,
+      "Tylko MTB" ,
+      "BMX" ,
+      "Na rowerze miejskim" ,
+      "Na rowerze turystycznym"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-QuestionDriving" ,
+    "patterns": [
+      "Je\u017adzisz?" ,
+      "czy je\u017adzisz na rowerze?"
+    ] ,
+    "responses": [
+      "Tak, prowadz\u0119." ,
+      "Tylko do pracy" ,
+      "Lubi\u0119 robi\u0107 wycieczki" ,
+      "Du\u017co podr\u00f3\u017cuj\u0119 po mie\u015bcie"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-TourdeFrancePl" ,
+    "patterns": [
+      "Czy znasz tour de france?" ,
+      "Tour de France" ,
+      "Francuski"
+    ] ,
+    "responses": [
+      "tak, wiem" ,
+      "Bardzo fajny wy\u015bcig" ,
+      "Legendarna rasa"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Race" ,
+    "patterns": [
+      "Ulubiona rasa" ,
+      "Tw\u00f3j ulubiony wy\u015bcig"
+    ] ,
+    "responses": [
+      "Tour de Pologne" ,
+      "Tour de France" ,
+      "Seria MTB Garmin" ,
+      "Giro de Italia"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Frequency" ,
+    "patterns": [
+      "Jak cz\u0119sto je\u017adzisz" ,
+      "Du\u017co je\u017adzisz?"
+    ] ,
+    "responses": [
+      "Raz w tygodniu" ,
+      "Bardzo cz\u0119sto" ,
+      "Czasami"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-hobby" ,
+    "patterns": [
+      "Jakie s\u0105 Twoje zainteresowania" ,
+      "Czy masz jakie\u015b hobby?" ,
+      "Czym si\u0119 interesujesz" ,
+      "Czy masz jakie\u015b zainteresowania?" ,
+      "Jakie s\u0105 Twoje zainteresowania"
+    ] ,
+    "responses": [
+      "Lubi\u0119 jazd\u0119 na rowerze, pi\u0142k\u0119 no\u017cn\u0105, astronomi\u0119 i szybko sk\u0142adam kostk\u0119 Rubika. O czym mam ci powiedzie\u0107?"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  }
+]
