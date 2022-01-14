@@ -1,0 +1,65 @@
+Input: hej
+bot_answer: Czesc czlowieku, prosze powiedz mi, ze jestes uzytkownikiem GeniSys
+Input: hola
+bot_answer: Don't know
+Input: fff
+bot_answer: Don't know
+Input: sss
+bot_answer: Don't know
+Input: czesc
+bot_answer: Czesc czlowieku, prosze powiedz mi, ze jestes uzytkownikiem GeniSys
+Input: czym sie interesujesz
+bot_answer: Lubie jazde na rowerze, pilke nozna, astronomie i szybko skladam kostke Rubika. O czym mam ci powiedziec?
+Input: rubik
+bot_answer: Don't know
+Input: kostka rubika
+bot_answer: Znam tylko kilka faktow, o kazdy mozesz mnie zapytac
+Input: czy masz jakies hobby
+bot_answer: Lubie jazde na rowerze, pilke nozna, astronomie i szybko skladam kostke Rubika. O czym mam ci powiedziec?
+Input: hobbi
+bot_answer: Don't know
+Input: czy masz jakies hobbi
+bot_answer: Don't know
+Input: hobby
+bot_answer: On the road bike
+Input: what's your hobby
+bot_answer: Polonia Warszawa
+Input: what's your hobby
+bot_answer: Polska Reprezentacja
+Input: what's your
+bot_answer: Call me Geni
+Input: astronomia
+bot_answer: Don't know
+Input: cos o astronomii
+bot_answer: Co chcesz wiedziec? Niektore fakty znam tez jako zarty.
+Input: zart astronomia
+bot_answer: Don't know
+Input: zart astronomii
+bot_answer: Slyszales o klaustrofobicznym astronautce?
+Potrzebowal tylko troche miejsca.
+Input: hi
+bot_answer: Hola human, please tell me your GeniSys user
+Input: czesc
+bot_answer: Czesc czlowieku, prosze powiedz mi, ze jestes uzytkownikiem GeniSys
+Input: hobby
+bot_answer: Well I would not be a very clever AI if I did not would I?
+Input: what hobby you have
+bot_answer: I like cycling, soccer, astronomy and I fold the Rubik's Cube quickly. What should I tell you about?
+Input: jakie twoje hobby
+bot_answer: Don't know
+Input: co lubisz robic
+bot_answer: Lubie jazde na rowerze, pilke nozna, astronomie i szybko skladam kostke Rubika. O czym mam ci powiedziec?
+Input: co robisz po pracy
+bot_answer: Don't know
+Input: co lubisz robic po pracy
+bot_answer: Lubie jazde na rowerze, pilke nozna, astronomie i szybko skladam kostke Rubika. O czym mam ci powiedziec?
+Input: jakie hobby jest twoje ulubione
+bot_answer: Don't know
+Input: co lubisz robic po pracy
+bot_answer: Lubie jazde na rowerze, pilke nozna, astronomie i szybko skladam kostke Rubika. O czym mam ci powiedziec?
+Input: jakie masz ulubione hobby
+bot_answer: Prosze nie przeklinac
+Input: jakie jest twoje ulubione zainteresowanie
+bot_answer: 90 minut plus czas doliczony przez sedziego
+Input: ulubiony pilkarz
+bot_answer: Sergio Ramos

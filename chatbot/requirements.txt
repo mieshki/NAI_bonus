@@ -1,0 +1,96 @@
+absl-py @ file:///opt/conda/conda-bld/absl-py_1639803114343/work
+aiohttp @ file:///C:/ci/aiohttp_1632749616620/work
+astor==0.8.1
+async-timeout==3.0.1
+attrs @ file:///tmp/build/80754af9/attrs_1620827162558/work
+beautifulsoup4==4.10.0
+blinker==1.4
+blis @ file:///C:/ci/cython-blis_1613319550054/work
+brotlipy==0.7.0
+cachetools @ file:///tmp/build/80754af9/cachetools_1619597386817/work
+catalogue @ file:///tmp/build/80754af9/catalogue_1608238891378/work
+certifi==2021.5.30
+cffi @ file:///C:/ci/cffi_1625831763871/work
+chardet==3.0.4
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.0.3
+colorama==0.4.4
+contextvars==2.4
+coverage @ file:///C:/ci/coverage_1614614921360/work
+cryptography @ file:///C:/ci/cryptography_1616769514516/work
+cymem @ file:///C:/ci/cymem_1613319479701/work
+Cython @ file:///C:/ci/cython_1626257069493/work
+deep-translator==1.5.0
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
+gast==0.2.2
+google-auth @ file:///tmp/build/80754af9/google-auth_1626320605116/work
+google-auth-oauthlib @ file:///tmp/build/80754af9/google-auth-oauthlib_1617120569401/work
+google-pasta @ file:///Users/ktietz/demo/mc3/conda-bld/google-pasta_1630577991354/work
+googletrans==4.0.0rc1
+grpcio @ file:///C:/ci/grpcio_1614884461394/work
+h11==0.9.0
+h2==3.2.0
+h5py==2.10.0
+hpack==3.0.0
+hstspreload==2021.12.1
+httpcore==0.9.1
+httpx==0.13.3
+hyperframe==5.2.0
+idna==2.10
+idna-ssl @ file:///C:/ci/idna_ssl_1611752657819/work
+immutables==0.16
+importlib-metadata @ file:///C:/ci/importlib-metadata_1631916885413/work
+joblib==0.13.2
+jsonschema==3.0.2
+Keras-Applications @ file:///tmp/build/80754af9/keras-applications_1594366238411/work
+Keras-Preprocessing @ file:///tmp/build/80754af9/keras-preprocessing_1612283640596/work
+Markdown @ file:///C:/ci/markdown_1614364003005/work
+mkl-fft==1.3.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+multidict @ file:///C:/ci/multidict_1607362067746/work
+murmurhash @ file:///C:/ci/murmurhash_1607456164222/work
+nltk==3.6.5
+numpy @ file:///C:/ci/numpy_and_numpy_base_1603480701039/work
+oauthlib @ file:///tmp/build/80754af9/oauthlib_1623060228408/work
+opt-einsum @ file:///tmp/build/80754af9/opt_einsum_1621500238896/work
+Pillow==8.4.0
+plac @ file:///C:/ci/plac_1594260068208/work
+preshed @ file:///C:/ci/preshed_1621861011437/work
+protobuf==3.17.2
+pyasn1 @ file:///Users/ktietz/demo/mc3/conda-bld/pyasn1_1629708007385/work
+pyasn1-modules==0.2.8
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+PyJWT @ file:///C:/ci/pyjwt_1619651879817/work
+pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1635333100036/work
+pyreadline==2.1
+pyrsistent @ file:///C:/ci/pyrsistent_1600141799440/work
+PySocks @ file:///C:/ci/pysocks_1605305839978/work
+regex @ file:///C:/ci/regex_1629302333945/work
+requests @ file:///opt/conda/conda-bld/requests_1641824580448/work
+requests-oauthlib==1.3.0
+rfc3986==1.5.0
+rsa @ file:///tmp/build/80754af9/rsa_1614366226499/work
+scipy @ file:///C:/ci/scipy_1597675683670/work
+six @ file:///tmp/build/80754af9/six_1623709665295/work
+sniffio==1.2.0
+soupsieve==2.3.1
+spacy @ file:///C:/ci/spacy_1608303000480/work
+srsly @ file:///C:/ci/srsly_1607548189686/work
+tensorboard @ file:///home/builder/ktietz/aggregate/tensorflow_recipes/ci_te/tensorboard_1614593728657/work/tmp_pip_dir
+tensorboard-plugin-wit==1.6.0
+tensorflow==2.1.0
+tensorflow-estimator @ file:///home/builder/adipietro/tf/tensorflow-estimator_1630508970172/work/tensorflow_estimator-2.6.0-py2.py3-none-any.whl
+termcolor==1.1.0
+tflearn==0.5.0
+thinc @ file:///C:/ci/thinc_1607710275191/work
+tqdm @ file:///tmp/build/80754af9/tqdm_1635330843403/work
+typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1631814937681/work
+urllib3==1.26.7
+wasabi @ file:///tmp/build/80754af9/wasabi_1612219178408/work
+Werkzeug==0.16.1
+win-inet-pton @ file:///C:/ci/win_inet_pton_1605306197271/work
+wincertstore==0.2
+wrapt==1.12.1
+yarl @ file:///C:/ci/yarl_1606921989557/work
+zipp @ file:///tmp/build/80754af9/zipp_1633618647012/work

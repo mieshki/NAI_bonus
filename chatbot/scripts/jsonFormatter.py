@@ -2,7 +2,11 @@ from json import load, dump
 
 
 def formater():
-    file = open('data/intent.json')
+    """
+    This function allow to format files to needed json format
+    It creates Json input file used to train chatbot model
+    """
+    file = open('../data/intent.json')
     json_data = load(file)
 
     """
@@ -46,12 +50,9 @@ def formater():
     # responses -> responses
     # context -> context
 
-    data = {}
-    data['intents'] = []
+    data = {'intents': []}
 
     all_intents = []
-
-
 
     for intent in json_data['intents']:
         temp_intent = {}
@@ -68,5 +69,3 @@ def formater():
         dump(all_intents, f)
 
     #json_data = json.dumps(data)
-
-    return None

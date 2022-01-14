@@ -11,147 +11,178 @@ Required python version 3.6
 
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
-from translate import intent_translator
 import numpy
 import tflearn
-import tensorflow
 import random
 import json
 import pickle
-from json import dump
-
-stemmer = LancasterStemmer()
+from config import *
 
 
-with open("intents-adv.json") as file:
-    data = json.load(file)
+def trainModel():
+    """
+    This function uses prepared json file to train chatbot model.
+    Input file contains intents with responses and answers in json format.
+    Here we decode all words and create arrays with tags and words.
 
-try:
-    with open("data.pickle", "rb") as f:
-        words, labels, training, output = pickle.load(f)
-except:
-    words = []
-    labels = []
-    docs_x = []
-    docs_y = []
+    :return:
+    model this is our AI model that will chat with human,
+    all_tags array will all tags from our intent file,
+    data loaded and formatted json file,
+    all_intents_words array with stemmed words  without duplicates
+    """
 
-    for intent in data["intents"]:
-        for pattern in intent["patterns"]:
-            wrds = nltk.word_tokenize(pattern)
-            words.extend(wrds)
-            docs_x.append(wrds)
-            docs_y.append(intent["tag"])
+    stemmer = LancasterStemmer()
 
-        if intent["tag"] not in labels:
-            labels.append(intent["tag"])
+    with open(f'data\\{INTENT_FILE_TO_TRAIN}') as file:
+        data = json.load(file)
 
-    words = [stemmer.stem(w.lower()) for w in words if w != "?"]
-    words = sorted(list(set(words)))
+    try:
+        with open(f'model\\{PICKLE_FILE_NAME}', 'rb') as f:
+            all_intents_words, all_tags, training, output = pickle.load(f)
+    except:
+        all_intents_words = []
+        all_tags = []
+        docs_x = []
+        docs_y = []
 
-    labels = sorted(labels)
+        for intent in data["intents"]:
+            for pattern in intent["patterns"]:
+                wrds = nltk.word_tokenize(pattern)
+                all_intents_words.extend(wrds)
+                docs_x.append(wrds)
+                docs_y.append(intent["tag"])
 
-    training = []
-    output = []
+            if intent["tag"] not in all_tags:
+                all_tags.append(intent["tag"])
 
-    out_empty = [0 for _ in range(len(labels))]
+        all_intents_words = [stemmer.stem(w.lower()) for w in all_intents_words if w != "?"]
+        all_intents_words = sorted(list(set(all_intents_words)))
 
-    for x, doc in enumerate(docs_x):
-        bag = []
+        all_tags = sorted(all_tags)
 
-        wrds = [stemmer.stem(w.lower()) for w in doc]
+        training = []
+        output = []
 
-        for w in words:
-            if w in wrds:
-                bag.append(1)
-            else:
-                bag.append(0)
+        out_empty = [0 for _ in range(len(all_tags))]
 
-        output_row = out_empty[:]
-        output_row[labels.index(docs_y[x])] = 1
+        for x, doc in enumerate(docs_x):
+            bag = []
 
-        training.append(bag)
-        output.append(output_row)
+            wrds = [stemmer.stem(w.lower()) for w in doc]
+
+            for w in all_intents_words:
+                if w in wrds:
+                    bag.append(1)
+                else:
+                    bag.append(0)
+
+            output_row = out_empty[:]
+            output_row[all_tags.index(docs_y[x])] = 1
+
+            training.append(bag)
+            output.append(output_row)
+
+        training = numpy.array(training)
+        output = numpy.array(output)
+
+        with open(f'model\\{PICKLE_FILE_NAME}', 'wb') as f:
+            pickle.dump((all_intents_words, all_tags, training, output), f)
+
+    """ Load existing model or train and save new one """
+    net = tflearn.input_data(shape=[None, len(training[0])])
+    net = tflearn.fully_connected(net, 8)
+    net = tflearn.fully_connected(net, 8)
+    net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
+    net = tflearn.regression(net)
+
+    model = tflearn.DNN(net)
+
+    try:
+        with open(f'.\\model\\{MODEL_FILE_NAME}.index', 'r'):
+            print("Available")
+        model.load(f'.\\model\\{MODEL_FILE_NAME}')
+
+    except:
+        # 10% of training data used for validation
+        #model.fit(X, Y, validation_set=0.1)
+        model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True, validation_set=0.1)
+        model.save(f'model\\{MODEL_FILE_NAME}')
+
+    return [model, all_tags, data, all_intents_words]
 
 
-    training = numpy.array(training)
-    output = numpy.array(output)
+def bag_of_words(input, words):
+    """
+    This function checks how many words from input string are available in our words list.
+    It returns array of 0 and 1 where 1 menas that words from input exist in words list and 0 it isn't
+    :param input: Input string form user
+    :param words: Array with stemmed words without duplicates
+    """
+    stemmer = LancasterStemmer()
 
-    with open("data.pickle", "wb") as f:
-        pickle.dump((words, labels, training, output), f)
-
-#tensorflow.reset_default_graph()
-
-net = tflearn.input_data(shape=[None, len(training[0])])
-net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
-net = tflearn.regression(net)
-
-model = tflearn.DNN(net)
-
-"""
-try:
-    model.load("model.tflearn")
-except:
-    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
-    model.save("model.tflearn")
-"""
-model.fit(training, output, n_epoch=1, batch_size=8, show_metric=True)
-
-def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
 
-    s_words = nltk.word_tokenize(s)
-    s_words = [stemmer.stem(word.lower()) for word in s_words]
+    input_words = nltk.word_tokenize(input)
+    input_words = [stemmer.stem(word.lower()) for word in input_words]
 
-    for se in s_words:
-        for i, w in enumerate(words):
-            if w == se:
+    for input_word in input_words:
+        for i, word in enumerate(words):
+            if word == input_word:
                 bag[i] = 1
 
     return numpy.array(bag)
 
 
-def chat():
+def normalize_polish_characters(str):
     """
+    This function replaces all polish characters from user's input
+    :param str: Message from user
+    :return: String without polish characters
+    """
+    return str.replace('ą', 'a').replace('ć', 'c').replace('ę', 'e').replace('ł', 'l').replace('ń', 'n').replace('ó', 'o').replace(
+        'ś', 's').replace('ź', 'z').replace('ż', 'z')
 
-    :return:
+
+def chat(model, tags, data, words):
+    """
+    This function is responsible for chat with users. Answer is predicted basing on our trained model.
+    It saves all conversation to provide more patterns and responses for future development.
+    :param model: Trained model used to predict answers
+    :param tags: Array with all tags available in intents source
+    :param data: loaded and formatted json file with all intents raw data
+    :param words: array with stemmed words without duplicates
     """
     print("Start talking with the bot (type quit to stop)!")
-    output = {}
-    output["input"] = []
-    output["bot_answer"] = []
+
     while True:
-        inp = input("You: ")
+        with open(f'logs\\{CHAT_HISTORY_LOG_FILE_NAME}', 'a') as f:
+            inp = input('You: ')
 
-        if inp.lower() == "quit":
-            break
+            if inp.lower() == 'quit':
+                break
 
-        print(f'[DEBUG] Input before: {inp}')
-        inp = inp.lower().replace('ą', 'a').replace('ć', 'c').replace('ę', 'e').replace('ł', 'l').replace('ń', 'n').replace('ó', 'o').replace('ś', 's').replace('ź', 'z').replace('ż', 'z')
-        print(f'[DEBUG] Input after: {inp}')
+            #print(f'[DEBUG] Input before: {inp}')
+            inp = normalize_polish_characters(inp.lower())
+            #print(f'[DEBUG] Input after: {inp}')
 
-        results = model.predict([bag_of_words(inp, words)])[0]
-        results_index = numpy.argmax(results)
-        tag = labels[results_index]
-        output["input"].append(inp)
-        if results[results_index] > 0.85:
-            for tg in data["intents"]:
-                # pl-greeting
-                # en-greeting
-                # if tg['tag'] == f'{language}-tag':
-                if tg['tag'] == tag:
-                    responses = tg['responses']
-            answer = random.choice(responses)
-            print(answer)
-            output["bot_answer"].append(answer)
-        else:
-            print("I don't know :C")
-            output["bot_answer"].append("Don't know")
+            results = model.predict([bag_of_words(inp, words)])[0]
+            results_index = numpy.argmax(results)
+            tag = tags[results_index]
 
-        with open('output_data.txt', 'a') as f:
-            dump(output, f)
-            f.write(',')
+            f.write(f'Input: {inp}\n')
 
-#intent_translator()
-chat()
+            if results[results_index] > CONFIDENCE_LEVEL:
+                for tg in data["intents"]:
+                    if tg['tag'] == tag:
+                        responses = tg['responses']
+                answer = random.choice(responses)
+                print(answer)
+                f.write(f'bot_answer: {answer}\n')
+            else:
+                print('I don\'t know :C')
+                f.write('bot_answer: Don\'t know\n')
+
+
+if __name__ == '__main__':
+    chat(*trainModel())

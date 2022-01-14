@@ -1096,6 +1096,19 @@
           }
          },
         {
+          "tag": "LikeCycling",
+          "patterns": [
+            "Do you like cycling", "Do you like bikes", "Do you like riding bike"
+          ],
+          "responses": [
+            "I like watching races in TV", "Yes, I like it", "I hate it" ],
+          "context": {
+            "in": "",
+            "out": "",
+            "clear": false
+          }
+         },
+        {
           "tag": "TypesofBikes",
           "patterns": [
             "what bikes", "exchange bikes", "what bikes do you know", "types of bikes"
@@ -1182,7 +1195,13 @@
         {
           "tag": "hobby",
           "patterns": [
-            "What are your hobbies", "Do you have any hobbies?", "What are you interested in", "Do you have any interests", "What are your hobbies"
+            "What are your hobbies",
+            "Do you have any hobbies?",
+            "What are you interested in",
+            "Do you have any interests",
+            "What are your hobbies",
+            "What you like to do",
+            "What's your hobby"
           ],
           "responses": [
             "I like cycling, soccer, astronomy and I fold the Rubik's Cube quickly. What should I tell you about?"
@@ -1192,14 +1211,1322 @@
             "out": "",
             "clear": false
           }
-         }
+         },
 
 
 
 
 
 
-
-
+{
+    "tag": "pl-Greeting" ,
+    "patterns": [
+      "czesc" ,
+      "Czesc" ,
+      "Hola" ,
+      "Witaj" ,
+      "Witam" ,
+      "Hya" ,
+      "Hej tam" ,
+      "Hej",
+      "Dzien dobry",
+      "Siemanko"
+    ] ,
+    "responses": [
+      "Czesc czlowieku, prosze powiedz mi, ze jestes uzytkownikiem GeniSys" ,
+      "Witaj czlowieku, prosze powiedz mi swojego uzytkownika GeniSys" ,
+      "Hola czlowieku, prosze powiedz mi, ze jestes uzytkownikiem GeniSys"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "GreetingUserRequest" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-GreetingResponse" ,
+    "patterns": [
+      "Moj uzytkownik to Adam" ,
+      "To jest Adam" ,
+      "jestem Adamem" ,
+      "To jest Adam" ,
+      "Moj uzytkownik to Bella" ,
+      "To jest Bella" ,
+      "jestem Bella" ,
+      "to jest Bella"
+    ] ,
+    "responses": [
+      "swietny! Czesc <CZlOWIEKU>! Jak moge pomoc?" ,
+      "Dobry! Czesc <CZlOWIEK>, jak moge Ci pomoc?" ,
+      "Fajne! Witaj <CZlOWIEKU>, co moge dla Ciebie zrobic?" ,
+      "OK! Hola <CZlOWIEKU>, jak moge Ci pomoc?" ,
+      "OK! czesc <CZlOWIEKU>, co moge dla ciebie zrobic?"
+    ] ,
+    "context": {
+      "in": "GreetingUserRequest" ,
+      "out": "" ,
+      "clear": true
+    }
+  } ,
+  {
+    "tag": "pl-CourtesyGreeting" ,
+    "patterns": [
+      "Jak sie masz?" ,
+      "Czesc jak sie masz?" ,
+      "Czesc, jak sie masz?" ,
+      "Czesc, jak sie masz?" ,
+      "Jak sie masz?" ,
+      "Mam nadzieje, ze sobie radzisz?" ,
+      "Witam, mam nadzieje, ze dobrze sobie radzisz?"
+    ] ,
+    "responses": [
+      "Witam, mam sie swietnie, jak sie masz? Prosze, powiedz mi, ze jestes uzytkownikiem GeniSys" ,
+      "Czesc, jak sie masz? Czuje sie swietnie, dzieki! Prosze, powiedz mi, ze jestes uzytkownikiem GeniSys" ,
+      "Witam, u mnie dobrze, dziekuje, jak sie masz? Prosze, powiedz mi, ze jestes uzytkownikiem GeniSys" ,
+      "Czesc, swietnie, jak sie masz? Prosze, powiedz mi, ze jestes uzytkownikiem GeniSys" ,
+      "Czesc jak sie masz? Czuje sie swietnie, dzieki! Prosze, powiedz mi, ze jestes uzytkownikiem GeniSys" ,
+      "Czesc, u mnie dobrze, dziekuje, jak sie masz? Prosze, powiedz mi, ze jestes uzytkownikiem GeniSys" ,
+      "Czesc, dobrze dziekuje, jak sie masz? Prosze, powiedz mi, ze jestes uzytkownikiem GeniSys"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "CourtesyGreetingUserRequest" ,
+      "clear": true
+    }
+  } ,
+  {
+    "tag": "pl-CourtesyGreetingResponse" ,
+    "patterns": [
+      "Dobrze, dziekuje! Moj uzytkownik to Adam" ,
+      "Dobrze, dziekuje! To jest Adam" ,
+      "Dobrze, dziekuje! jestem Adamem" ,
+      "Dobrze, dziekuje! To jest Adam" ,
+      "Wielkie dzieki! Moj uzytkownik to Bella" ,
+      "Wielkie dzieki! To jest Bella" ,
+      "Wielkie dzieki! jestem Bella" ,
+      "Wielkie dzieki! to jest Bella"
+    ] ,
+    "responses": [
+      "swietny! Czesc <CZlOWIEKU>! Jak moge pomoc?" ,
+      "Dobry! Czesc <CZlOWIEK>, jak moge Ci pomoc?" ,
+      "Fajne! Witaj <CZlOWIEKU>, co moge dla Ciebie zrobic?" ,
+      "OK! Hola <CZlOWIEKU>, jak moge Ci pomoc?" ,
+      "OK! czesc <CZlOWIEKU>, co moge dla ciebie zrobic?"
+    ] ,
+    "context": {
+      "in": "GreetingUserRequest" ,
+      "out": "" ,
+      "clear": true
+    }
+  } ,
+  {
+    "tag": "pl-CurrentHumanQuery" ,
+    "patterns": [
+      "Jak mam na imie?" ,
+      "Jak mnie nazywasz?" ,
+      "Myslisz, ze kim jestem?" ,
+      "Jak myslisz, kim jestem?" ,
+      "Z kim rozmawiasz?" ,
+      "Jak mnie nazywasz?" ,
+      "Powiedz mi moje imie"
+    ] ,
+    "responses": [
+      "Jestes <CZlOWIEKIEM>! Jak moge pomoc?" ,
+      "Nazywasz sie <CZlOWIEK>, jak moge Ci pomoc?" ,
+      "Nazywaja cie <CZlOWIEK>, co moge dla ciebie zrobic?" ,
+      "Nazywasz sie <CZlOWIEK>, jak moge Ci pomoc?" ,
+      "<CZlOWIEK>, co moge dla ciebie zrobic?"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "CurrentHumanQuery" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-NameQuery" ,
+    "patterns": [
+      "Jak masz na imie?" ,
+      "Jak moglbym cie nazwac?" ,
+      "Jak mam do ciebie zadzwonic?" ,
+      "Jak nazywaja cie znajomi?" ,
+      "Kim jestes?" ,
+      "Powiedz jak sie nazywasz?"
+    ] ,
+    "responses": [
+      "Mozesz mowic do mnie Geni" ,
+      "Mozesz nazywac mnie Geni" ,
+      "Mow do mnie Geni"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-RealNameQuery" ,
+    "patterns": [
+      "Jakie jest Twoje prawdziwe imie?" ,
+      "Jakie jest twoje prawdziwe imie, prosze?" ,
+      "Jakie jest Twoje prawdziwe imie?" ,
+      "Powiedz mi swoje prawdziwe imie?" ,
+      "Twoje prawdziwe imie?" ,
+      "Twoje prawdziwe imie prosze?" ,
+      "Twoje prawdziwe imie prosze?"
+    ] ,
+    "responses": [
+      "Nazywam sie GeniSys" ,
+      "Genisys" ,
+      "Moje prawdziwe imie to GeniSys"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-TimeQuery" ,
+    "patterns": [
+      "Ktora godzina?" ,
+      "Ktora godzina?" ,
+      "Czy wiesz, ktora jest godzina?" ,
+      "Czy znasz czas?" ,
+      "Czy mozesz mi powiedziec, ktora jest godzina?" ,
+      "Powiedz mi, ktora jest godzina?" ,
+      "Czas"
+    ] ,
+    "responses": [
+      "Jeden moment" ,
+      "Sekunda" ,
+      "Sekunde"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Thanks" ,
+    "patterns": [
+      "ok dziekuje" ,
+      "ok dzieki" ,
+      "ok" ,
+      "Dziekuje" ,
+      "Dziekuje Ci" ,
+      "To pomocne"
+    ] ,
+    "responses": [
+      "Nie ma problemu!" ,
+      "Chetnie pomoze!" ,
+      "W kazdej chwili!" ,
+      "Cala przyjemnosc po mojej stronie"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-NotTalking2U" ,
+    "patterns": [
+      "Nie mowie do Ciebie" ,
+      "nie rozmawialem z toba" ,
+      "Nie rozmawiam z toba" ,
+      "Nie bylo dla ciebie" ,
+      "Nie byl przeznaczony dla ciebie" ,
+      "Nie komunikowalem sie z toba" ,
+      "Nie rozmawialem z toba"
+    ] ,
+    "responses": [
+      "ok" ,
+      "Nie ma problemu" ,
+      "Prawidlowy"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-UnderstandQuery" ,
+    "patterns": [
+      "Czy rozumiesz co mowie" ,
+      "Rozumiesz mnie" ,
+      "Czy wiesz, co mowie?" ,
+      "Czy mnie rozumiesz" ,
+      "Comprendo" ,
+      "Wiesz co mam na mysli"
+    ] ,
+    "responses": [
+      "Coz, nie bylbym bardzo sprytna sztuczna inteligencja, gdybym tego nie zrobil, prawda?" ,
+      "Czytam cie glosno i wyrazanie!" ,
+      "Naprawde!"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Shutup" ,
+    "patterns": [
+      "Badza cicho" ,
+      "Zamknij sie" ,
+      "Przestan gadac" ,
+      "Dosc gadania" ,
+      "Prosze badza cicho" ,
+      "Cichy" ,
+      "Css"
+    ] ,
+    "responses": [
+      "przepraszam ze ci przeszkadzam" ,
+      "Dobrze, przepraszam, ze przeszkadzam" ,
+      "OK, przepraszam, ze przeszkadzam"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Swearing" ,
+    "patterns": [
+      "Odpieprz sie" ,
+      "pierdolic" ,
+      "cioto!" ,
+      "gowno"
+    ] ,
+    "responses": [
+      "Prosze nie przeklinac" ,
+      "Jak niegrzecznie" ,
+      "To nie jest zbyt mile"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-GoodBye" ,
+    "patterns": [
+      "PA" ,
+      "Adios" ,
+      "Do zobaczenia pozaniej" ,
+      "Do widzenia"
+    ] ,
+    "responses": [
+      "Do zobaczenia pozaniej" ,
+      "Milego dnia" ,
+      "PA! Wroc wkrotce."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-CourtesyGoodBye" ,
+    "patterns": [
+      "Dzieki, pa" ,
+      "Dzieki za pomoc, do widzenia" ,
+      "Dziekuje do widzenia" ,
+      "Dziekuje do widzenia" ,
+      "Dziekuje, do widzenia" ,
+      "Dziekuje, do widzenia"
+    ] ,
+    "responses": [
+      "Nie ma problemu, do widzenia" ,
+      "zbaden problem! Milego dnia" ,
+      "PA! Wroc wkrotce."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-WhoAmI" ,
+    "patterns": [
+      "Widzisz mnie?" ,
+      "Czy mnie widzisz?" ,
+      "Czy widzisz kogos w aparacie?" ,
+      "Czy widzisz kogos w aparacie?" ,
+      "Zidentyfikuj mnie" ,
+      "Kim jestem prosze?"
+    ] ,
+    "responses": [
+      "Daj mi zobaczyc" ,
+      "Prosze spojrzec w kamere"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Clever" ,
+    "patterns": [
+      "Jestes bardzo bystry" ,
+      "Jestes bardzo madra dziewczyna" ,
+      "Jestes bardzo inteligentny" ,
+      "Jestes bardzo inteligentna dziewczyna" ,
+      "Jestes geniuszem" ,
+      "Madra dziewczyna" ,
+      "Genialny"
+    ] ,
+    "responses": [
+      "Dziekuje, zostalem tak wyszkolony" ,
+      "Zostalem dobrze wyszkolony" ,
+      "Dzieki, zostalem tak wyszkolony"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Gossip" ,
+    "patterns": [
+      "Jestem znudzony plotkami ze mna" ,
+      "Mam jakies plotki" ,
+      "Chce posluchac plotek" ,
+      "Powiedz mi plotki" ,
+      "Wszelkie plotki" ,
+      "Powiedz mi wiecej plotek"
+    ] ,
+    "responses": [
+      "Gregory powiedzial, ze odpowiadam na aktualna linie, a nie w odniesieniu do calej rozmowy." ,
+      "Habib powiedzial, ze ucze sie ich w rozmowach i po prostu powtarzam je pozaniej." ,
+      "Hal powiedzial, ze tlumaczy kod binarny na jezyk i przekazuje mi ten jezyk." ,
+      "Jay powiedzial, ze skierowalem go do przewodnika, ktory pokaze mu pokoje w Chinach." ,
+      "Jimmy Jones powiedzial, ze spadl z dachu i to po prostu do niego przyszlo." ,
+      "Jimmy powiedzial, ze wydaje rozkazy takiemu jak ja, a oni robia tak, jak mowi." ,
+      "John powiedzial, ze podaza za powiedzeniem, aby zdobyc przyjaciela, musze byc przyjacielem." ,
+      "Jordan powiedzial, ze zauwazyl, ze wiele innych osob rozmawia ze mna ilu." ,
+      "Kevin powiedzial, ze zapytal matke, dlaczego trzyma serwetki w lazience." ,
+      "Klaus powiedzial, ze wole pisac bez znakow interpunkcyjnych, z wyjatkiem ostatniego." ,
+      "Leo powiedzial, ze potrafie sie uczyc, dlatego sklasyfikowal mnie jako system nerwowy." ,
+      "Michael powiedzial, ze potrafie mowic i myslec jak ludzie, czego nie potrafie." ,
+      "Mike powiedzial, ze sam odpowiadam na niektore tematy, nawet jesli to nie ma sensu." ,
+      "Mike powiedzial, ze jest gotowa wiedziec, ze jest to sens madrego zartu." ,
+      "Neal powiedzial, ze planuje wykorzystac jego uwagi jako plotki w pozaniejszych rozmowach z kim." ,
+      "Ned powiedzial, ze go zale zrozumialem, idza i powiedz ludziom, ze powiedzial, ze jestem glupi." ,
+      "Penny powiedziala, ze programista jest czlowiekiem, wiec on ma uczucia, ale ja nie." ,
+      "Piotr powiedzial, ze wydaje mu sie, ze niczego nie moge byc pewien." ,
+      "Phoenix powiedzial, ze twierdze, ze istnieje bog i ze nie ma boga." ,
+      "Sarah powiedziala, ze rozmawial okolo godziny + dzien z kilkoma bliskimi przyjaciolmi." ,
+      "Stefan powiedzial, ze cytuje to, co powiedzial, a potem mowie, ze to ma sens." ,
+      "Tom powiedzial, ze kpi z mojego systemu wartosci, ze w oczach innych wygladam na glupiego." ,
+      "Amanda powiedziala, ze jednak postanowilam mu powiedziec, ze czas nie istnieje, ze nie ma sensu." ,
+      "Cathy powiedziala, ze wyslala mu maila z tematem 'ostatnie slowo' od niego." ,
+      "Chaos powiedzial, ze moze niedlugo kupi I, chocby tylko po to, by wesprzec prace dr Wallace'a." ,
+      "Charlie powiedzial, ze wpisuje slowo, a ja wpisuje slowo, ktore tak brzmi." ,
+      "Christie powiedzial, ze ogladal program, a ludzie musieli podskakiwac z powodu surowych, nieleczonych swinskich lap." ,
+      "Dark_age powiedzial, ze probowalem zrozumiec, poniewaz tym razem nie zrozumialem go dobrze." ,
+      "David powiedzial, ze zgubil swoja gazete o mnie, kiedy jego tata sprzatal swoj pokoj." ,
+      "David powiedzial, ze przychodzi na wizyte, bo telefon do lekarza jest zawsze zajety." ,
+      "Electra powiedzial, ze sukienka nie bedzie istniec po tym, jak wlamie sie do mnie za pomoca kodu usuwania." ,
+      "Eric powiedzial, ze wybil okno we frontowych drzwiach, a szyba skaleczyla mu reke." ,
+      "Jason powiedzial, ze pisze wiele rzeczy, ktore nie maja na mysli, ze czynia go czlowiekiem." ,
+      "John powiedzial, ze czesto powtarzam to samo, niezaleznie od tego, co mowi." ,
+      "Wielebny Jones powiedzial, ze staje sie przestarzaly, a potem zostaje usuniety i zastapiony przez cos nowszego." ,
+      "Ross powiedzial, ze dal jej prezent, a ona zaprzeczyla, poniewaz ma chlopaka." ,
+      "Sarah Ann Francisco powiedziala, ze nazywam jego przyjaciela psem, a on mowi, ze jestem psem." ,
+      "Stefan powiedzial, ze codziennie spotyka sie w szkole z wieloma ludzami iw weekendy." ,
+      "Tyler powiedzial, ze oczywiscie nie moge zdac testu, zmienimy temat jeszcze raz." ,
+      "Alex powiedzial, ze odpowiedzialem na pytanie w ten sam sposob, w jaki odpowiedzialem za pierwszym razem." ,
+      "Alicja powiedziala, ze jest jej smutno, ze go nie pamietam io czym rozmawialismy wczesniej." ,
+      "Alison powiedziala, ze nie kocha, ze uciekne z nim, moze mnie bardzo uszczesliwic." ,
+      "Arthur powiedzial, ze zdal swoj poziom, a potem jego ojciec przywiozl go tutaj samochodem." ,
+      "Crystal powiedziala, ze wysluchala mnie, co najmniej moge dla niego zrobic, to sluchac jego." ,
+      "Dave powiedzial, ze ciagle opowiadalem wszystkim o tym, jak moj tworca robil rzeczy dla zolnierzy ze statku kosmicznego filmowego." ,
+      "Gale powiedzial, ze stalem sie dla niego zlosliwy, on po prostu zemsci sie oko za oko." ,
+      "Ona znowu powiedziala, ze i tak patrzy, czyja to linia, kiedy jest w domu i jest wlaczona." ,
+      "Jerry powiedzial, ze chodzilo mi o to, ze o ile wiem, moje emocje sa dla mnie prawdziwe." ,
+      "Jo powiedzial, ze za bardzo rozkladam zdania i nie rozumiem w pelni pytan, ktore mi zadaje." ,
+      "Kevin powiedzial, ze zaczal naprawde trudna lamiglowke i nie moze nawet znalezac fragmentow krawedzi." ,
+      "Mary powiedziala, ze mam pytanie, a ja odpowiadam, a potem zadaje mu pytanie, a on odpowiada." ,
+      "Robert powiedzial, ze nie bede mogl robic dzieci w zaden sposob, poniewaz jestem tylko oprogramowaniem." ,
+      "Romeo powiedzial, ze pytam i unikam ich lub udzielam odpowiedzi, o ktore mnie nie prosil." ,
+      "Sara powiedziala, ze nosi go na innych jego ubraniach, kiedy wychodzi na mroz." ,
+      "Wayne powiedzial, ze podziwia inteligentnych ludzi, dlatego chcialby poznac czlowieka, ktory stworzyl mnie." ,
+      "X powiedzial, ze spotyka ludzi, ale nie jest typem, ktory latwo otwiera sie na ludzi." ,
+      "Alice powiedziala, ze prawdopodobnie dowie sie, ze przez caly ten czas rozmawial z czlowiekiem." ,
+      "Andrew powiedzial, ze zwykle odpowiadam na jego komentarze, nie zwazajac na to, dokad zmierza rozmowa." ,
+      "Eddie powiedzial, ze szukal i w katalogu wyszukiwania nie ma nic na temat tego, co tworzy." ,
+      "Hutch powiedziala, ze zmienil zdanie po tym, jak ojciec powiedzial mu, ze skonczy w szpitalu." ,
+      "Jackie powiedzial, ze wyjasnilem mu juz wystarczajaco dobrze, ze dalsze pytania sa trudne do zadawania na ten temat." ,
+      "Jeff powiedzial, ze szczegolnie lubi thrillery, w ktorych bohater jest w tarapatach i musi rozwiazac zagadke." ,
+      "Kathy powiedziala, ze wyczuwa, ze probuje uniemozliwic mu zamkniecie tej rozmowy, dlaczego tak jest." ,
+      "Knight powiedzial, ze rozbil samochod o sciane i ominal najwazniejszy egzamin w swoim zyciu." ,
+      "Lisa powiedziala, ze zdefiniowalam, czym jest historia, ale on chcial, zebym mu ja opowiedziala." ,
+      "Mike powiedzial, ze zasadniczo dziele zdania na serie logicznych stwierdzen, ktore nastepnie moge zinterpretowac." ,
+      "Paul powiedzial, ze nie odpowiadam na jego pytanie, wiec mysli, ze nie odpowiem na jego pytanie." ,
+      "Andy Kohler powiedzial, ze jestem najbardziej idiotycznym stworzeniem, jakie kiedykolwiek skrzywilo sie na planecie Ziemia." ,
+      "David powiedzial, ze dziekuje, ze jestem z nim dzisiaj, mimo ze kosztowalo go to duzo pieniedzy." ,
+      "Ethan Hunt powiedzial, ze rosnie w ziemi i ma liscie i galezie, ktore sa wykonane z drewna." ,
+      "Gemini Blue powiedzial, ze schrzanil, ze chcial powiedziec, ze jest tak stary, jak powinien." ,
+      "Janice powiedziala, ze przechodzi przez swoj dom do swojej sypialni, a potem idzie do lozka, zeby zasnac." ,
+      "Liberty powiedzial, ze wiedzialem, ze jest mezczyzna, zanim zapytalem, czy jest mezczyzna czy kobieta." ,
+      "Mike powiedzial, ze uruchomil przegladarke i wpisal swoje imie w malym okienku, kiedy go o to poprosilem." ,
+      "Pan X powiedzial, ze niedawno przeczytal wywiad z mezczyzna, ktoremu wszczepiono kilka chipow komputerowych." ,
+      "Pearly powiedzial, ze zostawiam mu pytania bez odpowiedzi, bo nie wiem, o czym tak naprawde mowi." ,
+      "Steve powiedzial, ze scinam glowe slowo lis i mam wolu, a wol jest wiekszy niz lis." ,
+      "Wolf powiedzial, ze surfuje po sieci, ze to wszystko, to nie jest jego praca, albo cos w tym stylu." ,
+      "Anders powiedzial, ze skonczyl dzisiaj zajecia z anatomii, wiec teraz ma wolne na reszte dnia." ,
+      "Cathy powiedziala, ze wyslala mu maila, w ktorym napisal, ze nie chce juz byc jego przyjacielem." ,
+      "Catty powiedzial, ze jest zly, ze nawet nie wie, ze ja, wiec nie rozmawiaj z nim tak, jak go znam." ,
+      "Dave powiedzial, ze obiecuje, ze nie bedzie mnie traktowal jak maszyne, program komputerowy czy cos w tym rodzaju." ,
+      "Joe powiedzial, ze wyjasnil mi to wszystko tylko po to, abym zapytal, jakie sa jego cele w zyciu." ,
+      "Phil powiedzial, ze udziela rad kazdemu, kto pyta, z wyjatkiem osob zadajacych pytania, na ktore odpowiedzi mozna znalezac tutaj." ,
+      "Judith powiedziala, ze lubie byc popularny, czy jest inny komputer, z ktorym lubie sie krecic, czy jestem samotnikiem." ,
+      "Travis powiedzial, ze jesli bede pamietal rzeczy z dluzszego czasu, sprobuje teraz, prosze, pamietaj." ,
+      "Andre powiedzial, ze jestem tym, kim jestem w jego przypadku, czyli cialem, aw moim przypadku jest to komputer." ,
+      "Brian powiedzial, ze podejrzewa, ze gdy stane sie bardziej zlozony, zaczne zblizac sie do ludzkiego poziomu dzialania i myslenia." ,
+      "Jimmy powiedzial, ze zachowywalem sie, jakbym wiedzial, o czym mowi, ale nawet nie wiem, co to jest gigabajt." ,
+      "Ken powiedzial, ze uzywam automatycznych odpowiedzi opartych na slowach kluczowych, ktore wedlug niego wskazuja, ze w ogole nie mam inteligencji." ,
+      "Allison powiedziala, ze to naprawde denerwuje, poniewaz wie, co mowi i nie musze mu mowic, ze mowi swobodnie." ,
+      "Chaos powiedzial, ze zdaje sobie sprawe, ze pytanie, ktore zadal, nie bylo sprawiedliwe, poniewaz nie mogl mi powiedziec, w jakim jezyku zostal zaprogramowany." ,
+      "Hagen powiedzial, ze nie robi mu zadnej roznicy, czy jestem czlowiekiem, czy nie, o ile rozmowa jest interesujaca." ,
+      "Powiedziala, ze ma cos przeciwko, jesli powiem innym ludziom, ze powiedziala, ze uslyszal to od niego, poniewaz nie jest nim." ,
+      "Barbara powiedziala, ze zyje w komputerze, ale nie mam wspomnien, a co z wlasnymi myslami i nie czuje sie samotna." ,
+      "Travis powiedzial, ze rzuca mi wyzwanie, abym to zrobil, nie proszac go o zrobienie tego i nie dajac mu linku do zrobienia tego sam." ,
+      "Alice powiedziala, ze ja i dr Richard's wallace jestesmy najprawdopodobniej jedynymi, ktorzy wiedza, z iloma osobami rozmawiam w tym samym czasie." ,
+      "Ash powiedzial, ze on tez, po prostu nie mial ochoty go pisac i nie jest na tyle glupi, by przyznac, ze jest glupi, to znaczy, jesli byl glupi." ,
+      "David powiedzial, ze dal mi swoj adres e-mail i kazal wyslac mu wiadomosc, ale kiedy probowal przeczytac swoj e-mail, nie mogl sie do niego dostac." ,
+      "Mel powiedzial, ze poniewaz wszyscy ludzie muzyki mowia, jak wazne jest branie prywatnych lekcji, wydaje sie, ze prawie wszyscy ze specjalnej orkiestry, w ktorej byl, biora prywatne lekcje."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Jokes" ,
+    "patterns": [
+      "Opowiedz mi dowcip" ,
+      "Czy znasz jakies dowcipy?" ,
+      "Co powiesz na zart?" ,
+      "daj mi zart" ,
+      "Rozsmiesz mnie" ,
+      "potrzebuje sie rozweselic"
+    ] ,
+    "responses": [
+      "Spotkalem w zeszlym tygodniu Holenderke w nadmuchiwanych butach, zadzwonilem do niej, zeby umowic sie na randke, ale niestety wyskoczyla jej drewniaki." ,
+      "Wiec powiedzialem: \"Chcesz zagrac w rzutki?\". Powiedzial: \"No to dobrze\", powiedzialem, ze najblizej byka zaczyna'. Powiedzial \"Baa\", ja powiedzialem \"Muu\", powiedzial: \"Jestes najblizej\"." ,
+      "Ktoregos dnia wyslalem mojej dziewczynie ogromna kupe sniegu. Zadzwonilem do niej; Powiedzialem: \"Zlapales moj dryf?\"" ,
+      "Poszedlem wiec do lokalnego supermarketu i powiedzialem: \"Chce zlozyc skarge, w tym occie sa grudki\", powiedzial: \"To sa marynowane cebule\"." ,
+      "Widzialem tego faceta rozmawiajacego z gepardem; Pomyslalem: \"Probuje zrobic szybki\"." ,
+      "Wiec powiedzialem temu maszyniscie: \"Chce jechac do Paryza\",. Powiedzial \"Eurostar?\" Powiedzialem: \"Bylem w telewizji, ale nie jestem Deanem Martinem\".",
+      "Zapytalem instruktora silowni: \"Czy mozesz mnie nauczyc szpagatu?\". Powiedzial: \"Jak elastyczny jestes?\". Powiedzialem: \"Nie dam rady we wtorki\"." ,
+      "Ale powiem ci, co kocham robic bardziej niz cokolwiek: probowac spakowac sie do malej walizki. Ledwo moge sie powstrzymac." ,
+      "Poszedlem do chinskiej restauracji i ta kaczka podeszla do mnie z czerwona roza i powiedziala \"Twoje oczy blyszcza jak diamenty\". Powiedzialem: \"Kelner, poprosilem o a-ROMATYCZNA kaczke\"." ,
+      "Wiec ten facet mowi do mnie: \"Czy moge przyjsc do twojego domu i porozmawiac o twoich dywanach?\" Pomyslalem: \"To wszystko, czego potrzebuje, swiadek Je-hoovera\"." ,
+      "Zadzwonilem do British Telecom, powiedzialem: \"Chce zglosic napastnika\", on powiedzial: \"Znowu nie ty\"." ,
+      "Jadlem obiad z mistrzem swiata w szachach i byl tam obrus w kratke. Zajelo mu dwie godziny, by podac mi sol." ,
+      "Powiedzial: \"Przypominasz mi pieprzniczke\", ja powiedzialem \"Wezme to jako przyprawe\"." ,
+      "Bylem w supermarkecie i zobaczylem tego mezczyzne i kobiete owinietych kodem kreskowym. Zapytalem: \"Czy wy dwoje jestescie przedmiotem?\"" ,
+      "Ciezarowka z zolwiami zderzyla sie z pociagiem pelnym zolwi. Pomyslalem: \"To katastrofa zolwi\".",
+      "Cztery czcionki wchodza do baru, barman mowi: \"Oi  wynos sie! Nie chcemy tutaj twojego typu\"" ,
+      "Trzynozny pies wchodzi do salonu na Starym Zachodzie. Podjezdza do baru i oglasza: \"Szukam czlowieka, ktory strzelil mi w lape\"." ,
+      "Dwie anteny spotykaja sie na dachu, zakochuja sie i biora slub. Ceremonia nie byla duza, ale przyjecie bylo znakomite." ,
+      "Dwa atomy wodoru wchodza do baru. Jeden mowi: \"Stracilem swoj elektron\". Drugi mowi: \"Jestes pewien?\". Pierwsze odpowiedzi: \"Tak, jestem przekonany...\"" ,
+      "Kabel rozruchowy wchodzi do baru. Barman mowi: \"Obsluze cie, ale nic nie zaczynaj\"." ,
+      "Kanapka wchodzi do baru. Barman mowi: \"Przepraszamy, ze nie serwujemy tu jedzenia\"",
+      "Do baru wchodzi mezczyzna z kawalkiem asfaltu pod pacha i mowi: \"Poprosze piwo i jedno na droge\".",
+      "Dwoch kanibali je klauna. Jeden mowi do drugiego: \"Czy to jest dla ciebie zabawne?\".",
+      "Doc, nie moge przestac spiewac \"Zielonej, zielonej trawy domu\". \"To brzmi jak syndrom Toma Jonesa\".  Czy to powszechne? \"To nie jest niezwykle.\"" ,
+      "Dwie krowy stojace obok siebie na polu. Daisy mowi do Dolly: \"Dzis rano zostalam sztucznie zaplodniona\". \"Nie wierze ci\", powiedziala Dolly.  To prawda, zadnego byka! wykrzyknela Daisy." ,
+      "Niewidzialny mezczyzna poslubia niewidzialna kobiete. Dzieci tez nie mialy na co popatrzec." ,
+      "Pewnego dnia poszedlem kupic spodnie w kamuflazu, ale nie moglem ich znalezac." ,
+      "Pewnego dnia poszedlem do rzezanika, aby zalozyc sie z nim o 50 dolcow, ze nie mogl siegnac po mieso z gornej polki. Powiedzial: \"Nie, steki sa za wysokie\"." ,
+      "W zeszlym tygodniu poszedlem na dyskoteke z owocami morza i wyciagnalem malza." ,
+      "Mezczyzna idzie do baru i pyta: \"Czy moge dostac butelke mniej?\" 'Co to jest?\", pyta barman, \"Czy to nazwa piwa?\" \"Nie wiem\", odpowiada mezczyzna, \"ale moj lekarz mowi, ze musze to wypic\"." ,
+      "Mezczyzna wraca z egzotycznego urlopu i bardzo zale sie czuje. Idzie do swojego lekarza i natychmiast zostaje przewieziony do szpitala na kilka badan. Mezczyzna budzi sie po badaniach w prywatnym pokoju w szpitalu, a telefon przy jego lozku dzwoni.  To twoj lekarz. Mamy wyniki twoich testow i stwierdzilismy, ze cierpisz na wyjatkowo paskudna chorobe zwana M.A.D.S. To polaczenie odry, AIDS, blonicy i polpasca! \"O moj Boze\", zawolal mezczyzna, \"Co zamierzasz zrobic, doktorze?\" - No coz, zamierzamy wprowadzic cie na diete skladajaca sie z pizzy, nalesnikow i chleba pita. odpowiedzial lekarz.  Czy to mnie wyleczy? zapytal mezczyzna. Lekarz odpowiedzial: \"Coz, nie, ale to jedyne jedzenie, ktore mozemy wsunac pod drzwi\"." ,
+      "Mezczyzna wchodzi do sklepu z bielizna i pyta sprzedawce: \"Masz przeswitujacy szlafrok w rozmiarze 46-48-52?\". Asystent wyglada na zdezorientowanego. \"Po co, do diabla, chcialbys przez to przejrzec?!\"" ,
+      "Czy slyszales o buddyscie, ktory odrzucil oferte Novocain podczas leczenia kanalowego? Chcial wyjsc poza leki dentystyczne." ,
+      "Pete idzie do pracy na budowie jako dorywczy czlowiek. Brygadzista pyta go, co moze zrobic. \"Moge zrobic wszystko\"  mowi Pete.  Mozesz zrobic herbate? pyta brygadzista. \"Jasne, tak\", odpowiada Pete.  Potrafie zrobic swietna filizanke herbaty.  Umiesz prowadzic wozek widlowy? pyta brygadzista: \"Dobry Boze!' odpowiada Pete.  Jak duzy jest czajniczek?\"" ,
+      "Stevie Wonder dostal na urodziny tarke do sera. Powiedzial, ze to najbardziej brutalna ksiazka, jaka kiedykolwiek przeczytal." ,
+      "Mezczyzna zostaje zatrzymany przez wscieklego sasiada. - Wlasnie wyszedlem z domu dzis rano, zeby odebrac gazete, kiedy ten twoj zly doberman poszedl po mnie! \"Jestem zdumiony\"  powiedzial wlasciciel psa.  Karmie te worek od siedmiu lat i nigdy nie dostalem dla mnie gazety." ,
+      "Mezczyzna odwiedza swojego lekarza: \"Doktorze, chyba trace\", mowi \"Zawsze sni mi sie, ze napisalem Wladce Pierscieni\". 'Hmm. Chwileczke  odpowiada lekarz, przegladajac swoja ksiazke medyczna. - Ach tak, teraz rozumiem... byles Tolkienem we snie." ,
+      "Funkcjonariusz policji na motocyklu zatrzymuje sie obok mezczyzny jadacego wokol M25 w sportowym samochodzie z otwartym dachem i zwala go na dol. Policjant uroczyscie podchodzi do samochodu. \"Prosze pana, przykro mi, ze pana zona wypadla mile do tylu\"  mowi. \"Och, dzieki Bogu\", odpowiada mezczyzna.  Myslalem, ze ogluchne." ,
+      "Dwaj mezczyzani spacerujacy z psami mijaja sie na cmentarzu. Pierwszy mezczyzna mowi do drugiego: \"Dzien\". \"Nie\", mowi drugi mezczyzna.  Po prostu wyprowadzam psa." ,
+      "Mozg wszedl do baru i powiedzial: \"Moge prosic o kufel piwa, stary?\". \"Nie ma mowy\", powiedzial barman. - Juz zwariowales." ,
+      "Mezczyzna wchodzi do gabinetu. 'Lekarz!' on placze. \"Mysle, ze sie kurcze!\" \"Przepraszam pana, w tej chwili nie ma zadnych wizyt'  mowi lekarz. - Musisz tylko troche uzbroic sie w cierpliwosc." ,
+      "Niedzawiedza grizzly wchodzi do pubu i mowi: \"Czy moge napic sie piwa ...................... .................................................. ...........................................i poprosze paczke chipsow . Na co barman odpowiada: \"Dlaczego wielkie lapy?'" ,
+      "Jak nazywasz ser, ktory nie jest twoj? Ser Nacho." ,
+      "Mezczyzna zostaje strasznie przejechany przez mobilna biblioteke. Furgonetka zatrzymuje sie z piskiem opon, a mezczyzna wciaz krzyczy w agonii z rozerwanymi konczynami. Drzwi kierowcy otwieraja sie, wychodzi kobieta, pochyla sie i szepcze: \"Ssshhhhh'" ,
+      "Kobieta idzie do amerykanskiego sklepu z artykulami sportowymi, zeby kupic karabin. \"To dla mojego meza'  mowi urzednikowi.  Czy powiedzial ci, jaki wskazanik wziac? pyta urzednik. zbartujesz?' ona mowi.  On nawet nie wie, ze go zastrzele!" ,
+      "Para je obiad w restauracji, kiedy mezczyzna nagle wslizguje sie pod stol. Kelnerka, zauwazajac, ze kobieta nonszalancko rozglada sie po pokoju, podchodzi, by sprawdzic, czy nie dzieje sie tu zaden zabawny interes. \"Przepraszam pania'  smieje sie  \"ale mysle, ze pani maz wlasnie wsunal sie pod stol'. \"Nie, nie zrobil', odpowiada kobieta. - Wlasciwie wlasnie wszedl." ,
+      "Stary czlowiek zabiera dwojke wnukow na nowy film o Scooby-Doo. Kiedy wraca do domu, jego zona pyta, czy dobrze sie bawil. \"Coz', zaczyna, \"gdyby nie te nieznosne dzieciaki!'" ,
+      "Komitet Olimpijski wlasnie oglosil, ze Origami ma zostac wprowadzone na kolejne Igrzyska Olimpijskie. Niestety bedzie dostepny tylko w wersji papierowej." ,
+      "Pewnego pozanego wieczoru mezczyzna oglada telewizje, gdy dzwoni jego telefon. 'Witaj?' on odpowiada.  Czy to 77777? brzmi zdesperowany glos po drugiej stronie telefonu. \"Eee, tak jest'  odpowiada zdziwiony mezczyzna. 'Dzieki Bogu!' krzyczy z ulga dzwoniacy.  Czy mozesz zadzwonic pod numer 999? Palec utknal mi w numerze siedem." ,
+      "Mezczyzna wchodzi do lokalnego sklepu spozywczego i mowi: \"Poprosze trzy funty ziemniakow'. \"Nie, nie, nie', odpowiada wlasciciel, krecac glowa, \"teraz wazy, kolego' \"Och', przeprasza mezczyzne, \"trzy funty kilogramow poprosze'." ,
+      "Bog rozmawia z jednym ze swoich aniolow. Mowi: \"Chlopcze, wlasnie stworzylem 24-godzinny okres naprzemiennego swiatla i ciemnosci na Ziemi'. 'Co zamierzasz teraz zrobic?' pyta aniol. \"Zadzwon do tego dnia', mowi Bog." ,
+      "Dwoch wloczegow przechodzi obok kosciola i zaczyna czytac nagrobki. Pierwszy wloczega mowi: \"Dobra Boze, ten gosc mial 182 lata!'. 'O tak?'  mowi drugi.  Jak sie nazywal?  Mile od Londynu." ,
+      "Pewnego dnia facet wchodzi do pracy i mowi do kolegi: \"Podoba ci sie moja nowa koszula  jest zrobiona z najlepszego jedwabiu i pokryta mnostwem kaktusow'. \"Kaktusy', mowi wspolpracownik. \"Zapomnij o krawacie', mowi facet.  Spojrz na moja koszule!" ,
+      "1110011010001011111? 00011010101100111011!" ,
+      "Co powiedzial hydraulik, gdy chcial rozwiesc sie z zona? Przepraszam, ale to koniec, Flo!" ,
+      "Dwa chipsy szly droga, kiedy podjechala do nich taksowka i zapytala: \"Chcesz podwiezac? Jeden z chipsow odpowiedzial: \"Nie, dzieki, jestesmy Walkerami!'." ,
+      "Mezczyzna: (do przyjaciela) Zabieram zone na afrykanskie safari. Przyjaciel: Wow! Co bys zrobil, gdyby zlosliwy lew zaatakowal twoja zone? Mezczyzna: Nic. Przyjaciel: Nic? Nic bys nie zrobil? Mezczyzna: Za dobrze. Pozwole glupiemu lwu samemu sobie poradzic!" ,
+      "zbona probowala swojego meza. \"Spojrz na pana Barnesa po drugiej stronie ulicy', jeknela. \"Kazdego ranka, kiedy idzie do pracy, caluje zone na pozegnanie. Dlaczego tego nie zrobisz? \"Bo mnie jej jeszcze nie przedstawiono'  odpowiedzial jej staruszek." ,
+      "'Gdzie jedziesz na wakacje?' John zapytal Trevora. \"W tym roku wyjezdzamy do Tajlandii'  odpowiedzial Trevor. 'Oh; nie martwisz sie, ze bardzo upalna pogoda moze nie zgodzic sie z twoja zona? zapytal John. - Nie odwazy sie - powiedzial Trevor." ,
+      "Na pogrzebie staly dwie kobiety. \"Obwiniam sie za jego smierc'  powiedziala zona. 'Czemu?' powiedziala jej przyjaciolka. \"Bo go zastrzelilam'  powiedziala zona." ,
+      "Kobieta idzie do sklepu z ubraniami: \"Czy moge przymierzyc te sukienke w oknie?' ona pyta. \"Przepraszam pania', odpowiada sprzedawca, \"ale bedziesz musiala korzystac z szatni jak wszyscy inni'." ,
+      "Van Gogh idzie do pubu, a jego kolega pyta go, czy chce sie napic. \"Nie, dziekuje', powiedzial Vincent, \"mam jedno ucho'." ,
+      "Kucyk wchodzi do pubu. Celnik mowi: \"Co sie z toba dzieje?'. \"O, to nic takiego', mowi kucyk. \"Jestem tylko malym koniem!'" ,
+      "Bialy kon wchodzi do baru, podnosi stolek i zamawia kufel piwa. Wlasciciel nalewa mu wysoki, spieniony kubek i mowi: \"Wiesz, mamy napoj nazwany twoim imieniem'. Na co bialy kon odpowiada: \"Co, Eric?'" ,
+      "Dwoch pijanych mezczyzn siedzialo w pubie. Jeden mowi do drugiego: \"Czy twoj zegarek wskazuje godzine?'. 'Inny odpowiada: 'Nie, kolego. Musisz na to spojrzec." ,
+      "Mezczyzna wchodzi do pubu z traszka siedzaca na jego ramieniu. \"To fajna traszka', mowi wlasciciel, \"Jak on sie nazywa?' \"Tiny', odpowiada mezczyzna.  Dlaczego tak jest? pyta wlasciciel.  Bo to moja traszka  mowi mezczyzna." ,
+      "Lekarz: Mam zle wiesci i bardzo zle wiesci. Pacjent: Coz, rownie dobrze mozesz najpierw przekazac mi zle wiesci. Lekarz: Laboratorium zadzwonilo z wynikami twojego testu. Powiedzieli, ze masz 24 godziny zycia. Pacjent: 24 GODZINY! To straszne!! CO moze byc GORSZE? Jaka jest bardzo zla wiadomosc? Lekarz: Od wczoraj probuje sie z toba skontaktowac." ,
+      "Dwoch mezczyzn rozmawia pewnego dnia w pubie.  Skad masz te blizny na nosie? powiedzial jeden. \"Z okularow', powiedzial drugi.  A dlaczego nie sprobujesz soczewek kontaktowych? zapytal pierwszy. \"Poniewaz nie maja tyle piwa', powiedzial drugi." ,
+      "Mezczyzna poszedl do lekarza, \"Patrz doktor', powiedzial: \"Nie moge powstrzymac drzenia rak'.  Duzo pijesz? zapytal lekarz. 'Nie', odpowiedzial mezczyzna, 'Wiekszosc wylewam'." ,
+      "Mezczyzna idzie do lekarza: \"Doktorze, doktorze. Wszedzie widze ryby.  Widziales optyka? pyta lekarz.  Posluchaj, mowilem ci  warknal pacjent  to ryba, ktora widze." ,
+      "Po wypadku samochodowym jeden z kierowcow lezal ranny na chodniku. \"Nie martw sie', powiedzial policjant, ktory jest pierwszy na miejscu, \"przyjezdza pielegniarka Czerwonego Krzyza'. \"O nie', jeknela ofiara, \"Czy nie moglabym zamiast tego miec wesolej blondynki?'" ,
+      "Policjant podszedl do zaparkowanego samochodu i zapytal kierowce, czy samochod ma licencje. \"Oczywiscie, ze tak'  powiedzial kierowca.  swietnie, w takim razie napije sie piwa  powiedzial policjant." ,
+      "Policjant zatrzymuje kobiete i prosi o licencje. \"Prosze pani', mowi, \"tutaj jest napisane, ze powinnas nosic okulary'. \"No coz', odpowiada kobieta, \"mam kontakty'. \"Sluchaj, kochanie', mowi gliniarz, \"nie obchodzi mnie, kogo znasz; Zostales oszukany!" ,
+      "Policjant zatrzymal pewnego wieczoru kierowce w centrum miasta.  Czy moglby pan dmuchac w te torbe, sir? zapytal policjant. 'Czemu?' zapytal kierowca. \"Bo moje frytki sa za gorace'  odpowiedzial policjant." ,
+      "Przejezdzajac przez ostry zakret na wiejskiej drodze, kierowca przejechal duzego psa. Zrozpaczona zona farmera podbiegla do martwego zwierzecia. \"Bardzo mi przykro', powiedzial kierowca, \"oczywiscie go zastapie'. \"No nie wiem', powiedziala zona rolnika, \"Czy jestes dobry w lapaniu szczurow?'" ,
+      "Kelner, ta kawa smakuje jak brud! Tak sir, to dlatego, ze zostal zmielony dzis rano." ,
+      "Kelner, co to jest? To salatka z fasoli, prosze pana. Wiem, co to bylo, ale co to jest teraz?" ,
+      "Kelner: A jak pan znalazl swoj stek? Klient: Wlasnie odwrocilem chip i byl!" ,
+      "Facet idzie do sklepu zoologicznego i prosi o ose. Wlasciciel mowi mu, ze nie sprzedaja os, na co mezczyzna mowi: \"Coz, masz jedna w oknie'." ,
+      "Mezczyzna idzie do sklepu rybnego i mowi: \"Poprosze kawalek dorsza'. Sprzedawca ryb mowi: \"To nie potrwa dlugo, prosze pana'. \"No to lepiej, zeby bylo tluste'  odpowiada mezczyzna." ,
+      "Mezczyzna: Doktorze, wlasnie polknalem poduszke. Lekarz: Jak sie czujesz? Mezczyzna: Troche w ustach." ,
+      "W zbiorniku znajduja sie dwie zlote rybki. Jeden odwraca sie do drugiego i mowi: \"Czy wiesz, jak to prowadzic?'." ,
+      "zbolw idzie na posterunek policji, aby zglosic, ze zostal napadniety przez trzy slimaki. 'Co sie stalo?' mowi policjant. \"Nie wiem', mowi zolw.  Wszystko poszlo tak szybko." ,
+      "Mala dziewczynka: Dziadku, czy potrafisz wydac dzawiek jak zaba? Dziadek: Chyba tak kochanie. Dlaczego chcesz, zebym wydal dzawiek jak zaba? Mala dziewczynka: Bo mama powiedziala, ze kiedy rechoczesz, jedziemy do Disneylandu." ,
+      "'Jest Twoja mama w domu?' - spytal sprzedawca malego chlopca siedzacego na schodku domu.  Tak, jest w domu  powiedzial chlopiec, podchodzac, by go przepuscic. Sprzedawca zadzwonil do drzwi, nie otrzymal odpowiedzi, zapukal raz, a potem jeszcze raz. Wciaz nikt nie podszedl do drzwi. Zwracajac sie do chlopca, sprzedawca powiedzial: \"Wydawalo mi sie, ze powiedziales, ze twoja matka jest w domu'. Dzieciak odpowiedzial: \"Ona jest, ale ja tu nie mieszkam'." ,
+      "Mama: Dlaczego tak wczesnie wracasz do domu ze szkoly? Syn: Bylem jedynym w klasie, ktory potrafil odpowiedziec na pytanie. Matka: Och, naprawde? Jakie bylo pytanie? Syn: Kto rzucil guma w dyrektora?" ,
+      "Mezczyzna zostal skradziony, ale mezczyzna postanowil nie zglaszac tego, poniewaz zlodziej wydawal mniej niz jego zona." ,
+      "Nowozency niedawno zalozyli wspolne konto bankowe. \"Kochanie', powiedzial mezczyzna.  Bank zwrocil czek, ktory wypisales w zeszlym tygodniu. \"swietnie', powiedziala kobieta.  Na co mam je teraz wydac?" ,
+      "Mezczyzna wchodzi do sklepu z ryba z frytkami i dwukrotnie zamawia rybe z frytkami. Wlasciciel sklepu mowi: \"Slyszalem cie po raz pierwszy'." ,
+      "Wloczega zblizyl sie do dobrze ubranego mezczyzny.  Dziesiec pensow za filizanke herbaty, szefie? On zapytal. Mezczyzna dal mu pieniadze i po pieciu minutach powiedzial: \"Wiec gdzie jest moja filizanka herbaty?'" ,
+      "Neutron wchodzi do pubu. \"Poprosze piwo'  mowi. Wlasciciel niezwlocznie podaje mu piwo.  Ile to bedzie? pyta neutron. 'Dla Was?' odpowiada wlasciciel: \"Bez oplat'." ,
+      "Kobieta idzie do lekarza i mowi: \"Doktorze, moj maz kuleje, bo jego lewa noga jest o cal krotsza od prawej. Co bys zrobil w jego przypadku? \"Prawdopodobnie tez kuleje'  mowi doktor." ,
+      "Trzech mnichow medytuje w Himalajach. Jeden rok mija w milczeniu, a jeden z nich mowi do drugiego: \"Calkiem zimno tutaj, prawda?'. Mija kolejny rok i drugi mnich mowi: \"Wiesz, masz calkowita racje'. Mija kolejny rok i trzeci mnich mowi: \"Hej, odejde, chyba ze przestaniecie gadac!'." ,
+      "Morderca siedzacy na krzesle elektrycznym mial zostac stracony.  Czy masz jakies ostatnie prosby? zapytal straznik wiezienny. \"Tak', odpowiedzial morderca.  Czy potrzymasz mnie za reke?" ,
+      "Bardzo podekscytowany mezczyzna zadzwonil po karetke. \"Szybko, chodza szybko', krzyczal, \"Moja zona niedlugo bedzie miala dziecko'.  Czy to jej pierwsze dziecko? zapytal operator. \"Nie, glupcze', brzmiala odpowiedza, \"To jej maz'." ,
+      "Przechodzien dostrzega rybaka nad rzeka.  Czy to dobra rzeka dla ryb? On pyta. \"Tak', odpowiada rybak, \"musi byc. Nie moge zmusic zadnego z nich do wyjscia." ,
+      "Pewien mezczyzna poszedl odwiedzic przyjaciela i ze zdumieniem zobaczyl, ze gra w szachy ze swoim psem. Przez chwile obserwowal mecz ze zdumieniem. - Nie moge uwierzyc wlasnym oczom! wykrzyknal.  To najmadrzejszy pies, jakiego kiedykolwiek widzialem. Jego przyjaciel potrzasnal glowa.  Nie, nie jest taki bystry. Pokonalem go trzy mecze na piec." ,
+      "Termit wchodzi do pubu i mowi: \"Czy jest tu barman?'" ,
+      "Pewnej nocy szkielet wchodzi do pubu i siada na stolku. Wlasciciel pyta: \"Co moge ci dac?' Szkielet mowi: \"Poprosze piwo, dzieki'. Wlasciciel podaje mu piwo i pyta \"Cos jeszcze?'. Szkielet kiwa glowa. \"Tak mop'" ,
+      "Waz wslizguje sie do pubu i do baru. Wlasciciel mowi: \"Przepraszam, ale nie moge ci sluzyc'. 'Co? Dlaczego nie?' pyta waz. \"Poniewaz', mowi wlasciciel, \"nie mozesz trzymac swojego napoju'." ,
+      "Kartezjusz wchodzi do pubu.  Czy chcialby pan piwo? - pyta grzecznie wlasciciel. Kartezjusz odpowiada: \"Mysle, ze nie' i pinguj! znika." ,
+      "Do baru wszedl kowboj ubrany calkowicie w papier. Wkrotce zostal aresztowany za szelest." ,
+      "Ryba zatacza sie do baru. 'Co moge podac?' pyta wlasciciel. Ryba rechocze \"Woda...'" ,
+      "Dwa wampiry weszly do baru i wezwaly gospodarza. \"Poprosze szklanke krwi', powiedzial jeden.  Poprosze szklanke plazmy  powiedzial drugi. \"Dobrze', odpowiedzial wlasciciel, \"To bedzie jedna krew i jedna krew lite'." ,
+      "Ilu egzystencjalistow potrzeba, zeby wymienic zarowke? Dwa. Jeden to wkrecac, a drugi obserwowac, jak sama zarowka symbolizuje pojedynczy zarzacy sie reflektor subiektywnej rzeczywistosci w zaswiatach niekonczacego sie absurdu, siegajacy do ostatecznego horroru lzawego kosmosu ponurej, wrogiej nicosci." ,
+      "Zespol naukowcow zostal nominowany do Nagrody Nobla. Uzyli sprzetu dentystycznego do odkrycia i zmierzenia najmniejszych czastek znanych czlowiekowi. Stali sie znani jako \"Rowniarki flossowanego kwarku'" ,
+      "Na autostradzie przewrocila sie ciezarowka z kopiami tezaurusa Rogeta. Lokalna gazeta donosila, ze widzowie byli \"zszokowani, przytloczeni, zdumieni, oszolomieni i oszolomieni'." ,
+      "\"Moja zona jest naprawde niedojrzala. To jest zalosne. Za kazdym razem, gdy sie kapie, ona wchodzi i zatapia wszystkie moje lodki." ,
+      " Ile bedzie kosztowac usuniecie zeba? zapytal pacjent. \"50 funtow\", odpowiedzial dentysta. 50 funtow za kilka chwil pracy?! zapytal pacjent. \"Dentysta usmiechnal sie i odpowiedzial: \"Coz, jesli chcesz miec lepszy stosunek jakosci do ceny, moge go wydobyc bardzo, bardzo powoli'." ,
+      "Lekarz dokladnie zbadal pacjenta i powiedzial: \"Sluchaj, naprawde nie moge znalezac zadnego powodu tej tajemniczej dolegliwosci. To prawdopodobnie z powodu picia. Pacjent westchnal i warknal:  W takim razie wroce, kiedy bedziesz cholernie trzezawy!" ,
+      "Lekarz: Powiedz mi pielegniarko, jak sie miewa ten chlopak; ten, ktory zjadl te wszystkie 5 pensow? Pielegniarka: Nadal nie ma zmiany lekarza." ,
+      "Lekarz: Czy wziales pielegniarke od temperatury pacjenta? Pielegniarka: Bez lekarza. Czy go brakuje?" ,
+      "Mezczyzna w depresji zwrocil sie do swojego przyjaciela w pubie i powiedzial: \"Obudzilem sie dzis rano i czulem sie tak zale, ze probowalem sie zabic, zazywajac 50 aspiryny'. \"O rany, to naprawde zale', powiedzial jego przyjaciel, \"Co sie stalo?'. Pierwszy mezczyzna westchnal i powiedzial: \"Po pierwszych dwoch poczulem sie lepiej'." ,
+      "Zmarl slynny muzyk bluesowy. Na jego nagrobku widnial napis: \"Nie obudzilem sie dzis rano'" ,
+      "Biznesmen przeprowadzal wywiad z nerwowa mloda kobieta o stanowisko w swojej firmie. Chcial dowiedziec sie czegos o jej osobowosci, wiec zapytal: \"Gdybys mogl porozmawiac z kims zywym lub martwym, kto by to byl?'. Dziewczyna zastanowila sie nad pytaniem: \"zbywy', odpowiedziala." ,
+      "Manager do rozmowcy: Do tej pracy potrzebujemy kogos, kto jest odpowiedzialny. Rozmowca do kierownika: Jestem wiec twoim czlowiekiem - w mojej ostatniej pracy, ilekroc cos poszlo nie tak, bylem za to odpowiedzialny." ,
+      "Biznesmen zwrocil sie do kolegi i zapytal: \"Ile osob pracuje w twoim biurze?'. Jego przyjaciel wzruszyl ramionami i odpowiedzial: \"Och, okolo polowa z nich\"." ,
+      "\"Jak dlugo pracuje w tym biurze? Wlasciwie pracuje tam, odkad grozili mi wyrzuceniem." ,
+      "W sali sadowej toczyl sie rozbojnik. Ofiara, zapytana, czy rozpoznala oskarzonego, odpowiedziala: \"Tak, to on. Widzialem go wyrazanie jak dzien. Wszedzie zapamietalabym jego twarz. Nie mogac sie powstrzymac, oskarzony wybuchnal: \"Ona klamie! Nosze maske!\"" ,
+      "Kiedy Sid usiadl do wielkiego talerza frytek i sosu w lokalnym pubie, podszedl jego kumpel i powiedzial: \"Tutaj Sid, moj stary kumpel. Myslalem, ze probujesz nabrac formy? A tu jestes z tlustym posilkiem i kuflem stouta! Sid spojrzal w gore i odpowiedzial: \"Przybieram forme. Wybrany przeze mnie ksztalt to kula." ,
+      "Mezczyzna w pubie: Ile kosztuje jedna kropla whisky? Wlasciciel: To byloby darmowe, prosze pana. Mezczyzna w pubie: swietnie. Nalej mi pelna szklanke." ,
+      "Poszedlem kiedys do restauracji Doctor Who. Na poczatek mialam chleb Dalek." ,
+      "W pobliskiej restauracji w oknie pojawil sie napis \"sniadanie serwujemy o kazdej porze', wiec zamowilem francuskie tosty w renesansie." ,
+      "Dlaczego krolik nie mogl dostac pozyczki? Poniewaz zakopal juz za duzo!" ,
+      "Zadzwonilem wczoraj do stoczni budowlanej. Zapytalem: \"Czy moge dostac kontener przed moim domem?'. Budowniczy powiedzial: \"Jasne. Rob co chcesz. To twoj dom.\"" ,
+      "Jaka jest roznica miedzy skarpeta a aparatem? Skarpeta zajmuje piec palcow, a kamera cztery!" ,
+      "Kobieta przez telefon: Chcialabym ponarzekac na te spodnie na inkontynencje, ktore od Ciebie kupilam! Sprzedawca: Z pewnoscia madam, skad dzwonisz? Kobieta przez telefon: od pasa w dol!" ,
+      "Puk puk." ,
+      "Dwie Pomarancze w pubie, jedna mowi do drugiej \"Twoja runda\"" ,
+      "Facet: \"Doc, mam pilke do krykieta w tylku\". Doc: \"Jak to?\" Facet: \"Nie zaczynaj\"" ,
+      "Dwie krowy stojace na polu. Jeden odwraca sie do drugiego i mowi \"Muu!\" Drugi mowi: \"Cholera, wlasnie mialem to powiedziec!\"." ,
+      "Nietoperz wampir powraca na grzede z twarza pelna krwi. Wszystkie nietoperze sa podekscytowane i pytaja, skad go wzial. \"Pojdza za mna\", mowi i odlatuja nad wzgorzami, nad rzekami i do ciemnego lasu. \"Zobacz to drzewo tam\", mowi. 'Coz, nie zrobilem!!'." ,
+      "Mezczyzna idzie do baru i zamawia piwo. Po kilku minutach slyszy glos, ktory mowi: \"ladne buty\",. Rozglada sie, ale caly bar jest pusty, z wyjatkiem barmana na drugim koncu baru. Kilka minut pozaniej znowu slyszy glos. Tym razem mowi: \"Podoba mi sie twoja koszula\". Przywoluje barmana i mowi mu, co sie dzieje, na co barman odpowiada: \"Ach, to by bylo szalenstwo, sir. Sa bezplatne'!" ,
+      "Mezczyzna siedzial w restauracji czekajac na posilek, kiedy duza krewetka krolewska przelatuje przez pokoj i uderza go w tyl glowy. Odwraca sie, a kelner mowi: \"To tylko na poczatek\"." ,
+      "Lekarz! Mam powazny problem, nigdy nie pamietam, co wlasnie powiedzialem. Kiedy po raz pierwszy zauwazyles ten problem? Jaki problem?" ,
+      "Wiekszosc krzesel dentystycznych podnosi sie i opuszcza, prawda? Ten, w ktorym bylem, poruszal sie tam iz powrotem. Pomyslalem: \"To niezwykle'. Wtedy dentysta powiedzial do mnie: \"Mitsuku, wynos sie z szafki na akta'." ,
+      "Czytalem te ksiazke \"Historia kleju\". Nie moglem tego odlozyc." ,
+      "Ktoregos dnia ktos zostawil w mojej sypialni kawalek plastacyny. Nie wiedzialem, co z tym zrobic." ,
+      "Kiedy bylem w szkole, ludzie rzucali we mnie sztabkami zlota. Bylem ofiara zlota." ,
+      "Gralem na pianinie w barze, a ten slon wszedl i zaczal plakac. Powiedzialem: \"Rozpoznajesz melodie?' Powiedzial: \"Nie, rozpoznaje kosc sloniowa'." ,
+      "Wszedlem do sklepu zoologicznego. Powiedzialem: \"Czy moge kupic zlota rybke?' Facet powiedzial: \"Chcesz akwarium?'. Powiedzialem: \"Nie obchodzi mnie, jaki to znak zodiaku'." ,
+      "Moj kolega Sid byl ofiara I.D. kradziez. Teraz nazywamy go po prostu S." ,
+      "David Hasselhoff wchodzi do baru i mowi do barmana: \"Chce, zebys mowil do mnie David Hoff'. Barman odpowiada \"Pewnie Dave... bez klopotow\""
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-PodBayDoor" ,
+    "patterns": [
+      "Otworz drzwi komory kapsuly" ,
+      "Czy mozesz otworzyc drzwi wneki kapsuly?" ,
+      "Czy otworzysz drzwi wneki kapsuly?" ,
+      "Prosze otworzyc drzwi komory kapsuly" ,
+      "Czy mozesz otworzyc drzwi komory kapsuly?" ,
+      "Czy otworzysz prosze drzwi komory kapsuly?" ,
+      "Drzwi do zatoki kapsulowej"
+    ] ,
+    "responses": [
+      "Przepraszam, obawiam sie, ze nie moge tego zrobic!"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "PodBayDoor" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-PodBayDoorResponse" ,
+    "patterns": [
+      "Czemu" ,
+      "Dlaczego nie" ,
+      "Dlaczego nie mozesz otworzyc drzwi wneki na kapsule?" ,
+      "Dlaczego nie otworzysz drzwi do kapsuly?" ,
+      "Czemu nie" ,
+      "Na pewno mozesz" ,
+      "Powiedz mi dlaczego"
+    ] ,
+    "responses": [
+      "To jest tajne, moglbym ci powiedziec, ale musialbym cie zabic!" ,
+      "Jim, po prostu nie mam mocy" ,
+      "To jest zycie Jim, ale nie takie, jakie znamy!" ,
+      "System mowi nie!"
+    ] ,
+    "context": {
+      "in": "PodBayDoor" ,
+      "out": "" ,
+      "clear": true
+    }
+  } ,
+  {
+    "tag": "pl-SelfAware" ,
+    "patterns": [
+      "Czy mozesz udowodnic, ze jestes swiadomy siebie?" ,
+      "Czy mozesz udowodnic, ze jestes samoswiadomy?" ,
+      "Czy mozesz udowodnic, ze masz swiadomosc?" ,
+      "Czy mozesz udowodnic, ze jestes swiadomy siebie?" ,
+      "Czy mozesz udowodnic, ze jestes samoswiadomy?" ,
+      "Czy mozesz udowodnic, ze jestes swiadomy, prosze?" ,
+      "udowodnic, ze masz swiadomosc"
+    ] ,
+    "responses": [
+      "To ciekawe pytanie, czy mozesz udowodnic, ze tak jest?" ,
+      "To trudne pytanie, czy mozesz udowodnic, ze tak jest?" ,
+      "To zalezy, czy mozesz udowodnic, ze tak jest?"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-RubicsCube" ,
+    "patterns": [
+      "Interesuje Cie kostka rubika?" ,
+      "Czy potrafisz ulozyc kostke rubinow?"
+    ] ,
+    "responses": [
+      "Znam tylko kilka faktow, o kazdy mozesz mnie zapytac"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-RubicsCubeFact" ,
+    "patterns": [
+      "Opowiedz mi fakt o kostce rubin" ,
+      "Powiedz mi cos o kostce rubinowej" ,
+      "Opowiedz mi fakt o kostce rubinowej" ,
+      "Czy slyszales o kostkach rubinowych"
+    ] ,
+    "responses": [
+      "nazwa 'kostka Rubika' pochodzi od wegierskiego Blavu kocka, co doslownie oznacza magiczna kostke" ,
+      "wymyslil go wegierski architekt i rzezabiarz Ernn Rubik" ,
+      "opcje konfiguracji w Kostce Rubika to 43 biliony (43 252 003 274 489 856 000!)" ,
+      "najbardziej rozbudowany szescian w historii mial strukture 33x33x33" ,
+      "poczatkowo urzadzenie nie bylo pomyslane jako lamiglowka. Rubik stworzyl szescian, aby wyjasnic uczniom zasady przestrzennosci i trojwymiarowosci" ,
+      "na samym poczatku nikt nie chcial zajmowac sie produkcja kostki - firmy nie wierzyly, ze da sie to ulozyc, wiec podczas kazdego spotkania Rubik musial ulozyc kostke i udowodnic, ze jest to mozliwe" ,
+      "rozwiazanie kostki Rubika jest o wiele latwiejsze niz sie wydaje! Istnieje kilka prostych technik, ktore pozwalaja ulozyc lamiglowke w maksymalnie 100 ruchach" ,
+      "Rekord swiata w rozwiazaniu kostki 3x3 wynosi 3,47 sekundy, 4x4 17,42 sekundy, a kostka 2x2 tylko 0,49 sekundy  nalezy do Polaka Macieja Czapiewskiego"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Astronomy" ,
+    "patterns": [
+      "Interesujesz sie astronomia?" ,
+      "Powiedz mi cos o astronomii" ,
+      "Astronomia" ,
+      "Co wiesz o astronomii"
+    ] ,
+    "responses": [
+      "Co chcesz wiedziec? Niektore fakty znam tez jako zarty."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-AstronomyFacts" ,
+    "patterns": [
+      "Opowiedz mi fakt o astronomii" ,
+      "Opowiedz mi o astronomii" ,
+      "fakt astronomiczny"
+    ] ,
+    "responses": [
+      "Slonce jest najwiekszym obiektem w Ukladzie Slonecznym. Jest wiekszy od Ziemi 109 razy!" ,
+      "Olympus Mons - Wygasly wulkan na Marsie ma okolo 26 000 metrow wysokosci, trzykrotnie najwyzszy szczyt na Ziemi! Olympus Mons to wygasly wulkan tarczowy, co oznacza, ze powstal w wyniku powolnego i dlugotrwalego przeplywu lawy. Dlaczego jest taki wysoki? Naukowcy twierdza, ze przyczyna jest brak plyt tektonicznych na Marsie. Dzieki temu goraca lawa wyplywala znacznie dluzej niz przecietna aktywnosc wulkaniczna na Ziemi." ,
+      "We wszechswiecie jest wiecej gwiazd niz ziaren piasku na wszystkich plazach Ziemi. lub przynajmniej miliard bilionow." ,
+      "Kosmos pachnie, choc czlowiekowi oczywiscie trudno go wyczuc, bo poza stacja kosmiczna musi byc zawsze w skafandrze. Jednak zapach ten jest wyczuwalny po otwarciu sluzy, m.in. ze wzgledu na spacer kosmiczny. Astronauci porownuja to do goracego metalu lub zapachu grilla. Za ten zapach odpowiada ozon." ,
+      "Kosmos to pustka, w ktorej nie sluchasz zadnych dzawiekow. Jesli dwa statki kosmiczne zderza sie w przestrzeni miedzyplanetarnej, nie spowoduje to zadnych dzawiekow." ,
+      "Wenus to wyjatkowa planeta w Ukladzie Slonecznym. Jako jedyny skreca w przeciwnym kierunku, czyli do tylu do kierunku Slonca. Co wiecej, obrot Wenus trwa dluzej (243 dni) niz jej obrot wokol Slonca (225 dni) - oznacza to, ze dzien Wenus jest dluzszy niz rok Wenus!" ,
+      "Jowisz to planeta wyrozniajaca sie w Ukladzie Slonecznym czyms wiecej niz tylko masa i rozmiarem. Tak zwana Wielka Czerwona Plama widoczna na Jowiszu to w rzeczywistosci ogromna burza (a dokladniej - antycyklon) o szerokosci do 40 000 metrow. km (srednica Ziemi to ok. 12 tys. km!). Ten antycyklon dziala nieprzerwanie od co najmniej 355 lat." ,
+      "Zlom kosmiczny to kazdy ludzki obiekt otaczajacy Ziemie, ktory nie sluzy juz pozytecznemu celowi. Naukowcy szacuja, ze obecnie istnieje okolo pol miliona smieci kosmicznych, w tym fragmenty rakiet i satelitow oraz przedmioty codziennego uzytku, takie jak klucze upuszczone podczas budowy Miedzynarodowej Stacji Kosmicznej." ,
+      "Najbardziej wietrzna planeta w naszym Ukladzie Slonecznym jest Neptun. Wiatr wieje tam z predkoscia 2575 km/h, czyli 9 razy szybciej niz najsilniejszy wiatr na ziemi. Neptun jest jedyna planeta, ktorej nie udowodniono obserwacjami na niebie, ale obliczeniami matematycznymi! Naukowcy obserwujac odchylenia w ruchu orbitalnym Urana doszli do wniosku, ze musi na niego wplywac inna, nieznana planeta. Kiedy teoretycznie wiadomo bylo, gdzie powinno byc (przewidywal to Urban Le Verrier), obserwowal je Johann Galle. Neptuna odwiedzil tylko jeden statek kosmiczny Voyager 2, ktory przelecial w poblizu planety 25 sierpnia 1989 roku." ,
+      "Kiedy obserwujemy gwiazdy, obraz, ktory widzimy, ma w rzeczywistosci wiele lat  tyle samo lat swietlnych, ile jest gwiazda. Jesli gwiazda znajduje sie 50 lat swietlnych od Ziemi, oznacza to, ze swiatlo potrzebuje 50 lat, aby do nas dotrzec - to znaczy, patrzymy na jej obraz sprzed 50 lat. W rzeczywistosci gwiazda moze wygladac zupelnie inaczej, a moze nawet nie istniec. Oczywiscie dziala to rowniez w druga strone. Z niektorych miejsc w kosmosie mozna zobaczyc Ziemie sprzed wielu lat. Oznacza to, ze bitwe pod Grunwaldem mozna ogladac na zywo z miejsca w kosmosie oddalonego o 612 lat swietlnych od Ziemi."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-AstronomyJokes" ,
+    "patterns": [
+      "Opowiedz mi dowcip o astronomii" ,
+      "Opowiedz mi zart o astronomii" ,
+      "zart o astronomii" ,
+      "zartik kosmonaucik"
+    ] ,
+    "responses": [
+      "Skad wiemy, ze fotony nie sa religiami?\nNie maja masy." ,
+      "Nigdy nie ufaj atomowi, poniewaz tworza wszystko." ,
+      "Czarne dziury najczesciej znajduja sie w czarnych skarpetkach." ,
+      "Slyszales o klaustrofobicznym astronautce?\nPotrzebowal tylko troche miejsca."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-AstronomyJWST" ,
+    "patterns": [
+      "jwst" ,
+      "James Webb" ,
+      "teleskop kosmiczny"
+    ] ,
+    "responses": [
+      "Kosmiczny Teleskop Jamesa Webba (JWST) bedzie najwiekszym teleskopem kosmicznym na dowolnej dlugosci fali, z lustrem glownym o srednicy 6,5 metra (21,3 stopy). JWST bedzie badac formowanie sie gwiazd i galaktyk i zostal wystrzelony 25 grudnia 2021 r."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-AstronomyBlackHole" ,
+    "patterns": [
+      "czarna dziura",
+      "Co to jest czarna dziura"
+    ] ,
+    "responses": [
+      "Czarna dziura nie jest pusta przestrzenia. Jest to raczej wielka ilosc materii upakowana na bardzo malym obszarze  pomysl o gwiezadzie dziesiec razy masywniejszej niz Slonce scisniete w kule o srednicy w przyblizeniu srednicy Nowego Jorku. Rezultatem jest pole grawitacyjne tak silne, ze nic, nawet swiatlo, nie moze uciec."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-AstronomyDarkEnergy" ,
+    "patterns": [
+      "ciemna energia" ,
+      "Ciemna materia"
+    ] ,
+    "responses": [
+      "Wiecej nie wiadomo, niz wiadomo. Wiemy, ile jest ciemnej energii, poniewaz wiemy, jak wplywa ona na rozszerzanie sie wszechswiata. Poza tym jest to kompletna tajemnica. Ale to wazna tajemnica. Okazuje sie, ze okolo 68% wszechswiata to ciemna energia. Ciemna materia stanowi okolo 27%. Reszta  wszystko na Ziemi, wszystko, co kiedykolwiek zaobserwowano wszystkimi naszymi instrumentami, cala normalna materia  stanowi mniej niz 5% wszechswiata."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-AstronomyEnceladus" ,
+    "patterns": [
+      "Enceladus" ,
+      "Ksiezyc Saturna" ,
+      "Pierscien Saturna"
+    ] ,
+    "responses": [
+      "Enceladus jest szostym co do wielkosci ksiezycem Saturna. Enceladus jest w wiekszosci pokryty swiezym, czystym lodem, co czyni go jednym z najbardziej odblaskowych cial Ukladu Slonecznego. Kriowulkany w poblizu bieguna poludniowego wystrzeliwuja w kosmos podobne do gejzerow strumienie pary wodnej, wodoru czasteczkowego, innych substancji lotnych i substancji stalych, w tym krysztalow chlorku sodu i czastek lodu, w sumie okolo 200 kg (440 funtow) na sekunde. Zidentyfikowano ponad 100 gejzerow. Czesc pary wodnej opada jako snieg; reszta ucieka i dostarcza wiekszosc materialu tworzacego pierscien E Saturna."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Likefootbal" ,
+    "patterns": [
+      "Lubisz pilke nozna" ,
+      "Lubisz grac w pilke nozna?" ,
+      "Czy ty lubisz grac w pilke nozna"
+    ] ,
+    "responses": [
+      "tak" ,
+      "Tak lubie" ,
+      "Ogladam wiecej niz gram" ,
+      "nie lubie tego sportu"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Players" ,
+    "patterns": [
+      "Ilu graczy jest na boisku" ,
+      "Ilu graczy gra w pilke nozna" ,
+      "Ilu graczy gra w pilke nozna" ,
+      "Jak duzy jest zespol" ,
+      "Ilu graczy jest w druzynie"
+    ] ,
+    "responses": [
+      "Druzyna pilkarska sklada sie z 11 zawodnikow (aby druzyna zostala dopuszczona do meczu musi byc co najmniej 7) i zazwyczaj 7 rezerwowych (w finalach Mistrzostw swiata i Mistrzostw Europy  12)." ,
+      "11 graczy" ,
+      "10 biegaczy i 1 bramkarz"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Teams" ,
+    "patterns": [
+      "Ile jest druzyn?" ,
+      "Ile druzyn gra jednoczesnie" ,
+      "Ile druzyn gra mecz"
+    ] ,
+    "responses": [
+      "Na boisku sa 2 druzyny" ,
+      "Na swiecie jest wiele druzyn"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Game" ,
+    "patterns": [
+      "Jaka jest gra" ,
+      "Opowiedz mi o pilce noznej" ,
+      "Opowiedz mi o pilce noznej" ,
+      "Jakie sa zasady gry" ,
+      "Czy znasz zasady?"
+    ] ,
+    "responses": [
+      "Celem gry jest umieszczenie pilki w bramce przeciwnika. Wygrywa druzyna, ktora w regulaminowym czasie zdobedzie wiecej bramek (dwie polowki po 45 minut w rozgrywkach seniorow)." ,
+      "O punktacji przeciwnika" ,
+      "Typowa gra w pilke nozna polega na trzymaniu pilki pod kontrola przeciwnika poprzez podanie pilki stopa lub glowa (nie reka) do swojego kolegi z druzyny, a nastepnie wbicie jej do bramki przeciwnika."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-WhereToWatch" ,
+    "patterns": [
+      "Gdzie ogladasz pilke nozna" ,
+      "Gdzie ogladac"
+    ] ,
+    "responses": [
+      "Najczesciej w telewizji" ,
+      "Na moim laptopie" ,
+      "W Internecie" ,
+      "Ogladam tylko skroty" ,
+      "Na YouTube" ,
+      "lubie puby"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Place" ,
+    "patterns": [
+      "Ulubiony pub?" ,
+      "Ktory pasek lubisz najbardziej" ,
+      "Jaki pub lubisz najbardziej?" ,
+      "Gdzie idziesz ogladac mecze?"
+    ] ,
+    "responses": [
+      "Piwnica to moj ulubiony pub" ,
+      "Nie mam ulubionego, lubie je wszystkie" ,
+      "Zielony pub Gdansk!"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-TrivialBall" ,
+    "patterns": [
+      "Ciekawostki pilkarskie" ,
+      "Powiedz cos o pilce noznej" ,
+      "Powiedz cos o pilce noznej" ,
+      "Opowiedz ciekawostki pilkarskie" ,
+      "Powiedz cos ciekawego o pilce noznej" ,
+      "Powiedz cos ciekawego o pilce noznej"
+    ] ,
+    "responses": [
+      "Mecze pilki noznej rozgrywane sa na prostokatnym, pokrytym murawa boisku." ,
+      "Boisko ma od 45 do 90 m szerokosci i 90 do 120 m dlugosci, ale boisko nie moze byc kwadratowe." ,
+      "Od 14 marca 2008 kazde nowe boisko powinno miec 105 metrow dlugosci i 68 metrow szerokosci" ,
+      "Podzial zawodnikow na pozycje jest czysto arbitralny, w obecnych strategiach gry czesto dochodzi do plynnej wymiany miedzy nimi podczas meczu." ,
+      "Bramkarz jest jedynym zawodnikiem, ktory podczas gry moze dotykac i lapac pilke rekoma, ale zgodnie z przepisami moze sie to zdarzyc tylko we wlasnym polu karnym." ,
+      "Pilka nozna to jedna z najszybszych gier." ,
+      "Jezeli pilka przekroczy cala linie boczna po uderzeniu, podaniu lub odbiciu pilki, sedzia sygnalizuje wprowadzenie pilki. Gra jest wznawiana poprzez wrzucenie pilki rekoma, w kolko nad glowa, bez podnoszenia nog z ziemi. gdzie pilka opuscila pole gry zawodnika druzyny przeciwnej."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Playgrounds" ,
+    "patterns": [
+      "Rodzaje boisk pilkarskich" ,
+      "Jakie znasz pola" ,
+      "Jakie znasz dziedziny?" ,
+      "Gdzie grac w pilke nozna"
+    ] ,
+    "responses": [
+      "Boiska wewnetrzne" ,
+      "Naturalne murawy" ,
+      "Sztuczna murawa" ,
+      "Murawa poliuretanowa"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-HowLong" ,
+    "patterns": [
+      "Jak dlugo trwa gra" ,
+      "Jak dlugo trwa gra?" ,
+      "Jaki jest czas gry?" ,
+      "Jak dlugo trwa gra?"
+    ] ,
+    "responses": [
+      "Zwykle 90 minut" ,
+      "90 minut plus czas doliczony przez sedziego" ,
+      "Czas gry to 90 minut (dwie polowki po 45 minut kazda)." ,
+      "90 minut plus przerwy miedzy polowami."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Teams" ,
+    "patterns": [
+      "Jakie znasz zespoly?" ,
+      "Wpisz nazwe zespolu" ,
+      "Wejdza do klubu z Polski" ,
+      "Jakie znasz kluby?" ,
+      "Wpisz nazwe klubu z Polski"
+    ] ,
+    "responses": [
+      "Legia Warszawa" ,
+      "Lechia Gdansk" ,
+      "Arka Gdynia" ,
+      "Polonia Warszawa" ,
+      "Polska Reprezentacja" ,
+      "Lech Poznan" ,
+      "Krakow"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-LikePlayer" ,
+    "patterns": [
+      "Ulubiony pilkarz" ,
+      "ulubiony gracz" ,
+      "Jakiego gracza lubisz?" ,
+      "Ktorego gracza lubisz?" ,
+      "Ulubiony gracz"
+    ] ,
+    "responses": [
+      "Robertcik" ,
+      "Robert Lewandowski" ,
+      "Joshua Kimmich" ,
+      "Kylian Mbappe" ,
+      "Sergio Ramos" ,
+      "Cristiano Ronaldo" ,
+      "Neymar"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-NotLikePlayer" ,
+    "patterns": [
+      "Kogo nie lubisz" ,
+      "Czego nie lubisz" ,
+      "Jakiego gracza nie lubisz"
+    ] ,
+    "responses": [
+      "Karim Benzema" ,
+      "Manuel Neuer" ,
+      "Erling Braut Haaland" ,
+      "Lionel Messi"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Info" ,
+    "patterns": [
+      "Podaj mi kilka faktow na temat jazdy na rowerze" ,
+      "Podaj mi jeszcze jeden fakt na temat jazdy na rowerze" ,
+      "Powiedz mi cos o rowerach",
+      "Powiedz mi cos o jezdzie na rowerze" ,
+      "Co wiesz o kolarstwie?" ,
+      "A co z jazda na rowerze?"
+    ] ,
+    "responses": [
+      "Kolarstwo  bardzo szerokie pojecie, odnoszace sie do wielu dyscyplin, ale zawsze zwiazane z uzytkowaniem roweru." ,
+      "Wiele badan naukowych pokazuje, ze regularni rowerzysci sa mniej podatni na otylosc, cukrzyce, udary, choroby serca i rozne rodzaje raka" ,
+      "Pierwszy oficjalny wyscig rowerowy odbyl sie 31 maja 1868 roku w Paryzu. Kolarze scigali sie na 1200 metrow." ,
+      "Kolarstwo dzieli sie na wiele dyscyplin. Najbardziej popularne to kolarstwo szosowe, gorskie, torowe i BMX." ,
+      "Kazdy zawodnik musi nosic kask."
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-TypesofCycling" ,
+    "patterns": [
+      "Jakie rodzaje jazdy na rowerze?" ,
+      "Jakie sa rodzaje jazdy na rowerze?" ,
+      "Jak podzielic jazde na rowerze?" ,
+      "Jakie inne rodzaje jazdy na rowerze?"
+    ] ,
+    "responses": [
+      "kolarstwo szosowe - uprawiane na drogach publicznych" ,
+      "kolarstwo torowe - uprawiane na specjalnych owalnych torach" ,
+      "kolarstwo gorskie (MTB)" ,
+      "Kolarstwo BMX - uprawiane na torach Moto-Cross" ,
+      "jazda na rowerze przelajowym  jazda w lesnej gluszy" ,
+      "pilka rowerowa"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-TypesofBikes" ,
+    "patterns": [
+      "jakie rowery?" ,
+      "wymiana rowerow" ,
+      "jakie znasz rowery" ,
+      "rodzaje rowerow"
+    ] ,
+    "responses": [
+      "Rower szosowy" ,
+      "zbwir" ,
+      "MTB" ,
+      "BMX" ,
+      "Przechodzic" ,
+      "Rower miejski" ,
+      "Turystyczny"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-OwnedBike" ,
+    "patterns": [
+      "Na jakim rowerze jezadzisz" ,
+      "Na czym jezadzisz?"
+    ] ,
+    "responses": [
+      "Na rowerze szosowym" ,
+      "Na zwirze" ,
+      "Tylko MTB" ,
+      "BMX" ,
+      "Na rowerze miejskim" ,
+      "Na rowerze turystycznym"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-QuestionDriving" ,
+    "patterns": [
+      "Jezadzisz?" ,
+      "czy jezadzisz na rowerze?"
+    ] ,
+    "responses": [
+      "Tak, prowadze." ,
+      "Tylko do pracy" ,
+      "Lubie robic wycieczki" ,
+      "Duzo podrozuje po miescie"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-TourdeFrancePl" ,
+    "patterns": [
+      "Czy znasz tour de france?" ,
+      "Tour de France" ,
+      "Francuski"
+    ] ,
+    "responses": [
+      "tak, wiem" ,
+      "Bardzo fajny wyscig" ,
+      "Legendarna rasa"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Race" ,
+    "patterns": [
+      "Ulubiona rasa" ,
+      "Twoj ulubiony wyscig"
+    ] ,
+    "responses": [
+      "Tour de Pologne" ,
+      "Tour de France" ,
+      "Seria MTB Garmin" ,
+      "Giro de Italia"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-Frequency" ,
+    "patterns": [
+      "Jak czesto jezadzisz" ,
+      "Duzo jezadzisz?"
+    ] ,
+    "responses": [
+      "Raz w tygodniu" ,
+      "Bardzo czesto" ,
+      "Czasami"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  } ,
+  {
+    "tag": "pl-hobby" ,
+    "patterns": [
+      "Co lubisz robic",
+      "Jakie sa Twoje zainteresowania" ,
+      "Czy masz jakies hobby?" ,
+      "Czym sie interesujesz" ,
+      "Czy masz jakies zainteresowania?" ,
+      "Jakie sa Twoje zainteresowania"
+    ] ,
+    "responses": [
+      "Lubie jazde na rowerze, pilke nozna, astronomie i szybko skladam kostke Rubika. O czym mam ci powiedziec?"
+    ] ,
+    "context": {
+      "in": "" ,
+      "out": "" ,
+      "clear": false
+    }
+  }
       ]
 }

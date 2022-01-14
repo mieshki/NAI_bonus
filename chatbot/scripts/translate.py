@@ -1,16 +1,14 @@
 from json import load, dump
-from googletrans import Translator
-
 from deep_translator import GoogleTranslator
-#
+
 
 def translate(input):
-    #service_urls=['translate.googleapis.com']
-    #https://translate.google.pl/?hl=pl
-    #translator = Translator()
-    #translator = Translator(service_urls=['translate.google.pl/?hl=pl'])
+    """
+    This function translate english sentences to polish
+    :param input: String which should be translated
+    :return: String after translation to polish
+    """
     print(f'Input: {input}')
-    #output = translator.translate(input, src='en', dest='pl')
     output = GoogleTranslator(source='en', target='pl').translate(input)
 
     print(f'Translating sentence:')
@@ -22,11 +20,14 @@ def translate(input):
 
 
 def intent_translator():
+    """
+    This function translates responses and patterns from english json input file to polish.
+    It creates new file with translated fields
+    """
     file = open('intents-eng.json')
     json_data = load(file)
 
-    data = {}
-    data['intents'] = []
+    data = {'intents': []}
 
     all_intents = []
 
@@ -44,17 +45,15 @@ def intent_translator():
 
         for i, pattern in enumerate(intent['patterns']):
             intent['patterns'][i] = translate(pattern)
-            #translate(pattern)
-            #break
+            # translate(pattern)
+            # break
 
         for i, response in enumerate(intent['responses']):
             intent['responses'][i] = translate(response)
-            #response = translate(response)
-            #break
+            # response = translate(response)
+            # break
 
     print(all_intents)
 
     with open('intents-adv-pl-test.json', 'w') as f:
         dump(all_intents, f)
-
-    # json_data = json.dumps(data)
