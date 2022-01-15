@@ -63,3 +63,21 @@ Input: jakie jest twoje ulubione zainteresowanie
 bot_answer: 90 minut plus czas doliczony przez sedziego
 Input: ulubiony pilkarz
 bot_answer: Sergio Ramos
+Input: hi
+bot_answer: Hello human, please tell me your GeniSys user
+Input: my name is dude
+bot_answer: You are <HUMAN>! How can I help?
+Input: you can't
+bot_answer: Hello human, please tell me your GeniSys user
+Input: i knew it
+bot_answer: Right
+Input: what do yo know
+bot_answer: Very nice race
+Input: what do you know
+bot_answer: Indoor pitches
+Input: 
+bot_answer: Don't know
+Input: 
+bot_answer: Don't know
+Input: what do you know
+bot_answer: Polyurethane turf
